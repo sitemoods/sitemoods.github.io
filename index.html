@@ -100,15 +100,13 @@
 
                     <div class="container">
                         <h2>Área do Cliente</h2>
-                        <form name="fLogin" action="#">
+                        <form name="fLogin" action="#" onsubmit="return sendLogin();">
                             <input name="user" class="user" type="text" placeholder="Usuário" />
                             <input name="pass" class="pass" type="password" placeholder="Senha" />
                             <input name="send" class="send" type="submit" value="Login" />
                         </form>
+                        <span class="feedback2">Senha ou nome da conta incorreto.</span>
                     </div>
-                    
-                    <span class="feedback2"></span>
-                    
                 </div>
             </section>
             <!-- /Login !-->

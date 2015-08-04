@@ -284,12 +284,12 @@ body {
           border-color: #000;
           background-color: #000;
           color: #FFF; }
-  #Login span.feedback {
+  #Login .feedback2 {
     font-weight: 600;
-    color: red;
-    margin: 0 0 20px;
+    color: #000;
     visibility: hidden;
-    display: block; }
+    display: block;
+    text-align: center; }
   #Login ::-webkit-input-placeholder {
     color: #FFF; }
   #Login :-moz-placeholder {
