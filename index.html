@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Moods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        <link rel="icon" type="image/x-icon" href="http://www.yurinascimento.com.br/moods/favicon.ico" />
+        <link rel="icon" type="image/png" href="http://www.yurinascimento.com.br/moods/favicon.png" />
+        <!-- Bower assets !-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- CDN !-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <!-- CDN Jquery fallback !-->
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <!-- Local CSS !-->
+        <link rel="stylesheet" href="css/moods.css" />
+        <link rel="stylesheet"href="css/menu.css" />
+        <link rel="stylesheet" href="css/cs-select.css" />
+        <link rel="stylesheet" href="css/cs-skin-underline.css" />
+        <!-- Bower assets !-->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/scrollr/dist/skrollr.min.js"></script>
+        <!-- Local JS !-->
+        <script src="js/min/inputmask.min.js"></script>
+        <script src="js/min/jquery.maskedinput.min.js"></script>
+        <script src="js/min/headroom-min.js"></script>
+        <script src="js/min/jquery.bgswitcher-min.js"></script>
+        <script src="js/min/jquery.smooth-scroll.min.js"></script>
+        <script src="js/min/jquery.ba-bbq-min.js"></script>
+        <script src="js/min/classie-min.js"></script>
+        <script src="js/min/selectFx-min.js"></script>
+        <!-- Main JS !-->
+        <script src="js/min/geral-min.js"></script>
+        <!-- Google Web Fonts !-->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="page-index">
+        <div id="Moods" class="container-fluid">
+
+            <!-- Top !-->
+            <header id="Top" class="row">
+                <div class="left col-sm-6 hidden-xs">
+                    <a href="#Inicio">
+                        <img alt="Moods" class="logo" src="img/Logo.jpg" />  
+                    </a>
+                </div>
+                <div class="right col-sm-6 visible-md visible-lg">
+                    <nav id="Menu" class="scroll-nav">
+                        <h3>Menu <i></i></h3>
+                        <ul class="scroll-nav">
+                            <li><a class="active" href="#Inicio">Início</a></li>
+                            <li><a href="#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="#QuemFaz">Quem faz</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="right tablet col-sm-6 visible-sm">
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
+                    <a href="#Inicio">
+                        <img alt="Moods" src="img/moods-mobile.png" />
+                    </a>
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <nav class="links">
+                    <ul class="scroll-nav">
+                        <li><a class="active" href="#Inicio">Início</a></li>
+                        <li><a href="#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="#QuemFaz">Quem faz</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                    </ul>
+                    <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
+                    <span><a href="mailto:moods@jardimsonoro.com" class="hidden-xs">moods@jardimsonoro.com</a></span>
+                </nav>
+            </header>
+            <!-- /Top !-->
+
+            <!-- Login !-->
+            <section id="Login" class="row">
+                <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
+
+                <div class="form">
+
+                    <div class="container">
+                        <h2>Área do Cliente</h2>
+                        <form name="fLogin" action="#">
+                            <input name="user" class="user" type="text" placeholder="Usuário" />
+                            <input name="pass" class="pass" type="password" placeholder="Senha" />
+                            <input name="send" class="send" type="submit" value="Login" />
+                        </form>
+                    </div>
+                    
+                    <span class="feedback2"></span>
+                    
+                </div>
+            </section>
+            <!-- /Login !-->
+
+            <!-- Inicio !-->
+            <article id="Inicio" class="row">
+                <!-- .left !-->
+                <div class="left col-sm-6 col-xs-12">
+
+                    <!-- Moods e uma solucao !-->
+                    <div class="row slogan">
+                        <div class="col-xs-12">
+                            <div class="group">
+                                <h2 id="h2icon" class="icon"></h2>
+                                <h3>Moods é uma soluçāo<br /> completa que leva <strong>música</strong><br /> e <strong>conteúdo visual</strong> para<br /> as lojas da sua franquia.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Moods e uma solucao !-->
+
+                    <!-- Music & Signage !-->
+                    <div class="row music_and_signage">
+                        <div class="col-xs-12">
+                            <span>
+                                MUSIC BRANDING E <br /> DIGITAL SIGNAGE JUNTOS!
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /Music & Signage !-->
+                </div>
+                <!-- /.left !-->
+
+                <!-- .right !-->
+                <div id="Banner" class="right banner col-sm-6 col-xs-12"><!-- background banner !--></div>
+                <!-- /.right !-->
+            </article>
+            <!-- /Inicio !-->
+
+            <!-- Conteudo !-->
+            <article id="Conteudo">
+                <!-- .musica !-->
+                <div class="row musica">
+
+                    <!-- .right !-->
+                    <div class="musica-right right col-sm-7 col-xs-12 col-sm-offset-5">
+                        <div class="content" anchor-target="#Conteudo" data-top="top: 0px;" data-100-center="top: 200px;">
+                            <img alt="Video" src="img/conteudo/icon_musica.png" class="icon hidden-sm hidden-xs" />
+                            <img alt="Video" src="img/conteudo/icon_musica_mobile.png" class="icon visible-sm visible-xs" />
+                            <span class="label">
+                                Música
+                            </span>
+                            <span class="text">
+                                Música faz você dançar sozinho, vestir roupa <br />colorida, ficar até o fim da festa. Música faz <br />você ligar para um amor antigo, escolher <br />o destino das próximas férias…<br /> Música faz coisas que ninguém imagina, <br />e é claro, tem tudo a ver com o sucesso da <br />sua franquia. <strong>Moods faz as suas lojas tocarem <br />sempre a música certa. Música que anima, <br />que emociona, estimula e envolve.</strong>
+                            </span>
+                            <img alt="comunicacao" class="comunicacao" src="img/conteudo/img_comunicacao_visual.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /.musica !-->
+
+                <!-- .video !-->
+                <div class="row video">
+                    <!-- .left !-->
+                    <div class="video-left left col-sm-4 col-sm-offset-2 col-xs-12">
+                        <div class="content" anchor-target="#Conteudo" data-top="top: -80px;" data-40-bottom="top: 100px;">
+                            <img alt="Video" src="img/conteudo/icon_play.png" class="icon hidden-sm hidden-xs" />
+                            <img alt="Video" src="img/conteudo/icon_play_mobile.png" class="icon visible-sm visible-xs" />
+                            <span class="label">
+                                Comunicaçāo <br />Visual
+                            </span>
+                            <span class="text">
+                                Conteúdo visual super atraente<br /> faz toda a diferença. Que tal levar<br /> o cardápio, lançamentos e promoções<br /> das suas lojas para telas digitais?<br /> E muitos mais! <strong>Tudo transmitido<br /> e atualizado em tempo real,<br /> em todas as lojas.</strong>
+                            </span>
+                            <img alt="roteador" class="roteador" src="img/conteudo/img_receiver.png" />
+                        </div>
+                    </div>
+                </div>
+                <!-- /.video !-->
+
+                <a class="contrate-agora" href="#Contato"></a>
+            </article>
+            <!-- /Conteudo !-->
+
+            <!-- ComoFunciona !-->
+            <article id="ComoFunciona" class="row">
+                <div class="title col-sm-6">
+                    <h2>Como funciona?</h2>
+                </div>
+                <div class="content col-md-12">
+                    <div class="content">
+                        <div id="Infografico"></div>
+                    </div>
+                    <a class="contrate-agora" href="#Contato"></a>
+                </div>
+            </article>
+            <!-- /ComoFunciona !-->
+
+            <!-- QuemFaz !-->
+            <article id="QuemFaz" class="row">
+                <!-- .left !-->
+                <div class="left col-md-6 col-sm-12">
+                    <div class="content">
+                        <h2>Quem faz a Moods acontecer?</h2>
+                        <p>Uma galera que adora café,  é super conectada quando  o assunto é música, arte,  humores e preferências.</p>
+                        <p>Caso você queira falar sobre  a sua franquia ou gostaria de  trabalhar com agente,  é só marcar um café!</p>
+                    </div>
+                </div>
+                <!-- /.left !-->
+                <!-- .right !-->
+                <div class="right col-sm-12 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
+                    <div class="content">
+                        <div class='embed-container'>
+                            <iframe src='http://player.vimeo.com/video/135188609' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.right !-->
+            </article>
+            <!-- /QuemFaz !-->
+
+            <!-- Contato !-->
+            <article id="Contato" class="row clearfix">
+                <div class="left col-sm-6">
+                    <h2>Contato</h2>
+                </div>
+                <div class="right col-sm-8 col-sm-offset-4">
+
+                    <form name="fContato" action="http://formspree.io/yuri.rsl@gmail.com" method="POST" onsubmit="return enviarContato();">
+                        
+                        <div class="row">
+
+                            <div class="left col-nome col-sm-6">
+                                <input name="nome" class="nome" placeholder="Nome" type="text">
+                            </div>
+
+                            <div class="right col-email col-sm-6">
+                                <input name="email" class="email" placeholder="Email" type="email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="left col-franquia col-sm-3 col-xs-6">
+                                <input name="franquia" class="franquia" placeholder="Franquia" type="text">
+                            </div>
+
+                            <div class="right col-telefone col-sm-3 col-xs-6">
+                                <input name="telefone" class="telefone" data-inputmask="(99) 9999-9999" placeholder="Telefone" type="text">
+                            </div>
+
+                            <div class="right col-sm-6 col-xs-12">
+                                <select name="comoPrefere" class="cs-select cs-skin-underline">
+                                    <option value="" disabled selected>Como prefere nossa resposta?</option>
+                                    <option value="e-mail">E-mail</option>
+                                    <option value="telefone">Telefone</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="left col-sm-10 col-digaOi">
+                                <textarea name="digaOi" placeholder="Diga oi" class="diga-oi" rows="5"></textarea>
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="submit" class="enviar" value="Enviar" />
+                            </div>
+                        </div>
+                        
+                        <span class="feedback">OPS! Por favor preencer todos os campos corretamente.</span>
+                    </form>  
+                </div>
+            </article>
+            <!-- /Contato !-->
+
+            <!-- Rodape !-->
+            <footer id="Rodape" class="row">
+                <!-- .left !-->
+                <div class="left col-xs-6">
+                    <div class="content">
+                        <h2>
+                            <a href="faq.html">FAQ</a>
+                        </h2>
+                        <a href="faq.html">Perguntas frequentes</a>
+                        <h3>Contato</h3>
+                        <a href="mailto:moods@jardimsonoro.com">moods@jardimsonoro.com</a>
+                    </div>
+                </div>
+                <!-- /.left !-->
+                <!-- .right !-->
+                <div class="right col-xs-6">
+                    <a id="LinkToTopo" href="#Inicio" class="topo">
+                        <i></i>
+                        <span>TOPO</span>
+                    </a>
+                </div>
+                <div class="plus">
+                    <span>Moods 2015 © Todos os direitos reservados.</span>
+                </div>
+                <!-- /.right !-->
+            </footer>
+            <!-- /Rodape !-->
+        </div>
+    </body>
+</html>

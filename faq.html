@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Moods - FAQ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        <link rel="icon" type="image/x-icon" href="http://www.yurinascimento.com.br/moods/favicon.ico" />
+        <link rel="icon" type="image/png" href="http://www.yurinascimento.com.br/moods/favicon.png" />
+        <!-- Bower assets !-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- CDN !-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <!-- CDN Jquery fallback !-->
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <!-- Local CSS !-->
+        <link rel="stylesheet" href="css/moods.css" />
+        <link rel="stylesheet"href="css/menu.css" />
+        <link rel="stylesheet" href="css/cs-select.css" />
+        <link rel="stylesheet" href="css/cs-skin-underline.css" />
+        <!-- Bower assets !-->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/scrollr/dist/skrollr.min.js"></script>
+        <!-- Local JS !-->
+        <script src="js/inputmask.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/headroom.js"></script>
+        <script src="js/jquery.bgswitcher.js"></script>
+        <script src="js/jquery.smooth-scroll.min.js"></script>
+        <script src="js/jquery.ba-bbq.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/selectFx.js"></script>
+        <!-- Main JS !-->
+        <script src="js/geral.js"></script>
+        <!-- Google Web Fonts !-->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="page-index">
+        <div id="Moods" class="container-fluid faq">
+
+            <!-- Top !-->
+            <header id="Top" class="row">
+                <div class="left col-sm-6 hidden-xs">
+                    <a href="index.html">
+                        <img alt="Moods" class="logo" src="img/Logo.jpg" />
+                    </a>
+                </div>
+                <div class="right col-sm-6 visible-md visible-lg">
+                    <nav id="Menu" class="scroll-nav">
+                        <h3>Menu <i></i></h3>
+                        <ul class="scroll-nav">
+                            <li><a href="index.html#Inicio">Início</a></li>
+                            <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="index.html#QuemFaz">Quem faz</a></li>
+                            <li><a href="index.html#Contato">Contato</a></li>
+                            <li><a class="active" href="#">FAQ</a></li>
+                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="right tablet col-sm-6 visible-sm">
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
+                    <a href="#FAQ">
+                        <img alt="Moods" src="img/moods-mobile.png" />
+                    </a>
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <nav class="links">
+                    <ul class="scroll-nav">
+                        <li><a href="index.html#Inicio">Início</a></li>
+                        <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="index.html#QuemFaz">Quem faz</a></li>
+                        <li><a href="index.html#Contato">Contato</a></li>
+                        <li><a class="active" href="#">FAQ</a></li>
+                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                    </ul>
+                    <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
+                    <span><a href="mailto:moods@jardimsonoro.com" class="hidden-xs">moods@jardimsonoro.com</a></span>
+                </nav>
+            </header>
+            <!-- /Top !-->
+
+            <!-- Login !-->
+            <section id="Login" class="row">
+                <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
+
+                <div class="form">
+
+                    <div class="container">
+                        <h2>Área do Cliente</h2>
+                        <form name="fLogin" action="#">
+                            <input name="user" class="user" type="text" placeholder="Usuário" />
+                            <input name="pass" class="pass" type="password" placeholder="Senha" />
+                            <input name="send" class="send" type="submit" value="Login" />
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+            <!-- /Login !-->
+
+            <!-- FAQ !-->
+            <article id="FAQ" class="row">
+
+                <div class="background-left col-sm-6 col-xs-12"></div>
+                <div class="background-right col-sm-6 hidden-xs"></div>
+
+                <div class="row">
+
+                    <div class="header col-xs-6">
+                        <a class="voltar" href="/">
+                            <i></i> <span>Voltar</span>
+                        </a>
+                        <div class="content clearfix">
+                            <h2>FAQ</h2>
+                            <span class="subtitle">Perguntas Frequentes</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>01. Moods é um serviço exclusivo para redes e franquias?</h3>
+                            <p>Sim, com a filosofia UNIX "faça uma coisa, e faça bem feito", o serviço foi projetado de forma exclusiva para redes, e assim, oferecer e manter a melhor qualidade de atendimento e conteúdo.</p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>02. Quais são os principais benefícios oferecidos pelo serviço?</h3>
+                            <p>Os principais benefícios oferecidos pelo serviço são a diferenciação que ele proporciona para a marca, o reforço da sua identidade e a padronização dos pontos da sua rede.</p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>03. É possível contratar apenas serviço de música?</h3>
+                            <p>Sim.</p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>04. É possível contratar apenas o serviço de vídeo?</h3>
+                            <p>Sim.</p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>05. É possível incluir no áudio vinhetas e locuções?</h3>
+                            <p>Sim.</p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>06. É possível diferenciar o conteúdo entre as lojas?</h3>
+                            <p>Sim, o conteúdo pode ser diferenciado por região, grupos e até individualmente entre as lojas.
+                                Por exemplo, o Video Menu pode acompanhar as variações de preços  que possam existir entre os estados, ou, lojas específicas podem exibir promoções que são exclusivas destas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>07. É possível atualizar o conteúdo do vídeo diariamente?</h3>
+                            <p>
+                                Sim, a atualização acontece quase em tempo real. <br />
+                                Uma rede pode exibir nas telas atualizações de preços ou novas informações diárias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>08. É oferecido também o serviço de instalação da estrutura de som e tv das lojas?</h3>
+                            <p>
+                                Não, toda a estrutura física da loja é de responsabilidade desta.
+                                Nosso serviço vai da criação de conteúdo até a ponta final de entrega, que são os nossos receivers Plug & Play.<br />
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>09. Como funcionam os receivers? O que é Plug & Play?</h3>
+                            <p>
+                                Basta conectar os cabos de energia, internet, áudio e hdmi, que está funcionando. <br />
+                                Não existe qualquer tipo de configuração, controle remoto ou botões para serem manuseados. <br />
+                                Ligou na tomada, está tocando.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>10. Onde o serviço está disponível?</h3>
+                            <p>Em todo o território nacional.</p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>11. É preciso pagar o ECAD?</h3>
+                            <p>
+                                Sim, os direitos autorais musicais são devidos nos seus locais de execução pública. <br />
+                                Estar em dia com o Ecad é responsabilidade da rede.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="right col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>12. É necessário conexão com a internet?</h3>
+                            <p>Sim, as músicas são transmitidas em streaming ao vivo e os vídeos são atualizados em tempo real, tudo via internet (ou também redes próprias, ver próxima pergunta)</p>
+                        </div>
+                    </div>
+
+                    <div class="left col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h3>13. O serviço é compatível com redes de dados corporativas, intranets, Vsat e outras?</h3>
+                            <p>Sim, todas as arquiteturas de rede são possíveis.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </article>
+            <!-- /FAQ !-->
+
+            <!-- Rodape !-->
+            <footer id="Rodape" class="row">
+                <!-- .left !-->
+                <div class="left col-xs-6">
+                    <div class="content">
+                        <h2>
+                            <a href="faq.html">FAQ</a>
+                        </h2>
+                        <a href="faq.html">Perguntas frequentes</a>
+                        <h3>Contato</h3>
+                        <a href="mailto:moods@jardimsonoro.com">moods@jardimsonoro.com</a>
+                    </div>
+                </div>
+                <!-- /.left !-->
+                <!-- .right !-->
+                <div class="right col-xs-6">
+                    <a id="LinkToTopo" href="#FAQ" class="topo">
+                        <i></i>
+                        <span>TOPO</span>
+                    </a>
+                </div>
+                <div class="plus">
+                    <span>Moods 2015 © Todos os direitos reservados.</span>
+                </div>
+                <!-- /.right !-->
+            </footer>
+            <!-- /Rodape !-->
+        </div>
+    </body>
+</html>
