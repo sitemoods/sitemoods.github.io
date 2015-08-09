@@ -1319,12 +1319,13 @@ body {
   from {
     transform: none; }
   50% {
-    transform: 0; }
+    transform: scale(1.2); }
   to {
     transform: none; } }
-.heart {
+#heart {
   /* ... */
-  animation: pound .5s infinite; }
+  animation: pound .5s infinite;
+  transform-origin: center center; }
 
 input {
   -webkit-border-radius: 0; }
