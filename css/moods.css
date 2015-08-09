@@ -1324,7 +1324,7 @@ body {
     transform: none; } }
 #heart {
   /* ... */
-  animation: pound .5s infinite;
+  animation: pound 1.2s infinite;
   transform-origin: center center; }
 
 input {
