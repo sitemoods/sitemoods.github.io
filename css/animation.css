@@ -190,26 +190,6 @@
   to {
     -webkit-transform: translateX(135px);
     transform: translateX(135px); } }
-@-webkit-keyframes pound {
-  from {
-    transform: none; }
-  to {
-    transform: none; } }
-@-moz-keyframes pound {
-  from {
-    transform: none; }
-  to {
-    transform: none; } }
-@-ms-keyframes pound {
-  from {
-    transform: none; }
-  to {
-    transform: none; } }
-@keyframes pound {
-  from {
-    transform: none; }
-  to {
-    transform: none; } }
 @-webkit-keyframes seta-baixo {
   from {
     opacity: 1; }
@@ -230,10 +210,30 @@
     opacity: 1; }
   to {
     opacity: 0.4; } }
-#heart {
-  animation: pound 1.2s infinite;
-  transform-origin: center center; }
-
+@-webkit-keyframes sinal-torre {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(4px, -6px); } }
+@-moz-keyframes sinal-torre {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(4px, -6px); } }
+@-ms-keyframes sinal-torre {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(4px, -6px); } }
+@keyframes sinal-torre {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    -webkit-transform: translate(4px, -6px); } }
 #Circulo1,
 #Circulo2 {
   -webkit-animation: dash 4s linear infinite;
@@ -283,92 +283,56 @@
   -webkit-animation: seta-baixo 1s ease infinite;
   -webkit-animation-delay: 0.7s; }
 
+#SinalAntena1, #SinalReceveir1 {
+  animation: sinal-torre 1s ease infinite;
+  -webkit-animation: sinal-torre 1s ease infinite; }
+
+#SinalAntena2, #SinalReceveir2 {
+  animation: sinal-torre 1s ease infinite;
+  animation-delay: 2.3s;
+  -webkit-animation: sinal-torre 1s ease infinite;
+  -webkit-animation-delay: 2.3s; }
+
+#SinalAntena3, #SinalReceveir3 {
+  animation: sinal-torre 1s ease infinite;
+  animation-delay: 3.5s;
+  -webkit-animation: sinal-torre 1s ease infinite;
+  -webkit-animation-delay: 3.5s; }
+
+@-webkit-keyframes pound {
+  from {
+    transform: none; }
+  50% {
+    transform: scale(1.2); }
+  to {
+    transform: none; } }
+@-moz-keyframes pound {
+  from {
+    transform: none; }
+  50% {
+    transform: scale(1.2); }
+  to {
+    transform: none; } }
+@-ms-keyframes pound {
+  from {
+    transform: none; }
+  50% {
+    transform: scale(1.2); }
+  to {
+    transform: none; } }
+@keyframes pound {
+  from {
+    transform: none; }
+  50% {
+    transform: scale(1.2); }
+  to {
+    transform: none; } }
+#Heart {
+  animation: pound 1.2s infinite;
+  transform-origin: center center; }
+
 /*
-#play,
-#som {
-    animation: anima-play-som2 2s ease infinite;
-    -webkit-animation: anima-play-som2 2s ease infinite;
-}
 
-.play {
-    animation: anima-play-som 2s ease infinite;
-    -webkit-animation: anima-play-som 2s ease infinite;
-}
-
-@-webkit-keyframes anima-seta1 {
-    to {
-        -webkit-transform: translateX(185px);
-    }
-}
-
-@keyframes anima-seta1 {
-    to {
-        transform: translateX(185px);
-    }
-}
-
-#seta1 {
-    animation: anima-seta1 2s ease infinite;
-    -webkit-animation: anima-seta1 2s ease infinite;
-}
-
-@-webkit-keyframes anima-seta2 {
-    from {
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: translateX(85px);
-    }
-}
-
-@keyframes anima-seta2 {
-    from {
-        opacity: 1;
-    }
-    to {
-        transform: translateX(85px);
-    }
-}
-
-#seta2 {
-    animation: anima-seta2 2s ease infinite;
-    -webkit-animation: anima-seta2 2s ease infinite;
-}
-
-@-webkit-keyframes anima-seta3 {
-    from {
-        opacity: 1;
-    }
-    to {
-        -webkit-transform: translateX(125px);
-    }
-}
-@keyframes anima-seta3 {
-    from {
-        opacity: 1;
-    }
-    to {
-        transform: translateX(125px);
-    }
-}
-#seta3 {
-    animation: anima-seta3 2s ease infinite;
-    -webkit-animation: anima-seta3 2s ease infinite;
-}
-@-webkit-keyframes anima-seta-4 {
-    to {
-        -webkit-transform: translateY(85px);
-    }
-}
-@keyframes anima-seta-4 {
-    to {
-        transform: translateY(85px); 
-    }
-}
-#seta4 {
-    animation: anima-seta-4 2s ease infinite;
-    -webkit-animation: anima-seta-4 2s ease infinite;
-}
 
 @-webkit-keyframes anima-sinal-torre {
     from {
