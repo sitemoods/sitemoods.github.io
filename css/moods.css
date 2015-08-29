@@ -21,22 +21,14 @@ body {
   width: 100%;
   position: fixed;
   z-index: 10; }
-  @media (min-width: 768px) {
-    #Top {
-      position: fixed; } }
   #Top .left {
-    background-color: #202020;
-    height: 40px; }
-    @media (min-width: 768px) {
-      #Top .left {
-        height: 55px; } }
-    @media (min-width: 992px) {
-      #Top .left {
-        height: 100px; } }
+    background-color: #202020; }
     #Top .left .logo {
       float: right;
+      position: absolute;
       margin-right: 295px;
-      margin-top: 40px; }
+      margin-bottom: -12px;
+      bottom: 50%; }
       @media (min-width: 768px) {
         #Top .left .logo {
           margin-top: 15px;
@@ -46,11 +38,7 @@ body {
           margin-top: 40px;
           margin-right: 408px; } }
   #Top .right {
-    background-color: #FFF;
-    height: 55px; }
-    @media (min-width: 992px) {
-      #Top .right {
-        height: 100px; } }
+    background-color: #FFF; }
 
 @-webkit-keyframes fadeInDown {
   0% {
@@ -139,7 +127,10 @@ body {
 
 #Menu {
   margin-left: 25px;
-  float: left; }
+  float: left;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -12px; }
   #Menu h3 {
     font-weight: normal;
     font-size: 13px;
@@ -153,7 +144,8 @@ body {
     border-bottom: 1px solid black; }
   #Menu ul {
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     #Menu ul li {
       display: table-cell;
       padding-right: 32px; }
@@ -319,9 +311,9 @@ body {
     #Inicio {
       padding-top: 100px; } }
   #Inicio .left {
-    background-color: #1F1F1F;
+    background-color: #202020;
     position: relative;
-    height: 300px; }
+    height: 390px; }
     @media (min-width: 768px) {
       #Inicio .left {
         height: 100%; } }
@@ -338,13 +330,12 @@ body {
   #Inicio .slogan > div {
     height: 100%; }
   #Inicio .slogan .group {
-    height: 300px;
+    height: 390px;
     margin-right: 0px !important;
     display: inline; }
     @media (min-width: 768px) {
       #Inicio .slogan .group {
         width: 360px;
-        height: 285px;
         margin: auto;
         position: absolute;
         top: 0;
@@ -356,18 +347,19 @@ body {
       #Inicio .slogan .group {
         width: 490px; } }
     #Inicio .slogan .group .icon {
-      width: 110px;
-      height: 111px;
+      width: 191px;
+      height: 182px;
       float: left;
       margin: 30px 0 0;
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-position: left bottom; }
       @media (min-width: 768px) {
         #Inicio .slogan .group .icon {
           margin: 0; } }
       #Inicio .slogan .group .icon:hover {
-        background-position: -110px top; }
+        background-position: 100% bottom; }
     #Inicio .slogan .group h3 {
-      margin: 170px 0 0 0;
+      margin: 220px 0 0 0;
       font-size: 20px;
       font-weight: 200;
       color: #FCFCFC; }
@@ -375,7 +367,7 @@ body {
         #Inicio .slogan .group h3 {
           width: 410px;
           font-size: 26px;
-          margin: 170px 0 0 0; } }
+          margin: 220px 0 0 0; } }
       @media (min-width: 992px) {
         #Inicio .slogan .group h3 {
           width: 426px;
@@ -422,7 +414,8 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 215px; }
+    height: 215px;
+    background: url("../img/banner/banner_01.jpg") no-repeat center top; }
     @media (min-width: 768px) {
       #Inicio .banner {
         height: 100%; } }
@@ -589,7 +582,7 @@ body {
 #ComoFunciona {
   min-height: 100vh;
   height: auto;
-  background-color: #000;
+  background-color: #202020;
   padding-bottom: 60px; }
   #ComoFunciona .title h2 {
     color: #FFF;
@@ -978,12 +971,23 @@ body {
       color: #FFF; }
       #Rodape .left .content a:hover {
         color: #4BC6F2; }
+    #Rodape .left .content a.faq {
+      font-weight: lighter; }
     #Rodape .left .content h3 {
       font-weight: 300;
       font-size: 16px;
       color: #FFF;
       margin-top: 60px;
       margin-bottom: 4px; }
+    #Rodape .left .content span {
+      margin-top: 70px;
+      display: block;
+      color: #FFF;
+      font-weight: lighter; }
+    #Rodape .left .content a.email {
+      font-weight: lighter; }
+      #Rodape .left .content a.email strong {
+        font-weight: normal; }
   #Rodape .right {
     padding: 50px 0;
     background-color: #1F1F1F; }

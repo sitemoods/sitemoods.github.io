@@ -43,6 +43,8 @@
       #Top nav.links ul a:hover {
         color: #4BC6F2 !important;
         text-decoration: none; }
+#Top .right {
+  position: relative; }
 
 a.menu-link {
   float: right;
@@ -83,77 +85,56 @@ a.menu-link {
     margin: 0;
     font-size: 1.5em; }
 
-/**
- * Note: I have omitted any vendor-prefixes for clarity.
- * Adding them is left as an exercise for the reader.
- */
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); } }
-@-webkit-keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); } }
-@keyframes fadeOutUp {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px); } }
-.headroom {
-  transition: transform 200ms linear; }
+@-webkit-keyframes menu-top {
+  from {
+    height: 65px; }
+  to {
+    height: 100px; } }
+@-moz-keyframes menu-top {
+  from {
+    height: 65px; }
+  to {
+    height: 100px; } }
+@-ms-keyframes menu-top {
+  from {
+    height: 65px; }
+  to {
+    height: 100px; } }
+@keyframes menu-top {
+  from {
+    height: 65px; }
+  to {
+    height: 100px; } }
+.menu-top .left, .menu-top .right {
+  height: 40px;
+  -webkit-animation: menu-top 300ms linear;
+  animation: menu-top 300ms linear; }
+  @media (min-width: 768px) {
+    .menu-top .left, .menu-top .right {
+      height: 65px; } }
+  @media (min-width: 992px) {
+    .menu-top .left, .menu-top .right {
+      height: 100px; } }
 
-.headroom--pinned {
-  -webkit-animation-duration: 800ms;
-  -moz-animation-duration: 800ms;
-  -o-animation-duration: 800ms;
-  animation-duration: 800ms;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  -moz-animation-name: fadeInDown;
-  -o-animation-name: fadeInDown;
-  animation-name: fadeInDown; }
-
-.headroom--unpinned {
-  -webkit-animation-duration: 600ms;
-  -moz-animation-duration: 600ms;
-  -o-animation-duration: 600ms;
-  animation-duration: 600ms;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeOutUp;
-  -moz-animation-name: fadeOutUp;
-  -o-animation-name: fadeOutUp;
-  animation-name: fadeOutUp; }
+@-webkit-keyframes menu-not-top {
+  from {
+    height: 100px; }
+  to {
+    height: 65px; } }
+@-moz-keyframes menu-not-top {
+  from {
+    height: 100px; }
+  to {
+    height: 65px; } }
+@-ms-keyframes menu-not-top {
+  from {
+    height: 100px; }
+  to {
+    height: 65px; } }
+@keyframes menu-not-top {
+  from {
+    height: 100px; }
+  to {
+    height: 65px; } }
+.menu-not-top .left, .menu-not-top .right {
+  height: 65px; }
