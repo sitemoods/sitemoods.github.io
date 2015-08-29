@@ -11,6 +11,7 @@
         <!-- Local CSS !-->
         <link rel="stylesheet" href="css/moods.css" />
         <link rel="stylesheet"href="css/menu.css" />
+        <link rel="stylesheet" href="css/animation.css" />
         <link rel="stylesheet" href="css/cs-select.css" />
         <link rel="stylesheet" href="css/cs-skin-underline.css" />
         <!-- Google Web Fonts !-->
@@ -28,7 +29,6 @@
                 </div>
                 <div class="right col-sm-6 visible-md visible-lg">
                     <nav id="Menu" class="scroll-nav">
-                        
                         <ul class="scroll-nav">
                             <li><a class="active" href="#Inicio">Início</a></li>
                             <li><a href="#ComoFunciona">Como Funciona</a></li>
@@ -45,7 +45,6 @@
                         <span class="bar2"></span>
                         <span class="bar3"></span>
                     </a>
-                    
                 </div>
                 <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
                     <a href="#Inicio">
@@ -56,7 +55,6 @@
                         <span class="bar2"></span>
                         <span class="bar3"></span>
                     </a>
-                    
                 </div>
                 <nav class="links">
                     <ul class="scroll-nav">
@@ -68,7 +66,7 @@
                         <li><a href="#Login" onclick="showLogin();">Login</a></li>
                     </ul>
                     <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
-                    <span><a href="mailto:contato@moods.com.br" class="hidden-xs">contato@moods.com.br</a></span>
+                    <span><a href="mailto:moods@jardimsonoro.com" class="hidden-xs">moods@jardimsonoro.com</a></span>
                 </nav>
             </header>
             <!-- /Top !-->
@@ -107,13 +105,7 @@
                     <!-- /Moods e uma solucao !-->
 
                     <!-- Music & Signage !-->
-                    <div class="row music_and_signage">
-                        <div class="col-xs-12">
-                        <!--    <span>
-                                MUSIC BRANDING E <br> DIGITAL SIGNAGE JUNTOS!
-                            </span>   !-->
-                        </div>
-                    </div>
+                    <div class="row music_and_signage"></div>
                     <!-- /Music & Signage !-->
                 </div>
                 <!-- /.left !-->
@@ -135,7 +127,7 @@
                             <img alt="Video" src="img/conteudo/icon_musica.png" class="icon hidden-sm hidden-xs" />
                             <img alt="Video" src="img/conteudo/icon_musica_mobile.png" class="icon visible-sm visible-xs" />
                             <span class="label">
-                                Music <br>Branding
+                                Music<br>Branding
                             </span>
                             <span class="text">
                                 Música faz você dançar sozinho, vestir roupa  <br> colorida, ficar até o fim da festa. Música faz  <br> você ligar para um amor antigo, escolher  <br> o destino das próximas férias… <br> Música faz coisas que ninguém imagina,  <br> e é claro, tem tudo a ver com o sucesso da  <br> sua franquia. <strong> Moods faz as suas lojas tocarem  <br> sempre a música certa. Música que anima,  <br> que emociona, estimula e envolve.</strong>
@@ -154,12 +146,12 @@
                             <img alt="Video" src="img/conteudo/icon_play.png" class="icon hidden-sm hidden-xs" />
                             <img alt="Video" src="img/conteudo/icon_play_mobile.png" class="icon visible-sm visible-xs" />
                             <span class="label">
-                                Digital <br>Signage
+                                Digital<br>Signage
                             </span>
                             <span class="text">
                                 Conteúdo visual super atraente<br> faz toda a diferença. Que tal levar<br> o cardápio, lançamentos e promoções<br> das suas lojas para telas digitais?<br> E muitos mais! <strong>Tudo transmitido<br> e atualizado em tempo real,<br> em todas as lojas.</strong>
                             </span>
-                           <img alt="roteador" class="roteador" src="img/conteudo/img_receiver.png" /> 
+                            <img alt="roteador" class="roteador" src="img/conteudo/img_receiver.png" />
                         </div>
                     </div>
                 </div>
@@ -189,17 +181,17 @@
                 <div class="left col-md-6 col-sm-12">
                     <div class="content">
                         <h2>Quem faz a Moods acontecer?</h2>
-                        <p>Uma galera super conectada quando o assunto é música, arte, humores e tecnologia.</p>
-                        <p>Se quiser saber mais, trabalhar com agente, ou apenas tomar um café, é só mandar um alô.</p>
+                        <p>Uma galera que adora café,  é super conectada quando  o assunto é música, arte,  humores e preferências.</p>
+                        <p>Caso você queira falar sobre  a sua franquia ou gostaria de  trabalhar com agente,  é só marcar um café!</p>
                     </div>
                 </div>
                 <!-- /.left !-->
                 <!-- .right !-->
                 <div class="right col-sm-12 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
                     <div class="content">
-                        <div class='embed-container'>
-                            <iframe src='http://player.vimeo.com/video/136318130' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                        </div>
+                        <video width="100%" height="100%" controls="controls">
+                            <source src="https://www.dropbox.com/s/iiri7dcp72qequv/moods.mp4?dl=1" type="video/mp4" />
+                        </video>
                     </div>
                 </div>
                 <!-- /.right !-->
@@ -222,27 +214,19 @@
                             </div>
 
                             <div class="right col-email col-sm-6">
-                                <input name="_replyto" class="email" placeholder="Email" type="text">
+                                <input name="empresa" class="email" placeholder="Empresa" type="email">
                             </div>
                         </div>
 
                         <div class="row">
 
-                            <div class="left col-franquia col-sm-3 col-xs-6">
-                                <input name="franquia" class="franquia" placeholder="Franquia" type="text">
+                            <div class="left col-franquia col-sm-6">
+                                <input name="email" class="franquia" placeholder="E-mail" type="text">
                             </div>
 
-                            <div class="right col-telefone col-sm-3 col-xs-6">
+                            <div class="right col-telefone col-sm-6">
                                 <input name="telefone" class="telefone" data-inputmask="(99) 9999-9999" placeholder="Telefone" type="text">
                             </div>
-
-                          <!--  <div class="right col-sm-6 col-xs-12">
-                                <select name="comoPrefere" class="cs-select cs-skin-underline">
-                                    <option value="" disabled selected>Como prefere nossa resposta?</option>
-                                    <option value="e-mail">E-mail</option>
-                                    <option value="telefone">Telefone</option>
-                                </select>
-                            </div> !-->
                         </div>
 
                         <div class="row">
@@ -251,7 +235,6 @@
                             </div>
                             <div class="col-sm-2">
                                 <input type="submit" class="enviar" value="Enviar" />
-                                <input type="hidden" name="_next" value="http://moods.com.br/sent.html">
                             </div>
                         </div>
                         
@@ -269,10 +252,9 @@
                         <h2>
                             <a href="faq.html">FAQ</a>
                         </h2>
-                        <a href="faq.html">Tira Dúvidas</a>
-                        
-                          <br></h3>
-                        <a href="mailto:contato@moods.com.br">contato@moods.com.br</a>
+                        <a class="faq" href="faq.html">Tira Dúvidas</a>
+                        <span class="telefone">(41) 8812-8123</span>
+                        <a class="email" href="mailto:contato@moods.com.br"><strong>contato</strong>@moods.com.br</a>
                     </div>
                 </div>
                 <!-- /.left !-->
@@ -284,7 +266,7 @@
                     </a>
                 </div>
                 <div class="plus">
-                    <span>Jardim Sonoro / Curitiba - PR 2015 © Todos os direitos reservados.</span>
+                    <span>Jardim Sonoro 2015 © Todos os direitos reservados.</span>
                 </div>
                 <!-- /.right !-->
             </footer>
