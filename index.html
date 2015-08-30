@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/moods.css" />
         <link rel="stylesheet"href="css/menu.css" />
         <link rel="stylesheet" href="css/animation.css" />
+        <link rel="stylesheet" href="css/video-js.css" />
         <!-- Google Web Fonts !-->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     </head>
@@ -187,12 +188,14 @@
                 <!-- .right !-->
                 <div class="right col-sm-12 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
                     <div class="content">
-                        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="100%"
-                            poster="http://www.moods.com.br/capa.jpg"
-                            data-setup="{}">
-                          <source src="http://www.moods.com.br/moods.mp4" type='video/mp4' />
-                          <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-                        </video>
+                        <div class="video-container">
+                            <video id="video" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto"
+                                poster="http://www.moods.com.br/capa.jpg"
+                                data-setup="{}">
+                              <source src="http://www.moods.com.br/moods.mp4" type='video/mp4' />
+                              <p class="vjs-no-js">Para visualizar este vídeo, habilite o Javascript e considere atualizar seu navegador.</a></p>
+                            </video>
+                        </div>
                     </div>
                 </div>
                 <!-- /.right !-->
@@ -276,13 +279,14 @@
         <!-- CDN !-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
-        <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
         <!-- CDN Jquery fallback !-->
         <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
         <!-- Bower assets !-->
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="bower_components/scrollr/dist/skrollr.min.js"></script>
         <!-- Local JS !-->
+        <script src="js/video.js"></script>
+        <script src="js/video-pt-BR.js"></script>
         <script src="js/min/jquery.maskedinput.min.js"></script>
         <script src="js/min/headroom-min.js"></script>
         <script src="js/min/jquery.smooth-scroll.min.js"></script>
