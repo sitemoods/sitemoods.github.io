@@ -297,7 +297,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: fixed; }
-  .login-open #Inicio, .login-open #FAQ {
+  .login-open #Inicio, .login-open #FAQ, .login-open #Confirmacao {
     margin-top: 100vh; }
 
 #Inicio {
@@ -937,6 +937,49 @@ body {
       @media (min-width: 768px) {
         #FAQ .left .content, #FAQ .right .content {
           margin: 0; } }
+
+#Confirmacao {
+  height: 550px;
+  margin-top: 40px;
+  background: url("../img/foto_feedback_contato.jpg") no-repeat left top;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #Confirmacao {
+      margin-top: 55px; } }
+  @media (min-width: 992px) {
+    #Confirmacao {
+      margin-top: 100px; } }
+  #Confirmacao a.voltar {
+    position: relative;
+    color: #000;
+    width: 70px;
+    float: left;
+    margin: 45px 0 0 200px; }
+    #Confirmacao a.voltar i {
+      width: 25px;
+      height: 25px;
+      display: block;
+      float: left;
+      background: url("../img/Seta_VOLTAR.png") no-repeat -25px top; }
+      @media (min-width: 768px) {
+        #Confirmacao a.voltar i {
+          background: url("../img/Seta_VOLTAR.png") no-repeat left top; } }
+    #Confirmacao a.voltar span {
+      padding: 3px 30px;
+      display: block;
+      width: 80px; }
+    #Confirmacao a.voltar:hover {
+      text-decoration: none; }
+      #Confirmacao a.voltar:hover i {
+        background: url("../img/Seta_VOLTAR.png") no-repeat -25px top; }
+  #Confirmacao .group {
+    margin: 200px 90px; }
+    #Confirmacao .group h2 {
+      color: #4BC6F2;
+      font-weight: bold; }
+    #Confirmacao .group span {
+      font-size: 18px;
+      font-weight: 600; }
 
 #Rodape {
   padding-bottom: 30px; }
