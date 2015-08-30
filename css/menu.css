@@ -137,4 +137,6 @@ a.menu-link {
   to {
     height: 65px; } }
 .menu-not-top .left, .menu-not-top .right {
-  height: 65px; }
+  height: 65px;
+  -webkit-animation: menu-not-top 300ms linear;
+  animation: menu-not-top 300ms linear; }
