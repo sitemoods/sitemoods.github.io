@@ -180,7 +180,7 @@ function closeLogin() {
     $('body').height(bodyHeight);
     $('#Moods').removeClass('login-open');
     $('.scroll-nav a').removeClass('active');
-    if(!isFaq) {
+    if(!isFaq || !isConfirmacao) {
         $('.scroll-nav a:first').addClass('active');
     } else {
         $(".scroll-nav a[href='#']").addClass('active');
@@ -254,7 +254,8 @@ function initMenu() {
     $('.menu-link').click(toggleMenu);
 }
 
-var isFAQ = false;
+var isFAQ = false,
+    isConfirmacao = false;
 
 /**
  * MAIN
@@ -294,6 +295,7 @@ var isFAQ = false;
         }
         
         isFaq = $('#Moods').hasClass('faq');
+        isConfirmacao = $('#Moods').hasClass('confirmacao');
 
         // SMOOT SCROLL
         $(document).on('click', 'a[href*="#"]', function () {
@@ -302,7 +304,7 @@ var isFAQ = false;
                 closeLogin();
             }
             
-            if(isFaq) {
+            if(isFaq || isConfirmacao) {
                 return;
             }
 
