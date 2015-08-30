@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Moods</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        <link rel="icon" type="image/x-icon" href="http://www.yurinascimento.com.br/moods/favicon.ico" />
+        <link rel="icon" type="image/png" href="http://www.yurinascimento.com.br/moods/favicon.png" />
+        <!-- Bower assets !-->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- Local CSS !-->
+        <link rel="stylesheet" href="css/moods.css" />
+        <link rel="stylesheet"href="css/menu.css" />
+        <link rel="stylesheet" href="css/cs-select.css" />
+        <link rel="stylesheet" href="css/cs-skin-underline.css" />
+        <!-- Google Web Fonts !-->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="page-index">
+        <div id="Moods" class="container-fluid">
+
+            <!-- Top !-->
+            <header id="Top" class="row">
+                <div class="left col-sm-6 hidden-xs">
+                    <a href="#Inicio">
+                        <img alt="Moods" class="logo" src="img/Logo.jpg" />  
+                    </a>
+                </div>
+                <div class="right col-sm-6 visible-md visible-lg">
+                    <nav id="Menu" class="scroll-nav">
+                        <h3>Menu <i></i></h3>
+                        <ul class="scroll-nav">
+                            <li><a class="active" href="#Inicio">Início</a></li>
+                            <li><a href="#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="#QuemFaz">Quem faz</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+                <div class="right tablet col-sm-6 visible-sm">
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
+                    <a href="#Inicio">
+                        <img alt="Moods" src="img/moods-mobile.png" />
+                    </a>
+                    <a href="#menu" class="menu-link">
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </a>
+                    <span class="title">Menu</span>
+                </div>
+                <nav class="links">
+                    <ul class="scroll-nav">
+                        <li><a class="active" href="#Inicio">Início</a></li>
+                        <li><a href="#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="#QuemFaz">Quem faz</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                    </ul>
+                    <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
+                    <span><a href="mailto:moods@jardimsonoro.com" class="hidden-xs">moods@jardimsonoro.com</a></span>
+                </nav>
+            </header>
+            <!-- /Top !-->
+
+            <!-- Login !-->
+            <section id="Login" class="row">
+                <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
+                <div class="form">
+                    <div class="container">
+                        <h2>Área do Cliente</h2>
+                        <form name="fLogin" action="#" onsubmit="return sendLogin();">
+                            <input name="user" class="user" type="text" placeholder="Usuário" />
+                            <input name="pass" class="pass" type="password" placeholder="Senha" />
+                            <input name="send" class="send" type="submit" value="Login" />
+                        </form>
+                        <span class="feedback2">Senha ou nome da conta incorreto.</span>
+                    </div>
+                </div>
+            </section>
+            <!-- /Login !-->
+
+            <!-- Confirmacao !-->
+            <article id="Confirmacao" class="row">
+                <div class="full col-xs-12">
+                    
+                    <a class="voltar" href="/">
+                        <i></i> <span>Voltar</span>
+                    </a>
+                    
+                    <div class="group">
+                        <h2>MENSSAGEM ENVIADA.</h2>
+                        <span>Retornaremos seu contato.</span>
+                    </div>
+                    
+                </div>
+            </article>
+            <!-- /Confirmacao !-->
+
+            <!-- Rodape !-->
+            <footer id="Rodape" class="row">
+                <!-- .left !-->
+                <div class="left col-xs-6">
+                    <div class="content">
+                        <h2>
+                            <a href="faq.html">FAQ</a>
+                        </h2>
+                        <a href="faq.html">Perguntas frequentes</a>
+                        <h3>Contato</h3>
+                        <a href="mailto:moods@jardimsonoro.com">moods@jardimsonoro.com</a>
+                    </div>
+                </div>
+                <!-- /.left !-->
+                <!-- .right !-->
+                <div class="right col-xs-6">
+                    <a id="LinkToTopo" href="#Inicio" class="topo">
+                        <i></i>
+                        <span>TOPO</span>
+                    </a>
+                </div>
+                <div class="plus">
+                    <span>Moods 2015 © Todos os direitos reservados.</span>
+                </div>
+                <!-- /.right !-->
+            </footer>
+            <!-- /Rodape !-->
+        </div>
+        <!-- CDN !-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
+        <!-- CDN Jquery fallback !-->
+        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+        <!-- Bower assets !-->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/scrollr/dist/skrollr.min.js"></script>
+        <!-- Local JS !-->
+        <script src="js/min/jquery.maskedinput.min.js"></script>
+        <script src="js/min/headroom-min.js"></script>
+        <script src="js/min/jquery.bgswitcher-min.js"></script>
+        <script src="js/min/jquery.smooth-scroll.min.js"></script>
+        <script src="js/min/jquery.ba-bbq-min.js"></script>
+        <script src="js/min/classie-min.js"></script>
+        <script src="js/min/selectFx-min.js"></script>
+        <!-- Main JS !-->
+        <script src="js/min/geral-min.js"></script>
+    </body>
+</html>
