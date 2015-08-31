@@ -431,7 +431,9 @@ body {
     #Conteudo {
       margin-top: 130px; } }
   #Conteudo .imagens {
-    position: absolute; }
+    position: absolute;
+    width: 100%;
+    overflow: hidden; }
     @media (min-width: 992px) {
       #Conteudo .imagens {
         position: absolute; } }
