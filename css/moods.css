@@ -422,8 +422,8 @@ body {
         height: 100%; } }
 
 #Conteudo {
-  margin-top: 270px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: 20px; }
   @media (min-width: 768px) {
     #Conteudo {
       margin-top: 90px; } }
@@ -437,25 +437,50 @@ body {
     @media (min-width: 992px) {
       #Conteudo .imagens {
         position: absolute; } }
-    #Conteudo .imagens .left img {
-      float: right; }
-    #Conteudo .imagens .right img {
-      float: left; }
+    @media (min-width: 768px) {
+      #Conteudo .imagens .left img {
+        float: right; } }
+    @media (min-width: 768px) {
+      #Conteudo .imagens .right img {
+        float: left; } }
     #Conteudo .imagens .som {
       padding: 0; }
       #Conteudo .imagens .som img {
-        margin-right: 90px;
-        margin-top: 80px; }
+        width: 238px;
+        height: 238px; }
+        @media (min-width: 768px) {
+          #Conteudo .imagens .som img {
+            width: 476px;
+            height: 476px;
+            margin-right: 90px;
+            margin-top: 80px; } }
     #Conteudo .imagens .tv {
       padding: 0; }
       #Conteudo .imagens .tv img {
-        margin: -65px -110px 0; }
+        width: 271px;
+        height: 162px;
+        margin: 240px auto;
+        display: block; }
+        @media (min-width: 768px) {
+          #Conteudo .imagens .tv img {
+            width: 542px;
+            height: 325px;
+            margin: -65px -110px 0; } }
     #Conteudo .imagens .receiver img {
-      margin: -65px 80px 0; }
+      width: 185px;
+      height: 90px;
+      margin: 20px auto;
+      display: block; }
+      @media (min-width: 768px) {
+        #Conteudo .imagens .receiver img {
+          width: 371px;
+          height: 181px;
+          margin: -65px 80px 0; } }
   #Conteudo .musica .right .content {
     background-color: #4CC7F3;
     height: 280px;
-    position: relative; }
+    position: relative;
+    margin-top: 200px; }
     @media (min-width: 768px) {
       #Conteudo .musica .right .content {
         width: 340px;
@@ -601,7 +626,7 @@ body {
             display: block; }
           #Conteudo .video .left .content:hover .label {
             display: none; } }
-  #Conteudo div.receiver {
+  #Conteudo div.receivers {
     margin-top: 80px;
     height: 300px; }
   #Conteudo .receiver-right img {
