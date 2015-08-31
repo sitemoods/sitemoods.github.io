@@ -25,18 +25,19 @@ body {
     background-color: #202020; }
     #Top .left .logo {
       float: right;
-      position: absolute;
-      margin-right: 295px;
-      margin-bottom: -12px;
-      bottom: 50%; }
+      margin-right: 295px; }
       @media (min-width: 768px) {
         #Top .left .logo {
           margin-top: 15px;
-          margin-right: 273px; } }
+          margin-right: 345px; } }
       @media (min-width: 992px) {
         #Top .left .logo {
           margin-top: 40px;
-          margin-right: 408px; } }
+          margin-right: 478px; } }
+      #Top .left .logo img {
+        position: absolute;
+        margin-bottom: -12px;
+        bottom: 50%; }
   #Top .right {
     background-color: #FFF; }
 
