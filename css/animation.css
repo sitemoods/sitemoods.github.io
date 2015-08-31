@@ -86,34 +86,26 @@
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-@-webkit-keyframes play_som {
+@-webkit-keyframes som {
   from {
     opacity: 1; }
   to {
-    opacity: 0;
-    -webkit-transform: translateX(180px);
-    transform: translateX(180px); } }
-@-moz-keyframes play_som {
+    opacity: 0; } }
+@-moz-keyframes som {
   from {
     opacity: 1; }
   to {
-    opacity: 0;
-    -webkit-transform: translateX(180px);
-    transform: translateX(180px); } }
-@-ms-keyframes play_som {
+    opacity: 0; } }
+@-ms-keyframes som {
   from {
     opacity: 1; }
   to {
-    opacity: 0;
-    -webkit-transform: translateX(180px);
-    transform: translateX(180px); } }
-@keyframes play_som {
+    opacity: 0; } }
+@keyframes som {
   from {
     opacity: 1; }
   to {
-    opacity: 0;
-    -webkit-transform: translateX(180px);
-    transform: translateX(180px); } }
+    opacity: 0; } }
 @-webkit-keyframes play_som_mobile {
   from {
     opacity: 1; }
@@ -236,8 +228,8 @@
     -webkit-transform: translate(4px, -6px); } }
 #Circulo1,
 #Circulo2 {
-  -webkit-animation: dash 4s linear infinite;
-  animation: dash 4s linear infinite; }
+  -webkit-animation: linha 4s linear infinite;
+  animation: linha 4s linear infinite; }
 
 #Linha1,
 #Linha2 {
@@ -248,7 +240,10 @@
   -webkit-animation: linha_reverso 4s linear infinite;
   animation: linha_reverso 4s linear infinite; }
 
-#Play,
+#PlayIcon {
+  -webkit-animation: play 2s ease infinite;
+  animation: play 2s ease infinite; }
+
 #SomDesktop {
   -webkit-animation: play_som 2s ease infinite;
   animation: play_som 2s ease infinite; }
@@ -299,33 +294,73 @@
   -webkit-animation: sinal-torre 1s ease infinite;
   -webkit-animation-delay: 3.5s; }
 
+@-webkit-keyframes play {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-moz-keyframes play {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@-ms-keyframes play {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes play {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 @-webkit-keyframes pound {
   from {
+    -webkit-transform: none;
     transform: none; }
   50% {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); }
   to {
+    -webkit-transform: none;
     transform: none; } }
 @-moz-keyframes pound {
   from {
+    -webkit-transform: none;
     transform: none; }
   50% {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); }
   to {
+    -webkit-transform: none;
     transform: none; } }
 @-ms-keyframes pound {
   from {
+    -webkit-transform: none;
     transform: none; }
   50% {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); }
   to {
+    -webkit-transform: none;
     transform: none; } }
 @keyframes pound {
   from {
+    -webkit-transform: none;
     transform: none; }
   50% {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2); }
   to {
+    -webkit-transform: none;
     transform: none; } }
 #Heart {
   animation: pound 1.2s infinite;
