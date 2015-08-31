@@ -429,14 +429,30 @@ body {
   @media (min-width: 992px) {
     #Conteudo {
       margin-top: 130px; } }
+  #Conteudo .imagens {
+    position: absolute; }
+    @media (min-width: 992px) {
+      #Conteudo .imagens {
+        position: absolute; } }
+    #Conteudo .imagens .left img {
+      float: right; }
+    #Conteudo .imagens .right img {
+      float: left; }
+    #Conteudo .imagens .som img {
+      margin-right: 90px;
+      margin-top: 80px; }
+    #Conteudo .imagens .tv img {
+      margin: -65px -110px 0; }
+    #Conteudo .imagens .receiver img {
+      margin: -65px 10px 0; }
   #Conteudo .musica .right .content {
     background-color: #4CC7F3;
-    height: 260px;
+    height: 280px;
     position: relative; }
     @media (min-width: 768px) {
       #Conteudo .musica .right .content {
         width: 340px;
-        height: 260px; } }
+        height: 280px; } }
     @media (min-width: 992px) {
       #Conteudo .musica .right .content {
         width: 473px;
