@@ -438,11 +438,15 @@ body {
       float: right; }
     #Conteudo .imagens .right img {
       float: left; }
-    #Conteudo .imagens .som img {
-      margin-right: 90px;
-      margin-top: 80px; }
-    #Conteudo .imagens .tv img {
-      margin: -65px -110px 0; }
+    #Conteudo .imagens .som {
+      padding: 0; }
+      #Conteudo .imagens .som img {
+        margin-right: 90px;
+        margin-top: 80px; }
+    #Conteudo .imagens .tv {
+      padding: 0; }
+      #Conteudo .imagens .tv img {
+        margin: -65px -110px 0; }
     #Conteudo .imagens .receiver img {
       margin: -65px 10px 0; }
   #Conteudo .musica .right .content {
@@ -452,11 +456,11 @@ body {
     @media (min-width: 768px) {
       #Conteudo .musica .right .content {
         width: 340px;
-        height: 280px; } }
+        height: 410px; } }
     @media (min-width: 992px) {
       #Conteudo .musica .right .content {
         width: 473px;
-        height: 360px; } }
+        height: 410px; } }
     #Conteudo .musica .right .content .comunicacao {
       top: 260px;
       position: absolute;
@@ -594,6 +598,11 @@ body {
             display: block; }
           #Conteudo .video .left .content:hover .label {
             display: none; } }
+  #Conteudo div.receiver {
+    margin-top: 80px;
+    height: 300px; }
+  #Conteudo .receiver-right img {
+    position: absolute; }
 
 #ComoFunciona {
   min-height: 100vh;
