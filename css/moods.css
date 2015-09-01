@@ -758,13 +758,17 @@ body {
           margin-right: 138px;
           float: right;
           padding: 0; } }
+  #Contato .right .col-digaOi {
+    margin-top: 20px; }
   @media (min-width: 992px) {
     #Contato .right {
       padding-right: 40px; }
       #Contato .right .col-nome, #Contato .right .col-telefone {
         padding-right: 60px; }
       #Contato .right .col-franquia {
-        padding-right: 40px; } }
+        padding-right: 40px; }
+      #Contato .right .col-digaOi {
+        margin-top: 0; } }
   #Contato .right form {
     clear: both; }
     #Contato .right form .preenchido {
