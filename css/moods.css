@@ -412,11 +412,11 @@ body {
           right: 0;
           float: right; } }
   #Inicio .banner {
+    height: 215px;
+    background: url("../img/banner/banner_01.jpg") no-repeat center top;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
-    height: 215px;
-    background: url("../img/banner/banner_01.jpg") no-repeat center top; }
+    background-size: cover; }
     @media (min-width: 768px) {
       #Inicio .banner {
         height: 100%; } }
