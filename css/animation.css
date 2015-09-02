@@ -88,24 +88,56 @@
     transform: rotate(360deg); } }
 @-webkit-keyframes som {
   from {
-    opacity: 1; }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: right; }
   to {
-    opacity: 0; } }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; } }
 @-moz-keyframes som {
   from {
-    opacity: 1; }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: right; }
   to {
-    opacity: 0; } }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; } }
 @-ms-keyframes som {
   from {
-    opacity: 1; }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: right; }
   to {
-    opacity: 0; } }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; } }
 @keyframes som {
   from {
-    opacity: 1; }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; }
+  50% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: right; }
   to {
-    opacity: 0; } }
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    -webkit-transform-origin: right; } }
 @-webkit-keyframes play_som_mobile {
   from {
     opacity: 1; }
@@ -294,9 +326,11 @@
   -webkit-animation: play 2s ease infinite;
   animation: play 2s ease infinite; }
 
-#SomDesktop {
-  -webkit-animation: play_som 2s ease infinite;
-  animation: play_som 2s ease infinite; }
+#SomDesktop, #Som {
+  -webkit-animation: som 2s ease infinite;
+  animation: som 2s ease infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center; }
 
 #Seta1 {
   -webkit-animation: seta1 2s ease infinite;
