@@ -426,10 +426,10 @@ body {
   margin-top: 20px; }
   @media (min-width: 768px) {
     #Conteudo {
-      margin-top: 90px; } }
+      margin-top: 40px; } }
   @media (min-width: 992px) {
     #Conteudo {
-      margin-top: 130px; } }
+      margin-top: 40px; } }
   #Conteudo .imagens {
     position: absolute;
     width: 100%;
@@ -453,7 +453,7 @@ body {
             width: 476px;
             height: 476px;
             margin-right: 90px;
-            margin-top: 80px; } }
+            margin-top: 120px; } }
     #Conteudo .imagens .tv {
       padding: 0; }
       #Conteudo .imagens .tv img {
@@ -475,12 +475,12 @@ body {
         #Conteudo .imagens .receiver img {
           width: 371px;
           height: 181px;
-          margin: -65px 80px 0; } }
+          margin: 30px 40px 0; } }
   #Conteudo .musica .right .content {
     background-color: #4CC7F3;
     height: 280px;
     position: relative;
-    margin-top: 200px; }
+    margin-top: 80px; }
     @media (min-width: 768px) {
       #Conteudo .musica .right .content {
         width: 340px;
@@ -552,7 +552,7 @@ body {
         margin-top: 62px; } }
     @media (min-width: 992px) {
       #Conteudo .video {
-        margin-top: 85px; } }
+        margin-top: 105px; } }
     #Conteudo .video .left {
       position: relative; }
       #Conteudo .video .left .content {
@@ -760,6 +760,9 @@ body {
           padding: 0; } }
   #Contato .right .col-digaOi {
     margin-top: 20px; }
+    @media (min-width: 768px) {
+      #Contato .right .col-digaOi {
+        margin-top: 0; } }
   @media (min-width: 992px) {
     #Contato .right {
       padding-right: 40px; }
