@@ -460,4 +460,6 @@
     transform: none; } }
 #Heart {
   animation: pound 1.2s infinite;
-  transform-origin: center center; }
+  -webkit-animation: pound 1.2s infinite;
+  transform-origin: center center;
+  -webkit-transform-origin: center center; }
