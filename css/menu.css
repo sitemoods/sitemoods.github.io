@@ -38,8 +38,8 @@
       @media (min-width: 768px) {
         #Top nav.links ul a {
           font-size: 22px; } }
-      #Top nav.links ul a.active {
-        color: #4BC6F2 !important; }
+   /*   #Top nav.links ul a.active {
+        color: #4BC6F2 !important; }  */
       #Top nav.links ul a:hover {
         color: #4BC6F2 !important;
         text-decoration: none; }
