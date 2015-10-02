@@ -413,7 +413,7 @@ body {
           float: right; } }
   #Inicio .banner {
     height: 215px;
-    background: url("../img/banner/banner_01.jpg") no-repeat center top;
+    background: url("http://res.cloudinary.com/dgjpgz7oj/image/upload/s--5p_lRc5c--/c_scale,q_jpegmini:1,w_800/v1443787495/banner_01_wf3wms.jpg") no-repeat center top;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover; }
@@ -633,7 +633,7 @@ body {
   #Conteudo .receiver-right .content {
     width: auto;
     height: 319px;
-    background: url("../img/banner_parallax.jpg") no-repeat top center;
+    background: url("http://res.cloudinary.com/dgjpgz7oj/image/upload/s--gMZ7NSkF--/q_jpegmini:1/v1443787155/banner_parallax_t9digd.jpg") no-repeat top center;
     background-size: cover; }
     @media (min-width: 768px) {
       #Conteudo .receiver-right .content {
@@ -1009,7 +1009,7 @@ body {
 #Confirmacao {
   height: 550px;
   margin-top: 40px;
-  background: url("../img/foto_feedback_contato.jpg") no-repeat left top;
+  background: url("http://res.cloudinary.com/dgjpgz7oj/image/upload/s--KVGN1tM6--/q_jpegmini:1/v1443787305/foto_feedback_contato_ouyikq.jpg") no-repeat left top;
   background-size: cover; }
   @media (min-width: 768px) {
     #Confirmacao {
