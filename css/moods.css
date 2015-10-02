@@ -155,7 +155,7 @@ body {
         font-weight: 600;
         color: #000;
         white-space: nowrap; }
-        #Menu ul li a:hover, #Menu ul li a.active {
+        #Menu ul li a:hover /*, #Menu ul li a.active */ {
           color: #4BC6F2 !important;
           text-decoration: none !important; }
         #Menu ul li a:visited {
