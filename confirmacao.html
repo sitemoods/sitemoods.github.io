@@ -29,12 +29,12 @@
                 <div class="right col-sm-6 visible-md visible-lg">
                     <nav id="Menu" class="scroll-nav">
                         <ul class="scroll-nav">
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                            <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                            <li><a href="index.html#Contato">Contato</a></li>
-                            <li><a href="index.html#FAQ">FAQ</a></li>
-                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
+            <li><a class="active" href="#Inicio">Início</a></li>
+                        <li><a href="#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="#QuemFaz">Quem faz</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                    <!-- <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -57,12 +57,12 @@
                 </div>
                 <nav class="links">
                     <ul class="scroll-nav">
-                        <li><a href="index.html#Inicio">Início</a></li>
-                        <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                        <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                        <li><a href="index.html#Contato">Contato</a></li>
-                        <li><a href="index.html#FAQ">FAQ</a></li>
-                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                <li><a class="active" href="#Inicio">Início</a></li>
+                        <li><a href="#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="#QuemFaz">Quem faz</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                    <!-- <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
                     </ul>
                     <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
                     <span><a href="mailto:contato@moods.com.br" class="hidden-xs">contato@moods.com.br</a></span>
@@ -75,13 +75,14 @@
                 <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
                 <div class="form">
                     <div class="container">
-                        <h2>Área do Cliente</h2>
+              <h2>Área do Cliente</h2>
                         <form name="fLogin" action="#" onsubmit="return sendLogin();">
-                            <input name="user" class="user" type="text" placeholder="Usuário" />
+                            <input name="user" class="user" type="text" placeholder="Conta" />
                             <input name="pass" class="pass" type="password" placeholder="Senha" />
                             <input name="send" class="send" type="submit" value="Login" />
                         </form>
-                        <span class="feedback2">Senha ou nome da conta incorreto.</span>
+                     <!--   <a href="http://moods.local"><img alt=login src="img/login.svg"></a> -->
+                        <span class="feedback2">Nome da conta ou senha incorretos.</span>
                     </div>
                 </div>
             </section>
