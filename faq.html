@@ -28,12 +28,12 @@
                 <div class="right col-sm-6 visible-md visible-lg">
                     <nav id="Menu" class="scroll-nav">
                         <ul class="scroll-nav">
-                            <li><a href="index.html#Inicio">Início</a></li>
-                            <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                            <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                            <li><a href="index.html#Contato">Contato</a></li>
-                            <li><a class="active" href="#">FAQ</a></li>
-                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                           <li><a class="active" href="#Inicio">Início</a></li>
+                            <li><a href="#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="#QuemFaz">Quem faz</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                         <!--   <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -56,12 +56,12 @@
                 </div>
                 <nav class="links">
                     <ul class="scroll-nav">
-                        <li><a href="index.html#Inicio">Início</a></li>
-                        <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                        <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                        <li><a href="index.html#Contato">Contato</a></li>
-                        <li><a class="active" href="#">FAQ</a></li>
-                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
+                        <li><a class="active" href="#Inicio">Início</a></li>
+                            <li><a href="#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="#QuemFaz">Quem faz</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                         <!--   <li><a href="faq.html">FAQ</a></li> -->
+                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
                     </ul>
                     <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
                     <span><a href="mailto:contato@moods.com.br" class="hidden-xs">contato@moods.com.br</a></span>
@@ -73,14 +73,14 @@
             <section id="Login" class="row">
                 <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
                 <div class="form">
-                    <div class="container">
-                        <h2>Área do Cliente</h2>
+                   <h2>Área do Cliente</h2>
                         <form name="fLogin" action="#" onsubmit="return sendLogin();">
-                            <input name="user" class="user" type="text" placeholder="Usuário" />
+                            <input name="user" class="user" type="text" placeholder="Conta" />
                             <input name="pass" class="pass" type="password" placeholder="Senha" />
                             <input name="send" class="send" type="submit" value="Login" />
                         </form>
-                        <span class="feedback2">Senha ou nome da conta incorreto.</span>
+                     <!--   <a href="http://moods.local"><img alt=login src="img/login.svg"></a> -->
+                        <span class="feedback2">Nome da conta ou senha incorretos.</span>
                     </div>
                 </div>
             </section>
@@ -100,7 +100,7 @@
                         </a>
                         <div class="content clearfix">
                             <h2>FAQ</h2>
-                            <span class="subtitle">Perguntas Frequentes</span>
+                            <span class="subtitle">Tira Dúvidas</span>
                         </div>
                     </div>
 
@@ -132,14 +132,14 @@
                     <div class="right col-sm-6 col-xs-12">
                         <div class="content">
                             <h3>04. É possível contratar apenas o serviço de vídeo (digital signage)?</h3>
-                            <p>Sim.</p>
+                            <p>Sim, como por exemplo em pontos do tipo kioski ou balção de praça de alimentação, onde não existe area interna para ser musicalizada.</p>
                         </div>
                     </div>
 
                     <div class="left col-sm-6 col-xs-12">
                         <div class="content">
-                            <h3>05. É possível contratar apenas o serviço/tecnologia dos receptores digitais, da moods para utilizar com conteúdo produzido internamente em minha empresa?</h3>
-                            <p>Sim. A nossa tecnologia própria de receptores digitais já é utilizada por produtoras de cinema/TV  que transmitem a sua programação em pontos exclusivos,  por ser uma tecnologia simples de usuar e eficiente. </p>
+                            <h3>05. É possível contratar apenas o serviço/tecnologia dos receptores digitais para fins como Tv Interna?</h3>
+                            <p>Sim.  Clientes utilizam a nossa tecnologia para criar Tv Corporativa, com conteúdo voltado para os funcionários </p>
                         </div>
                     </div>
 
@@ -157,7 +157,7 @@
                             <p>
                                 Nossa tecnologia é própria, desenvolvida exclusivamente para a prestação do nosso serviço. <br />
                                 Controlamos toda a produção, desde os receptores digitais até os servidores. E por isso,  <br />
-                                Podemos oferecer o melhor serviço para a sua rede e escalabilidade a baixo custo.
+                                Podemos oferecer o melhor serviço para a sua rede, com escalabilidade a baixo custo.
                             </p>
                         </div>
                     </div>
@@ -177,9 +177,9 @@
                     <div class="left col-sm-6 col-xs-12">
                         <div class="content">
                           <h3>09. Onde fica a sede da Moods? Em quais cidades o serviço disponível?</h3>
-                            <p>
+                            
                                <p>Em Curitiba-PR, e o serviço está disponível para todo o território nacional.</p>
-                            </p>
+                            
                         </div>
                     </div>
 
