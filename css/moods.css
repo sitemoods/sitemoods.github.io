@@ -1055,6 +1055,57 @@ body {
       font-size: 18px;
       font-weight: 600; }
 
+
+#Clientes {
+  height: 550px;
+  margin-top: 40px;
+ 
+  @media (min-width: 768px) {
+    #Clientes {
+      margin-top: 55px; } }
+  @media (min-width: 992px) {
+    #Clientes {
+      margin-top: 100px; } }
+  #Clientes a.voltar {
+    position: relative;
+    color: #000;
+    width: 70px;
+    float: left;
+    margin: 220px 0 0px; }
+    @media (min-width: 768px) {
+      #Clientes a.voltar {
+        margin: 45px 0 0 200px; } }
+    #Clientes a.voltar i {
+      width: 25px;
+      height: 25px;
+      display: block;
+      float: left;
+      background: url("../img/Seta_VOLTAR.png") no-repeat -25px top; }
+      @media (min-width: 768px) {
+        #Clientes a.voltar i {
+          background: url("../img/Seta_VOLTAR.png") no-repeat left top; } }
+    #Clientes a.voltar span {
+      padding: 3px 30px;
+      display: block;
+      width: 80px; }
+    #Clientes a.voltar:hover {
+      text-decoration: none; }
+      #Clientes a.voltar:hover i {
+        background: url("../img/Seta_VOLTAR.png") no-repeat -25px top; }
+  #Clientes .group {
+    margin: 300px 0 0; }
+    @media (min-width: 768px) {
+      #Clientes .group {
+        margin: 200px 90px; } }
+    #Clientes .group h2 {
+      color: #4BC6F2;
+      font-weight: bold; }
+    #Clientes .group span {
+      font-size: 18px;
+      font-weight: 600; }
+
+
+
 #Rodape {
   padding-bottom: 30px; }
   #Rodape .left {
