@@ -4,7 +4,7 @@
     width: 30%;
     padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
-    background-color:#1E1E1E;
+   
     overflow:hidden;
 }
 
@@ -13,7 +13,7 @@
     height:90%; /* = 100% - 2*5% padding */
     width:90%; /* = 100% - 2*5% padding */
     padding: 5%;
-    background-color:black
+  
     
 }
 .clientestable{
@@ -26,5 +26,5 @@
     vertical-align:middle;
     font-size:60px;
     text-align:center;
-    color: white;
+  
 }
