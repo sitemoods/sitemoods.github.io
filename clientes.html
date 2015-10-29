@@ -11,30 +11,31 @@
         <!-- Local CSS !-->
         <link rel="stylesheet" href="css/moods.css" />
         <link rel="stylesheet"href="css/menu.css" />
+        <link rel="stylesheet" href="css/animation.css" />
         <link rel="stylesheet" href="css/cs-select.css" />
         <link rel="stylesheet" href="css/cs-skin-underline.css" />
         <!-- Google Web Fonts !-->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     </head>
-    <body class="page-confirmacao">
-        <div id="Moods" class="container-fluid confirmacao">
+    <body class="page-404">
+        <div id="Moods" class="container-fluid">
 
             <!-- Top !-->
             <header id="Top" class="row">
                 <div class="left col-sm-6 hidden-xs">
                     <a href="/" class="logo">
-                        <img alt="Moods" src="img/Logo.jpg" />
+                        <img alt="Moods" src="img/Logo.jpg" />  
                     </a>
                 </div>
                 <div class="right col-sm-6 visible-md visible-lg">
                     <nav id="Menu" class="scroll-nav">
                         <ul class="scroll-nav">
-            <li><a class="active" href="#Inicio">Início</a></li>
-                        <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                        <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                        <li><a href="index.html#Contato">Contato</a></li>
-                    <!-- <li><a href="faq.html">FAQ</a></li> -->
-                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
+                            <li><a class="active" href="#Inicio">Início</a></li>
+                            <li><a href="#ComoFunciona">Como Funciona</a></li>
+                            <li><a href="#QuemFaz">Quem faz</a></li>
+                            <li><a href="#Contato">Contato</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#Login" onclick="showLogin();">Login</a></li>
                         </ul>
                     </nav> 
                 </div>
@@ -46,7 +47,7 @@
                     </a>
                 </div>
                 <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
-                    <a href="#FAQ">
+                    <a href="#Inicio">
                         <img alt="Moods" src="img/moods-mobile.png" />
                     </a>
                     <a href="#menu" class="menu-link">
@@ -57,12 +58,12 @@
                 </div>
                 <nav class="links">
                     <ul class="scroll-nav">
-                <li><a class="active" href="#Inicio">Início</a></li>
-                        <li><a href="index.html#ComoFunciona">Como Funciona</a></li>
-                        <li><a href="index.html#QuemFaz">Quem faz</a></li>
-                        <li><a href="index.html#Contato">Contato</a></li>
-                    <!-- <li><a href="faq.html">FAQ</a></li> -->
-                        <li><a href="#Login" onclick="showLogin();">Área do Cliente</a></li>
+                        <li><a class="active" href="#Inicio">Início</a></li>
+                        <li><a href="#ComoFunciona">Como Funciona</a></li>
+                        <li><a href="#QuemFaz">Quem faz</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#Login" onclick="showLogin();">Login</a></li>
                     </ul>
                     <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
                     <span><a href="mailto:contato@moods.com.br" class="hidden-xs">contato@moods.com.br</a></span>
@@ -75,84 +76,65 @@
                 <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
                 <div class="form">
                     <div class="container">
-              <h2>Área do Cliente</h2>
+                        <h2>Área do Cliente</h2>
                         <form name="fLogin" action="#" onsubmit="return sendLogin();">
-                            <input name="user" class="user" type="text" placeholder="Conta" />
+                            <input name="user" class="user" type="text" placeholder="Usuário" />
                             <input name="pass" class="pass" type="password" placeholder="Senha" />
                             <input name="send" class="send" type="submit" value="Login" />
                         </form>
-                     <!--   <a href="http://moods.local"><img alt=login src="img/login.svg"></a> -->
-                        <span class="feedback2">Nome da conta ou senha incorretos.</span>
+                        <span class="feedback2">Senha ou nome da conta incorreto.</span>
                     </div>
                 </div>
             </section>
             <!-- /Login !-->
 
-            <!-- Confirmacao !-->
-            <article id="Confirmacao" class="row">
-                <div class="full col-xs-12">
-                    
-                    <a class="voltar" href="/">
-                        <i></i> <span>Voltar</span>
-                    </a>
-                    
-                    <div class="group">
-                        <h2>Clientes</h2>
-                        <span>Retornaremos seu contato.</span>
+            <!-- Inicio !-->
+            <article id="Inicio" class="row">
+                <!-- .left !-->
+                <div class="left col-sm-6 col-xs-12">
+
+                    <!-- Moods e uma solucao !-->
+                    <div class="row slogan">
+                        <div class="col-xs-12">
+                            <div class="group">
+                       bla bla bla
+                       <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
-                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
+                       <br>
                         <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                         <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        
+                       <br>
+                       
+                            </div>
+                        </div>
                     </div>
-                    
+                    <!-- /Moods e uma solucao !-->
                 </div>
+                <!-- /.left !-->
+
+                <!-- .right !-->
+                <div id="Banner" class="right banner col-sm-6 hidden-xs"><!-- background banner !--></div>
+                <!-- /.right !-->
             </article>
-            <!-- /Confirmacao !-->
+            <!-- /Inicio !-->
 
             <!-- Rodape !-->
             <footer id="Rodape" class="row">
@@ -170,7 +152,7 @@
                 <!-- /.left !-->
                 <!-- .right !-->
                 <div class="right col-xs-6">
-                    <a id="LinkToTopo" href="#Confirmacao" class="topo">
+                    <a id="LinkToTopo" href="#Inicio" class="topo">
                         <i></i>
                         <span>TOPO</span>
                     </a>
@@ -194,8 +176,8 @@
         <script src="js/min/jquery.maskedinput.min.js"></script>
         <script src="js/min/headroom-min.js"></script>
         <script src="js/min/jquery.bgswitcher-min.js"></script>
-        <script src="js/min/jquery.smooth-scroll.min.js"></script>
         <script src="js/min/jquery.ba-bbq-min.js"></script>
+        <script src="js/min/jquery.smooth-scroll.min.js"></script>
         <script src="js/min/classie-min.js"></script>
         <script src="js/min/selectFx-min.js"></script>
         <!-- Main JS !-->
