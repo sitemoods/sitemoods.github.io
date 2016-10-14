@@ -744,6 +744,8 @@ body {
 #clientes h2{
 	text-align:center;
 	margin:20px auto;
+	font-size: 40px;
+    font-weight: 600;
 }
 .partner-logo {
 	background-color:#fff;
