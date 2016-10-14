@@ -738,7 +738,17 @@ body {
           padding-top: 56.25%; }
         #QuemFaz .right .content .video-container .vjs-fullscreen {
           padding-top: 0px; }
-
+#clientes {
+	margin:40px auto;
+}
+#clientes h2{
+	text-align:center;
+	margin:20px auto;
+}
+.partner-logo {
+	background-color:#fff;
+	padding:10px 10px;
+}
 #Contato {
   background-color: #F5F5F5;
   padding-top: 28px;
