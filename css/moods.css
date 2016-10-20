@@ -639,7 +639,6 @@ body {
       #Conteudo .receiver-right .content {
         width: 476px;
         position: absolute; } }
-
 #ComoFunciona {
   min-height: 100vh;
   height: auto;
@@ -741,11 +740,33 @@ body {
 #clientes {
 	margin:40px auto;
 }
-#clientes h2{
-	text-align:center;
-	margin:20px auto;
-	font-size: 40px;
-    font-weight: 600;
+
+#clientes .title h2 {
+    color: #FFF;
+    margin-top: 32px;
+    margin-right: 53px;
+    color: #A6A6A6;
+    font-size: 22px;
+}
+@media (min-width: 992px) {
+	#clientes .title h2 {
+		width: 417px;
+		margin-top: 78px;
+		margin-right: 60px;
+		font-size: 42px;
+		font-weight: 600;
+		float: right;
+	}
+}
+@media (min-width: 768px){
+	#clientes .title h2 {
+		width: 320px;
+		margin-top: 42px;
+		margin-right: 22px;
+		font-size: 42px;
+		font-weight: 600;
+		float: right;
+	}
 }
 .partner-logo {
 	background-color:#fff;
