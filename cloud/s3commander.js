@@ -146,7 +146,7 @@ b64pad = "=";
       "sSecretKey": "",
       "sBucket": "",
       "pPrefix": new Path("", true),
-      "sEndpoint": "s3.amazonaws.com",
+      "sEndpoint": "objects-us-west-1.dream.io",
       "bShowVersions": false,
       "iMaxFilesizeMB": 1024
     }, options);
@@ -1033,7 +1033,7 @@ b64pad = "=";
     "sSecretKey": "",
     "sBucket": "",
     "sPrefix": "",
-    "sEndpoint": "s3.amazonaws.com",
+    "sEndpoint": "objects-us-west-1.dream.io",
     "bShowVersions": false,
     "bConfirmDelete": false,
     "iMaxFilesizeMB": 1024
