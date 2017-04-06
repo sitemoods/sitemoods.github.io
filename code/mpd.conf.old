@@ -3,7 +3,7 @@ playlist_directory "/mnt/streaming/jardimsonoro/playlists"
 db_file "/mnt/streaming/jardimsonoro/mpd.db"
 #log_file "/mnt/memory/mpd/log"
 pid_file "/tmp/mpd.pid"
-"/mnt/streaming/jardimsonoro/mpd.state"
+state_file "/mnt/streaming/jardimsonoro/mpd.state"
 #sticker_file "/mnt/memory/mpd/sticker.sql"
 user "root"
 #group "nogroup"
@@ -22,3 +22,4 @@ audio_output {
   device   "ladcomp"
 #	device		"hw:0,0"
 }
+
