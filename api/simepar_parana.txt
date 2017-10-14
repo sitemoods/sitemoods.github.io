@@ -1,9 +1,9 @@
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_1.jpeg
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_2.jpeg
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_3.jpeg
-http://www.simepar.br/riak/sinalmet_moods_teste/teste_animation.mp4
+http://moods.com.br/api/out.mp4
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_4.jpeg
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_5.jpeg
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_6.jpeg
 http://www.simepar.br/riak/sinalmet_moods_teste/teste_7.jpeg
-http://www.simepar.br/riak/sinalmet_moods_teste/teste_animation.mp4
+http://moods.com.br/api/out.mp4
