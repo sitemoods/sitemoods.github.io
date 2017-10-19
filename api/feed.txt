@@ -1,3 +1,4 @@
-(14:23) - Chuva forte avana pelo litoral, norte da RMC, Vale do Ribeira e parte dos Campos Gerais, se estendendo também até o norte.
-(16:47) - A rajada de vento mais forte no PR até o momento foi de 102,2 km/h em Marechal Cândido Rondon, seguida por Santa Helena de 100,8 km/h.
-(19:20) - Por onde a frente fria está passando está provocando ventos fortes. No oeste/sudoeste foram superiores aos 100 km/h.
+
+    (14:23) - Chuva forte avanca pelo litoral, norte da RMC, Vale do Ribeira e parte dos Campos Gerais, se estendendo tambem ate o norte.
+    (16:47) - A rajada de vento mais forte no PR ate o momento foi de 102,2 km/h em Marechal Candido Rondon, seguida por Santa Helena de 100,8 km/h.
+    (19:20) - Por onde a frente fria esta passando esta provocando ventos fortes. No oeste/sudoeste foram superiores aos 100 km/h.
