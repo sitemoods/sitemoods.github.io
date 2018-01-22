@@ -413,7 +413,7 @@ body {
           float: right; } }
   #Inicio .banner {
     height: 215px;
-    background: url("../img/banner/shopping.jpg") no-repeat center top;
+    background: url("../img/banner/digitalsignage.jpg") no-repeat center top;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover; }
@@ -1041,7 +1041,7 @@ body {
 #Confirmacao {
   height: 550px;
   margin-top: 40px;
-  background: url("../img/banner/tvcorporativa.jpg") no-repeat left top;
+  background: url("../img/banner/digitalsignage.jpg") no-repeat left top;
   background-size: cover; }
   @media (min-width: 768px) {
     #Confirmacao {
