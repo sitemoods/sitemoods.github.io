@@ -1,392 +1,300 @@
-<!DOCTYPE html>
-<html>
-    <head>  
-        <meta charset="UTF-8">
-        <title>Moods</title>
-	<meta name="google-site-verification" content="pBWfobIoF7d3lvOBQm7LLK-U2QqxJUQvjY42plEv1mw" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        <link rel="icon" type="image/x-icon" href="https://www.moods.com.br/favicon.ico" />
-        <link rel="icon" type="image/png" href="https://www.moods.com.br/favicon.png" />
-        <!-- Bower assets !-->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-        <!-- Local CSS !-->
-        <link rel="stylesheet" href="css/moods.css" />
-        <link rel="stylesheet"href="css/menu.css" />
-        <link rel="stylesheet" href="css/animation.css" />
-        <link rel="stylesheet" href="css/video-js.css" />
-        <!-- Google Web Fonts !-->
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
-    </head>
-    <body class="page-index">
-        <div id="Moods" class="container-fluid">
-
-            <!-- Top !-->
-            <header id="Top" class="row">
-                <div class="left col-sm-6 hidden-xs">
-                    <a href="#Inicio" class="logo">
-                        <img alt="Moods" src="img/Logo.jpg" />  
-                    </a>
-                </div>
-                <div class="right col-sm-6 visible-md visible-lg">
-                    <nav id="Menu" class="scroll-nav">
-                        <ul class="scroll-nav">
-                            <li><a class="active" href="#Inicio">Início</a></li>
-                            <li><a href="#ComoFunciona">Como Funciona</a></li>
-                            <li><a href="#QuemFaz">Quem faz</a></li>
-                        <!--     <li><a href="clientes.html">Clientes</a></li>  !-->
-                            <li><a href="#clientes">Clientes</a></li>
-                            <li><a href="#Contato">Contato</a></li>
-                   <!--      <li><a href="#Login" onclick="showLogin();">Login</a></li> !-->
-                            <li><a href="https://moodsbrasil.blogspot.com.br">Blog</a></li>
-                        </ul>
-                    </nav> 
-                </div>
-                <div class="right tablet col-sm-6 visible-sm">
-                    <a href="#menu" class="menu-link">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </a>
-                </div>
-                <div id="MenuMobile" class="col-xs-12 hidden-sm hidden-md hidden-lg visible-xs">
-                    <a href="#Inicio">
-                        <img alt="Moods" src="img/moods-mobile.png" />
-                    </a>
-                    <a href="#menu" class="menu-link">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </a>
-                </div>
-                <nav class="links">
-                    <ul class="scroll-nav">
-                     <li><a class="active" href="#Inicio">Início</a></li>
-                            <li><a href="#ComoFunciona">Como Funciona</a></li>
-                            <li><a href="#QuemFaz">Quem faz</a></li>
-                       <!--     <li><a href="clientes.html">Clientes</a></li>  !-->
-                            <li><a href="#clientes">Clientes</a></li>
-                            <li><a href="#Contato">Contato</a></li>
-                   <!--      <li><a href="#Login" onclick="showLogin();">Login</a></li> !-->
-                            <li><a href="https://moodsbrasil.blogspot.com.br">Blog</a></li>
-                    </ul>
-                    <img alt="sub logo" src="img/logo/tablet/logo_menu.png" class="hidden-xs" />
-                    <span><a href="mailto:contato@moods.com.br" class="hidden-xs">contato@moods.com.br</a></span>
-                </nav>
-            </header>
-            <!-- /Top !-->
-
-            <!-- Login !-->
-            <section id="Login" class="row">
-                <a id="LinkCloseLogin" class="fechar" href="#Inicio" onclick="closeLogin();"><span></span></a>
-                <div class="form">
-                    <div class="container">
-                        <h2>Área do Cliente</h2>
-                        <form name="fLogin" action="#" onsubmit="return sendLogin();">
-                            <input name="user" class="user" type="text" placeholder="Conta" />
-                            <input name="pass" class="pass" type="password" placeholder="Senha" />
-                            <input name="send" class="send" type="submit" value="Login" />
-                        </form>
-                       <a href="https://moods.com.br/chat"><img alt=login src="img/login.svg">Chat</a>
-                        <span class="feedback2">Nome da conta ou senha incorretos.</span>
-                    </div>
-                </div>
-            </section>
-            <!-- /Login !-->
-
-            <!-- Inicio !-->
-            <article id="Inicio" class="row">
-                <!-- .left !-->
-                <div class="left col-sm-6 col-xs-12">
-
-                    <!-- Moods e uma solucao !-->
-                    <div class="row slogan">
-                        <div class="col-xs-12">
-                            <div class="group">
-                                <h2 id="h2icon" class="icon"></h2>
-                                <h3>Moods é uma solução<br> completa em conteúdo <strong>audiovisual</strong> pensada para grandes <strong>marcas</strong> redes e franquias.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Moods e uma solucao !-->
-
-                    <!-- Music & Signage !-->
-                    <div class="row music_and_signage"></div>
-	
-                    <!-- /Music & Signage !-->
-                </div>
-                <!-- /.left !-->
-
-                <!-- .right !-->
-                <div id="Banner" class="right banner col-sm-6 col-xs-12"><!-- background banner !--></div>
-                <!-- /.right !-->
-            </article>
-            <!-- /Inicio !-->
-
-            <!-- Conteudo !-->
-            <article id="Conteudo">
-                
-                <div class="row imagens">
-                    <div class="som left col-sm-6 col-xs-12">
-              <!--     <img alt="" src="img/som_parallax.jpg" /> !-->
-			    <img alt="" src="img/playermoods.png" />
-			   
-                    </div>
-                    <div class="tv right col-sm-4 col-sm-offset-6 col-xs-12">
-                   <!--     <img alt="" src="img/tv_parallax.jpg" /> !-->
-                         <img alt="" src="img/digitalsignage.png" />
-                    </div>
-                  <!--   <div class="receiver left col-sm-6 col-xs-12">
-                        <img alt="" src="img/receiver_parallax.jpg" />
-                    </div>   !-->
-                </div>
-                
-                <!-- .musica !-->
-                <div class="row musica">
-                    <!-- .right !-->
-                    <div class="musica-right right col-sm-7 col-xs-12 col-sm-offset-5">
-                        <div class="content" anchor-target="#Conteudo" data-top="top: -200px;" data-100-bottom="top: 0px;">
-                            <img alt="Video" src="img/conteudo/icon_musica.png" class="icon hidden-sm hidden-xs" />
-                            <img alt="Video" src="img/conteudo/icon_musica_mobile.png" class="icon visible-sm visible-xs" />
-                            <span class="label">
-                                Music<br>Branding
-                            </span>
-                            <span class="text">
-                                Música faz você dançar sozinho, vestir roupa<br> colorida, ficar até o fim da festa. Música faz<br> você se apaixonar, escolher<br> o destino das próximas férias… <br> Música faz coisas que ninguém imagina,<br> e é claro, tem tudo a ver com o sucesso da<br> sua marca. <strong> Moods faz as suas playlists tocarem <br> sempre a música certa. Música que anima,<br> que emociona, estimula e envolve.</strong>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.musica !-->
-
-                <!-- .video !-->
-                <div class="row video">
-                    <!-- .left !-->
-                    <div class="video-left left col-sm-4 col-sm-offset-2 col-xs-12">
-                        <div class="content" anchor-target="#Conteudo" data-top="top: -200px;" data-40-bottom="top: 80px;">
-                            <img alt="Video" src="img/conteudo/icon_play.png" class="icon hidden-sm hidden-xs" />
-                            <img alt="Video" src="img/conteudo/icon_play_mobile.png" class="icon visible-sm visible-xs" />
-                            <span class="label">
-                                Conteúdo<br>Visual
-                            </span>
-                            <span class="text">
-                            <!--    Conteúdo visual super atraente<br> faz toda a diferença. Que tal levar<br> o cardápio, lançamentos e promoções<br> das suas lojas para telas digitais?<br> E muitos mais! <strong>Tudo transmitido<br> e atualizado em tempo real,<br> em todas as lojas.</strong>!-->
-<strong>Moods faz a sua marca se comunicar de maneira inteligênte</strong>, oferecendo:
-<ul>
-  <li>Digital Signage</li>
-  <li>Menu Board</li>
-  <li>Video Clipes</li>
-  <li>TV Corporativa</li>
-</ul>
-</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.video !-->
-                
-                <div class="row receivers">
-                    <div class="receiver-right right col-sm-7 col-xs-12 col-sm-offset-5">
-                      
-                    </div>
-                </div>
-
-                <a class="contrate-agora" href="#Contato"></a>
-            </article>
-            <!-- /Conteudo !-->
-
-            <!-- ComoFunciona !-->
-            <article id="ComoFunciona" class="row">
-                <div class="title col-sm-6">
-                    <h2>Como funciona?</h2>
-                </div>
-                <div class="content col-md-12">
-                    <div class="content">
-                        <div id="Infografico"></div>
-                    </div>
-                    <a class="contrate-agora" href="#Contato"></a>
-                </div>
-            </article>
-            <!-- /ComoFunciona !-->
-
-            <!-- QuemFaz !-->
-            <article id="QuemFaz" class="row">
-                <!-- .left !-->
-                <div class="left col-md-6 col-sm-12">
-                    <div class="content">
-                        <h2>Quem faz a Moods acontecer?</h2>
-                       <p>Frederico Flores (fundador) é formado em Produção Sonora pela Universidade Federal do Paraná e estudou cinema na AIC.
-			A equipe MOODS é uma galera super conectada em música, humores, arte e tecnologia!</p>
-                    </div>
-                </div>
-                <!-- /.left !-->
-                <!-- .right !-->
-                <div class="right col-sm-12 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5">
-                    <div class="content">
-                        <div class="video-container">
-                            <video id="video" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto"
-                                poster="img/video.jpg"
-                                data-setup="{}">
-                              <source src="https://www.moods.com.br/moods.mp4" type='video/mp4' />
-                              <p class="vjs-no-js">https://moods.com.br/moods.mp4</a></p>
-                            </video>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.right !-->
-            </article>
-            <!-- /QuemFaz !-->
-			
-			
-            <!-- Partner logos !-->
-            <article id="clientes" class="row">
-			 	<div class="col-sm-6 title">
-				  	<h2>Clientes</h2> 
-				</div>
-				<div class="content">					
-					<div class="col-xs-12">
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/babilonia.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/begerson.jpg">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/drfreeze.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/tastysaladshop.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/kingtemaki.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/academiadoacai.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/montblanc.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/simepar.png">
-						</div>
-						 <div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/droptv.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/coloursclub.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/mediterraneo.png">
-						</div>
-						 <div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/oven.jpg">
-						</div>
-					        <div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/daju.png">
-						</div>
-						 <div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/muitoprazer.png">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/madalosso.jpg">
-						</div>
-						<div class="partner-logo col-lg-2 col-md-3 col-sm-4 col-xs-6">
-						   <img class="img-responsive" src="img/bigben.jpg">
-						</div>
-						
-					</div>
-				</div>
-            </article>
-       <!--     Partner logos !-->
-
-            <!-- Contato !-->
-            <article id="Contato" class="row clearfix">
-                <div class="left col-sm-6">
-                    <h2>Contato</h2>
-                </div>
-                <div class="right col-sm-8 col-sm-offset-4">
-                    <form name="fContato" action="https://formspree.io/contato@moods.com.br" method="POST">
-                        <input type="hidden" name="_next" value="https://www.moods.com.br/confirmacao.html" />
-                        <div class="row">
-
-                            <div class="left col-nome col-sm-6">
-                                <input name="nome" class="nome" placeholder="Nome" type="text">
-                            </div>
-
-                            <div class="right col-email col-sm-6">
-                                <input name="empresa" class="email" placeholder="Empresa" type="text">
-                            </div>
-                        </div>
-
-                        <div class="row">
-
-                            <div class="left col-franquia col-sm-6">
-                                <input name="email" class="franquia" placeholder="E-mail" type="email">
-                            </div>
-
-                            <div class="right col-telefone col-sm-6">
-                                <input name="telefone" class="telefone" placeholder="Telefone" type="text">
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="left col-sm-10 col-digaOi">
-                                <textarea name="digaOi" placeholder="Diga oi" class="diga-oi" rows="5"></textarea>
-                            </div>
-                            <div class="col-sm-2">
-                                <input type="submit" class="enviar" value="Enviar" />
-                            </div>
-                        </div>
-                        <span class="feedback">OPS! Por favor preencer todos os campos corretamente.</span>
-                    </form>  
-                </div>
-            </article>
-            <!-- /Contato !-->
-
-            <!-- Rodape !-->
-            <footer id="Rodape" class="row">
-                <!-- .left !-->
-                <div class="left col-xs-6">
-                    <div class="content">
-                        <h2>
-                            <a href="https://moodsbrasil.blogspot.com.br">Blog!</a>
-                        </h2>
-                    <!--      <a class="faq" href="faq.html">Tira Dúvidas</a>!-->
-                         
-                       <!--  <a class="email" href="mailto:contato@"><strong>contato</strong>@moods.com.br</a> !-->
-                        <span class="telefone"><strong>contato</strong>@moods.com.br<br>Alameda Dom Pedro II 345, sala 04. Curitiba - PR</span>
-                    </div>
-                </div>
-                <!-- /.left !-->
-                <!-- .right !-->
-                <div class="right col-xs-6">
-                    <a id="LinkToTopo" href="#Inicio" class="topo">
-                        <i></i>
-                        <span>TOPO</span>
-                    </a>
-                </div>
-                <div class="plus">
-                    <span>Jardim Sonoro Produções - CNPJ: 12.553.127/000117</span>
-                </div>
-                <!-- /.right !-->
-            </footer>
-            <!-- /Rodape !-->
+<!doctype html>
+<html class="no-js" lang="pt-br">
+  
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moods</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/animation.css" />
+    <link href="css/fontello.css" media="screen" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/meganoot.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/slick-theme.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/slick.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/slick.min.js"></script>
+	<script src="js/geral.js"></script>
+  </head>
+  <body>
+	  
+    <div class='contain-to-grid sticky transparent'>
+      <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+        <ul class='title-area'>
+          <li class='name'>
+            <h1>
+              <a href='index.html'>
+                <img src="img/logo.png" alt="">
+              </a>
+            </h1>
+          </li>
+        </ul>
+        <div class="menu-toggler right">
+          <a href='#'>
+            <i class="fas fa-bars"></i>
+          </a>
         </div>
-        <!-- CDN !-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.9/jquery.transit.min.js"></script>
-        <!-- CDN Jquery fallback !-->
-        <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
-        <!-- Bower assets !-->
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="bower_components/scrollr/dist/skrollr.min.js"></script>
-        <!-- Local JS !-->
-        <script src="js/video.js"></script>
-        <script src="js/video-pt-BR.js"></script>
-        <script src="js/min/jquery.maskedinput.min.js"></script>
-        <script src="js/min/headroom-min.js"></script>
-        <script src="js/min/jquery.ba-bbq-min.js"></script>
-        <script src="js/min/jquery.smooth-scroll.min.js"></script>		
-        <script src="js/min/jquery.bgswitcher-min.js"></script>
-        <!-- Main JS !-->
-        <script src="js/min/geral-min.js"></script>
-    </body>
+      </nav>
+    </div>
+    <header class=" ">
+      <div class='contain-to-grid sticky transparent'>
+            <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+              <ul class='title-area'>
+                <li class='name'>
+                  <h1>
+                    <a href='index.html'>
+                      <img src="img/logo-white.png" alt="">
+                    </a>
+                  </h1>
+                </li>
+              </ul>
+              <div class="menu-toggler right">
+                <a href='#'>
+                  <i class="fas fa-times"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="four spacing"></div>
+          <div class="row">
+            <div class="large-12 columns">
+              <ul class="centered-text menu">
+                <li class='active'>
+                  <a class="" href='index.html'>Inicio</a>
+                </li>
+                <li>
+                  <a class="" href='sobre.html'>Sobre</a>
+				   <ul class="sub-menu">
+	                    <li><a class="" href="musicbranding.html">Music Branding</a></li>
+	                    <li><a class="" href="videobranding.html">Video Branding</a></li>
+	                    <li><a class="" href="videoclipes.html">TV Videoclipes</a></li>
+	                    <li><a class="" href="digitalsignage.html">Digital Signage</a></li>
+	                    <li><a class="" href="playlists.html">Playlists</a></li>
+	                    <li><a class="" href="hashtags.html">Hashtags</a></li>
+	                   </ul>
+                </li>
+                <li class=''>
+                  <a class="" href='contato.html'>Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </header>
+  <div class="circles top">
+    <img class="circle-3" src="img/svg2/moods-05.svg" alt="">
+   </div>
+    <div class="full header top-shift">
+      <div class="circles">
+        <img class="circle-1 big" src="img/svg2/moods-orange.svg" alt="">
+
+      </div>
+      <div class="circles tiny">
+        <img class="circle-2" src="img/svg2/moods-blue.svg" alt="">
+
+      </div>
+      <div class="row">
+        <div class="large-7 columns">
+          <h1 class="grey wow fadeIn" data-wow-duration="1s"> 
+
+          </h1>
+        </div>
+        <div class="large-5 columns">
+          <div class="intro wow bounceInUp">
+            <h2 class="special-title">Moods é uma solução completa para levar conteúdos visuais e musicais aos seus consumidores.</h2>
+            <p>Coloque a sua marca na frente e no centro das atenções e expanda o seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="full centered-text">
+      <div class="two spacing"></div>
+      <div class="row">
+        <div class="large-12 columns">
+          <h2 class="special-title alt wow slideInUp">O que fazemos:</h2>
+        </div>
+      </div>
+ 
+ 
+      <div class="row">
+        <div class="large-6 columns">
+          <div class="work box wow slideInUp"><h2>Music Branding</h2>
+            <a href="musicbranding.html">
+              <img src="img/music.png" alt="">
+              <div class="info">
+                <h3>Musica para tocar nas suas lojas</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <div class="work box wow slideInUp"><h2>Video Branding</h2>
+            <a href="videobranding.html">
+              <img src="img/video_branding.png" alt="">
+              <div class="info">
+                <h3>TV da marca e vídeo ambientação</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+		
+  
+
+        <div class="large-6 columns">
+          <div class="work box wow slideInUp"><h2>TV de Videoclipes</h2>
+            <a href="videoclipes.html">
+             <img src="img/tv_videoclipes.png" alt="">
+              <div class="info">
+                <h3>Video clipes para lugares incríveis</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="large-6 columns">
+          <div class="work box wow slideInUp"><h2>Digital Signage</h2>
+            <a href="digitalsignage.html">
+              <img src="img/digital_signage.png" alt="">
+              <div class="info">
+                <h3>Menu Board, Vitrines, sistema de filas na TV</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+		
+		
+
+
+        </div>
+        <div class="row">
+			
+			
+	        <div class="large-6 columns">
+	          <div class="work wow slideInUp"><h2>Playlists</h2>
+	            <a href="playlists.html">
+	              <img class="rotate" src="img/playlists_spotify.png" alt="">
+	              <div class="info">
+	                <h3>Playlists para Spotify e eventos</h3>
+	              </div>
+	            </a>
+	          </div>
+	        </div>
+      
+	        <div class="large-6 columns">
+	          <div class="work wow slideInUp"><h2>Hashtags na TV</h2>
+	            <a href="hashtags.html">
+	              <img src="img/social_wall.png" alt="">
+	              <div class="info">
+	                <h3>Live wall: Exiba Hashtags que os clientes postam no instagram em suas telas</h3>
+	              </div>
+	            </a>
+	          </div>
+	        </div>
+			
+			
+
+       
+      </div>
+	  
+
+      
+    </div>
+	    <div class="full serious">
+	      <div class="row">
+	        <div class="large-12 columns">
+	            <div class="large-12 columns">
+	              <h2 class="special-title grey wow slideInUp">Nossa Tecnologia</h2>
+	            </div>
+				<div class="full centered-text">
+	<div id="Infografico"></div></div>
+	        </div>
+	      </div>     
+    </div>
+	
+        <div class="large-1 columns">
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+    <div class="full gold">
+      <div class="row">
+        <div class="large-12 columns">
+          <h2 class="special-title white wow slideInUp">Nossos amigos</h2>
+        </div>
+      </div>
+      <div class="spacing"></div>
+      <div class='row'>
+        <div class='large-12 columns'>
+          <div class='clients'>
+            <div><a href="#patiobatel"><img alt="Patio Batel" src="img/clientes/patiobatel.png" /></a></div>
+            <div><a href="#madalosso"><img alt="Madalosso" src="img/clientes/madalosso.png" /></a></div>
+            <div><a href="#ovenpizza"><img alt="Oven Pizza" src="img/clientes/oven.png" /></a></div>
+            <div><a href="#bigbenjoalheria"><img alt="Bigben Joalheria" src="img/clientes/bigben.png" /></a></div>
+            <div><a href="#daju"><img alt="Daju" src="img/clientes/daju.png" /></a></div>
+            <div><a href="#kingtemaki"><img alt="King Temaki" src="img/clientes/kingtemaki.png" /></a></div>
+			<div><a href="#babiloniagastronomia"><img alt="Babilonia Gastronomia" src="img/clientes/babilonia.png" /></a></div>	
+            <div><a href="#academiadoacai"><img alt="Daju" src="img/clientes/academiadoacai.png" /></a></div>
+            <div><a href="#bergersonjoias"><img alt="Bergerson Joias" src="img/clientes/bergerson.png" /></a></div>
+			<div><a href="#coloursclub"><img alt="Coloursclub" src="img/clientes/coloursclub.png" /></a></div>		
+            <div><a href="#mediterraneo"><img alt="Mediterraneo" src="img/clientes/mediterraneo.png" /></a></div>
+            <div><a href="#montblanc"><img alt="Mont Blanc" src="img/clientes/montblanc.png" /></a></div>
+			<div><a href="#tastysaladshop"><img alt="Tasty Salad Shop" src="img/clientes/tastysaladshop.png" /></a></div>
+            <div><a href="#simepar"><img alt="Simepar" src="img/clientes/simepar.png" /></a></div>
+            <div><a href="#muitoprazer"><img alt="Muito Prazer Sex Boutique" src="img/clientes/muitoprazer.png" /></a></div>
+			<div><a href="#droptv"><img alt="Drop TV" src="img/clientes/droptv.png" /></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="full light-grey footer no-overflow">
+      <div class="row">
+		  <div class="circles under">
+		    <img class="circle-2" src="img/svg2/moods-05.svg" alt="">
+		   </div>
+        <div class="large-6 columns">
+          <ul class="socials wow bounceInUp">
+            <li><a href="https://medium.com/@moods.com.br"><i class='fab fa-medium'></i></a></li>
+			<li><a href="https://instagram.com/moods.com.br"><i class='fab fa-instagram'></i></a></li>
+          </ul>
+        </div>
+        <div class="large-6 columns">
+          <ul>
+            <li>Av. Dom Pedro II 345, sala 04. Curitiba-PR, Brasil.</li>
+            <li><ul class="socials wow"><a href="https://api.whatsapp.com/send?phone=5541988128123&text=Ol%C3%A1!"><i class="fab fa-whatsapp"></i></a> (41) 98812 8123</li>
+				<br>
+            <li><a href="mailto:contato@moods.com.br">contato@moods.com.br</a></li></ul>
+          </ul>
+          <p>©2018 Jardim Sonoro. CNPJ: 12.553.127/0001­17</p>
+        </div>
+
+      </div>
+
+    </div>
+
+ </body>
+
 </html>
