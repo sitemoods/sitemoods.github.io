@@ -91,9 +91,10 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
 
 .full.fixed-image {
-  background-size: 45%;
-  background-position: 50% 30%;
-  background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   background-image: url(../img/banner_01.jpg);
   -webkit-animation: fixed-images 10s ease infinite;
   -moz-animation: fixed-images 10s ease infinite;
@@ -101,32 +102,47 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
 
   
-  .full.bg-musicbranding {
-    background-image: url(../img/musicbranding.jpg); 
+  .bg-musicbranding {
+    background: url(../img/musicbranding.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
-  .full.bg-playlists {
- 	 background-size: 800px;
- 	 background-repeat: no-repeat;
-    background-image: url(../img/playlists.jpg); 
+  .bg-playlists {	
+    background: url(../img/playlists.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }
   
   .full.bg-videoclipes {
     background-image: url(../img/videoclipes-capa.jpg); }
 	
-    .full.bg-videobranding {
-    	 background-size: 800px;
-    	 background-repeat: no-repeat;
-      background-image: url(../img/videobranding.jpg); 
+    .full.bluez {
+      background-image: url(../img/svg2/bluez.svg); }
+	  
+      .full.grey {
+        background-image: url(../img/svg2/grey.svg); }
+	
+    .bg-videobranding {
+      background: url(../img/videobranding.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       
   }
   
-  .full.bg-hashtags {
-  	 background-size: 800px;
-  	 background-repeat: no-repeat;
-    background-image: url(../img/hashtags.jpg); 
-    
+  .bg-hashtags {
+      background: url(../img/hashtags.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
 }
   
   
@@ -139,9 +155,14 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 	  background-image: linear-gradient( 91.7deg,  rgba(50,25,79,1) -4.3%, rgba(122,101,149,1) 101.8% );
   }
 
-      .full.bg-digitalsignage {
-
-       background-image: url(../img/digitalsignage.jpg); }
+      .bg-digitalsignage {
+	      background: url(../img/digitalsignage.jpg) no-repeat center center fixed; 
+	      -webkit-background-size: cover;
+	      -moz-background-size: cover;
+	      -o-background-size: cover;
+	      background-size: cover;
+  }
+  
 .overlay {
   padding: 100px 0 200px;
   background: rgba(34, 34, 34, 0.85); }
@@ -241,51 +262,6 @@ body {
   display: block;
   margin: 0 auto 50px; }
   
-  .special-title.pink::after{
-    content: "";
-    height: 40px;
-    background: url(../img/svg2/moods-01.svg) center center no-repeat;
-	background-size: 50px;
-    width: 80px;
-    display: block;
-    margin: 0 auto 50px;
- }
-
-	.special-title.green::after {
-	  content: "";
-	  height: 80px;
-	  background: url(../img/svg2/moods-green.svg) center center no-repeat;
-	  background-size: 120px;
-	  width: 160px;
-	  display: block;
-	  margin: 0 auto 50px; }
-	  
-	  .special-title.red::after {
-	    content: "";
-	    height: 40px;
-	    background: url(../img/svg2/moods-03.svg) center center no-repeat;
-		background-size: 50px;
-	    width: 80px;
-	    display: block;
-	    margin: 0 auto 50px; }
-		
-		.special-title.blue::after {
-		  content: "";
-		  height: 40px;
-		  background: url(../img/svg2/moods-04.svg) center center no-repeat;
-		  background-size: 50px;
-		  width: 80px;
-		  display: block;
-		  margin: 0 auto 50px; }
-		  
-		  .special-title.orange::after {
-		    content: "";
-		    height: 40px;
-		    background: url(../img/svg2/moods-orange.svg) center center no-repeat;
-			background-size: 50px;
-		    width: 80px;
-		    display: block;
-		    margin: 0 auto 50px; }
 
 .special-title::after {
   content: "";
@@ -295,13 +271,6 @@ body {
   display: block;
   margin: 20px 0 30px; }
   
-  
-  .special-title.green:hover {
-
-    background: url(../img/svg2/moods-02.svg) center center no-repeat;
-background-size: 120px;
-
-  }
 
 .special-title.white::after {
   background: #fff;
@@ -6001,7 +5970,7 @@ nav {
   margin: 0; }
   .sub-menu li {
     display: block;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: normal;
     text-transform: none;
     font-family: meganoot, "Open Sans";
@@ -6022,11 +5991,11 @@ header {
 
 header ul {
   list-style: none;
-  font-size: 70px;
+  font-size: 40px;
   line-height: 1.5;
   font-family: meganoot, "Open Sans";
   font-weight: 600;
-  text-transform: uppercase;
+    /* text-transform: uppercase;*/
   margin: 0 0 60px; }
   header ul a {
     color: #fff; }
@@ -6057,7 +6026,7 @@ header.on {
     font-size: 92px;
     font-weight: bold;
     line-height: 1em;
-    text-transform: uppercase;
+    /* text-transform: uppercase;*/
     font-weight: 600; }
   .header .intro {
     margin-top: 380px;
@@ -6139,6 +6108,14 @@ header.on {
   .circle-1.big {
 	    width: 80%;}
 		
+		.capa {
+
+		    position: absolute;
+		    left: -80px;
+		    top: 190px;
+			opacity: 0.8;
+}
+
 
 .circle-2 {
   top: 10px;

@@ -1,12 +1,10 @@
 @media only screen and (max-width: 1024px) {
-  .number-bg {
-    background-attachment: inherit; }
 
-  .circles.alt {
-    right: 100px; }
+ /* .circles.alt {
+    right: 100px; } */
 
-  .circles.tiny {
-    display: none; }
+/*  .circles.tiny {
+    display: none; }  */
 
   .fold-lines {
     top: 200px; }
@@ -21,8 +19,6 @@
     margin-top: 150px;
     margin-bottom: 0; }
 
-  .full.zigzag {
-    padding-top: 400px; }
 
   i.arrow {
     display: none;
@@ -34,14 +30,6 @@
   .fold-lines {
     top: 300px; }
 
-  .full.zigzag {
-    padding-top: 300px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; } }
-@media only screen and (max-width: 640px) {
-  nav.wrapper a {
-    width: 160px;
-    padding: 20px; }
 
   .work-header .work-header-title h1 {
     font-size: 50px;
@@ -52,8 +40,8 @@
   .page-header .intro {
     margin-left: 0; }
 
-  .circles.alt {
-    display: none; }
+ /* .circles.alt {
+    display: none; } */
 
   .fold-lines {
     top: 350px; }
@@ -64,23 +52,18 @@
     margin-top: 100px;
     margin-bottom: 0; }
 
-  .full.zigzag {
-    padding-top: 200px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; }
 
   .sub-menu {
     margin: 0; }
     .sub-menu li {
       font-size: 20px;
-      font-family: "Source Sans Pro";
+      font-family: meganoot, "Open Sans";
       letter-spacing: 0px; }
 
   header ul {
     list-style: none;
     font-size: 40px;
     font-weight: bold;
-    text-transform: uppercase;
     margin: 0 0 60px; }
 
   .menu-toggler {
