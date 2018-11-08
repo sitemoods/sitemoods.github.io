@@ -103,20 +103,12 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
   
   .bg-musicbranding {
-<<<<<<< HEAD
     background-image: url(../img/musicbranding.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
     background-position: top;
 
-=======
-    background: url(../img/musicbranding.jpg) no-repeat center center fixed; 
-    -webkit-background-size: contain;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size:cover;
->>>>>>> 8062f7100bd5e7d41a0c90f8e194e423e995791b
 }
 
 
@@ -6575,7 +6567,6 @@ nav.wrapper {
   .price-option--high .price-option__purchase:before {
     border-color: transparent transparent #e54e4b;
   }
-<<<<<<< HEAD
   
   
    .embed-container {
@@ -6597,5 +6588,3 @@ nav.wrapper {
   height: 75%;
 }
   
-=======
->>>>>>> 8062f7100bd5e7d41a0c90f8e194e423e995791b
