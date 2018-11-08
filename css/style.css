@@ -90,11 +90,11 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
   
 
 
-.full.fixed-image {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.fixed-image {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
   background-image: url(../img/banner_01.jpg);
   -webkit-animation: fixed-images 10s ease infinite;
   -moz-animation: fixed-images 10s ease infinite;
@@ -103,24 +103,23 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
   
   .bg-musicbranding {
-    background: url(../img/musicbranding.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(../img/musicbranding.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+
 }
 
 
   .bg-playlists {	
-    background: url(../img/playlists.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
+    background-image: url(../img/playlists.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
 }
   
-  .full.bg-videoclipes {
-    background-image: url(../img/videoclipes-capa.jpg); }
 	
     .full.bluez {
       background-image: url(../img/svg2/bluez.svg); }
@@ -129,20 +128,20 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
         background-image: url(../img/svg2/grey.svg); }
 	
     .bg-videobranding {
-      background: url(../img/videobranding.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+	    background-image: url(../img/videobranding.jpg);
+	    background-repeat: no-repeat;
+	    background-size: auto;
+	    background-attachment: scroll;
+	    background-position: top;
       
   }
   
   .bg-hashtags {
-      background: url(../img/hashtags.jpg) no-repeat center center fixed; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+    background-image: url(../img/hashtags.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
 }
   
   
@@ -156,11 +155,11 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
   }
 
       .bg-digitalsignage {
-	      background: url(../img/digitalsignage.jpg) no-repeat center center fixed; 
-	      -webkit-background-size: cover;
-	      -moz-background-size: cover;
-	      -o-background-size: cover;
-	      background-size: cover;
+  	    background-image: url(../img/digitalsignage.jpg);
+  	    background-repeat: no-repeat;
+  	    background-size: auto;
+  	    background-attachment: scroll;
+  	    background-position: top;
   }
   
 .overlay {
@@ -448,42 +447,42 @@ background: url(../img/moodstitle-decoration.png) center center no-repeat;
 @-webkit-keyframes fixed-images {
   0% {
     background-image: url(../img/banner_01.jpg); 
-background-size: cover;}
+background-size: auto;}
   33% {
     background-image: url(../img/banner_02.jpg); 
-background-size: cover;}
+background-size: auto;}
   67% {
     background-image: url(../img/banner_03.jpg); 
-background-size: cover;}
+background-size: auto;}
   100% {
     background-image: url(../img/banner_01.jpg); 
-	background-size: cover;} }
+	background-size: auto;} }
 @-moz-keyframes fixed-images {
   0% {
     background-image: url(../img/banner_01.jpg); 
-background-size: cover;}
+background-size: auto;}
   33% {
     background-image: url(../img/banner_02.jpg); 
-background-size: cover;}
+background-size: auto;}
   67% {
     background-image: url(../img/banner_03.jpg); 
-background-size: cover;}
+background-size: auto;}
   100% {
     background-image: url(../img/banner_01.jpg); 
-	background-size: cover;} }
+	background-size: auto;} }
 @keyframes fixed-images {
   0% {
     background-image: url(../img/banner_01.jpg); 
-background-size: cover;}
+background-size: auto;}
   33% {
     background-image: url(../img/banner_02.jpg); 
-background-size: cover;}
+background-size: auto;}
   67% {
     background-image: url(../img/banner_03.jpg); 
-background-size: cover;}
+background-size: auto;}
   100% {
     background-image: url(../img/banner_01.jpg); 
-	background-size: cover;} }
+	background-size: auto;} }
 @-webkit-keyframes circle-1 {
   0% {
     top: 10px;
@@ -5991,7 +5990,7 @@ header {
 
 header ul {
   list-style: none;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1.5;
   font-family: meganoot, "Open Sans";
   font-weight: 600;
@@ -6074,9 +6073,10 @@ header.on {
 }
 
   .circles.topcontato {
-    right: 0px;
-    top: -100px; 
+    top: 20px;
+	left: 20px;
 }
+
 
 
 .circles.small {
@@ -6245,6 +6245,18 @@ ul.socials {
       color: #333; }
     ul.socials li a:hover {
       color: #7AC787; }
+	  
+	  
+	  ul.members {
+	    list-style: none;
+	    margin: 0; }
+	    ul.members li {
+	      display: inline-block;
+	      padding: 0 5px; }
+	      ul.members li a {
+	        color: #FFF; }
+	      ul.members li a:hover {
+	        color: #7AC787; }
 
 
 
@@ -6555,3 +6567,24 @@ nav.wrapper {
   .price-option--high .price-option__purchase:before {
     border-color: transparent transparent #e54e4b;
   }
+  
+  
+   .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 13%;
+  width: 100%;
+  height: 75%;
+}
+  

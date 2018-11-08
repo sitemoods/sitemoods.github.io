@@ -1,10 +1,5 @@
 @media only screen and (max-width: 1024px) {
 
- /* .circles.alt {
-    right: 100px; } */
-
-/*  .circles.tiny {
-    display: none; }  */
 
   .fold-lines {
     top: 200px; }
@@ -12,8 +7,6 @@
   .letters {
     top: 0px; }
 
-  .number {
-    display: none; }
 
   .header .intro {
     margin-top: 150px;
@@ -40,9 +33,6 @@
   .page-header .intro {
     margin-left: 0; }
 
- /* .circles.alt {
-    display: none; } */
-
   .fold-lines {
     top: 350px; }
 
@@ -62,7 +52,7 @@
 
   header ul {
     list-style: none;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     margin: 0 0 60px; }
 
