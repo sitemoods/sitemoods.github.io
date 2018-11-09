@@ -3,6 +3,15 @@
 
   .fold-lines {
     top: 200px; }
+	
+    .circles.tiny {
+      display: none; }
+	  
+      .circles.top {
+        display: none; }
+		
+	    .circles.alt {
+	      right: 100px; }
 
   .letters {
     top: 0px; }
