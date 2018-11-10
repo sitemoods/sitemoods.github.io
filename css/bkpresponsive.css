@@ -1,36 +1,32 @@
 @media only screen and (max-width: 1024px) {
-  .number-bg {
-    background-attachment: inherit; }
 
-   .circle-1.big {
+
+.circle-1.big {
 	
 	margin-top: -100px;
-	margin-left: 100px; }
-
-  .circles.alt {
-    right: 100px; }
-
-  .circles.tiny {
-    display: none; }
-
-  .circles.top {
-        display: none; }
+	margin-left: 100px;
+}
 
   .fold-lines {
     top: 200px; }
+	
+    .circles.tiny {
+      display: none; }
+	  
+      .circles.top {
+        display: none; }
+		
+	    .circles.alt {
+	      right: 100px; }
 
   .letters {
     top: 0px; }
 
-  .number {
-    display: none; }
 
   .header .intro {
     margin-top: 150px;
     margin-bottom: 0; }
 
-  .full.zigzag {
-    padding-top: 400px; }
 
   i.arrow {
     display: none;
@@ -39,17 +35,15 @@
   i.arrow.down {
     display: block; } }
 @media only screen and (max-width: 800px) {
+	
+	.circle-1.big {
+		margin-top: -300px;
+		margin-left: 200px;
+	}
+	
   .fold-lines {
     top: 300px; }
 
-  .full.zigzag {
-    padding-top: 300px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; } }
-@media only screen and (max-width: 640px) {
-  nav.wrapper a {
-    width: 160px;
-    padding: 20px; }
 
   .work-header .work-header-title h1 {
     font-size: 50px;
@@ -60,9 +54,6 @@
   .page-header .intro {
     margin-left: 0; }
 
-  .circles.alt {
-    display: none; }
-
   .fold-lines {
     top: 350px; }
 
@@ -72,10 +63,6 @@
     margin-top: 100px;
     margin-bottom: 0; }
 
-  .full.zigzag {
-    padding-top: 200px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; }
 
   .sub-menu {
     margin: 0; }

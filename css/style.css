@@ -6359,6 +6359,13 @@ i.arrow.down {
 
 }
 
+
+.shadow{
+	-webkit-box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
+	}
+
 .box img{
 	-webkit-box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
 	-moz-box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
@@ -6462,7 +6469,7 @@ nav.wrapper {
  
 
 	margin-bottom: 0.8125em;
-    font-size: 18px;
+    font-size: 22px;
     opacity: 1;
     transition: opacity .2s ease;
   }
@@ -6480,7 +6487,7 @@ nav.wrapper {
   }
 
   .price-option__detail {
-    padding: 2em 0;
+    padding: 5em 0;
     background: white;
     text-align: center;
   }
@@ -6573,10 +6580,10 @@ nav.wrapper {
   position: relative;
   padding-bottom: 56.25%;
 
-  height: 0;
+
+  width: 100%;
   overflow: hidden;
-  max-width: 100%;
-  height: auto;
+
 }
 
 .embed-container iframe,
