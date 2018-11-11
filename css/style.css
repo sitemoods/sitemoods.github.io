@@ -103,7 +103,7 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
   
   .bg-musicbranding {
-    background-image: url(../img/musicbranding.jpg);
+    background-image: url(../img/music_branding_capa.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
@@ -113,7 +113,7 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
 
   .bg-playlists {	
-    background-image: url(../img/playlists.jpg);
+    background-image: url(../img/playlists_capa.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
@@ -136,8 +136,24 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
       
   }
   
+  .bg-sobre {
+    background-image: url(../img/sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+}
+
+  .bg-contato {
+    background-image: url(../img/contato.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+}
+
   .bg-hashtags {
-    background-image: url(../img/hashtags.jpg);
+    background-image: url(../img/hashtags_tv.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
@@ -155,7 +171,7 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
   }
 
       .bg-digitalsignage {
-  	    background-image: url(../img/digitalsignage.jpg);
+  	    background-image: url(../img/digital_signage_capa.jpg);
   	    background-repeat: no-repeat;
   	    background-size: auto;
   	    background-attachment: scroll;
