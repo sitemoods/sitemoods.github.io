@@ -119,6 +119,9 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
     background-attachment: scroll;
     background-position: top;
 }
+
+.full.green {
+  background-image: url(../img/svg2/green.svg); }
   
 	
     .full.bluez {
@@ -159,6 +162,14 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
     background-attachment: scroll;
     background-position: top;
 }
+
+  .bg-portfolio {
+    background-image: url(../img/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+}
   
   
   .full.cinza {
@@ -190,6 +201,7 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 
 .parallax {
   background-attachment: fixed; }
+  
 
 .centered-text {
   text-align: center; }
@@ -267,7 +279,11 @@ body {
   
   .texto {
 	  text-indent: 5em;
+      text-align: justify;
+      text-justify: inter-word;
   }
+  .texto.white {
+	  		  color: #fff;}
 
 .special-title.alt::after {
   content: "";
@@ -5993,6 +6009,21 @@ nav {
 
 .top-bar {
   height: 60px; }
+  
+  .player {
+	  width: 60%;
+	  height: 60%;
+  }
+  
+  .player-info {
+	  width: 90%;
+	  height: 90%;
+  }
+  
+  .player:hover {
+	  width: 62%;
+	  height: 62%;
+  }
 
 header {
   visibility: hidden;
@@ -6071,6 +6102,13 @@ header.on {
   margin-right: -100px; }
   .circles img {
     position: absolute; }
+	
+	.anima {
+text-align: center;
+overflow: hidden;
+ }
+	  .anima img {
+	    position: relative; }
 
 .circles.alt {
   right: -100px;
@@ -6084,7 +6122,7 @@ header.on {
   .circles.top {
     right: 0px;
     top: -100px; 
-    opacity: 0.1;
+ 
     filter: alpha(opacity=10); /* For IE8 and earlier */
 }
 
@@ -6107,6 +6145,7 @@ header.on {
 .circles.tiny {
   right: -380px;
   top: 35vh;
+
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
   -ms-transform: scale(0.6);
@@ -6139,6 +6178,7 @@ header.on {
   -webkit-animation: circle-2 6s ease-in-out infinite;
   -moz-animation: circle-2 6s ease-in-out infinite;
   animation: circle-2 6s ease-in-out infinite; }
+  
 
 .circle-3 {
   top: 10px;
@@ -6430,6 +6470,7 @@ i.arrow.down {
     left: 50%; 
     
 }
+
     .work-header .work-header-title h1 {
       line-height: 1; }
 
@@ -6481,7 +6522,7 @@ nav.wrapper {
 
   .price-option {
     display: inline-block;
-    width: 15.25em;
+    width: 13.25em;
  
 
 	margin-bottom: 0.8125em;
@@ -6503,7 +6544,7 @@ nav.wrapper {
   }
 
   .price-option__detail {
-    padding: 5em 0;
+    padding: 1em 0;
     background: white;
     text-align: center;
   }
@@ -6550,18 +6591,18 @@ nav.wrapper {
   }
 
   .price-option--low .price-option__purchase {
-	  background: #7c7c7c;
+	  background: #333;
     border-radius: 0 0 0 .25em;
 	color: white;
   }
 
   .price-option--mid .price-option__purchase {
-    background: #f9f9f9;
+    background: #333;
     border-radius: 0 0 .25em .25em;
   }
 
   .price-option--high .price-option__purchase {
-    background: #f9f9f9;
+    background: #333;
     border-radius: 0 0 .25em 0;
   }
 
