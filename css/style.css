@@ -6019,11 +6019,7 @@ nav {
 	  width: 90%;
 	  height: 90%;
   }
-  
-  .player:hover {
-	  width: 62%;
-	  height: 62%;
-  }
+    
 
 header {
   visibility: hidden;

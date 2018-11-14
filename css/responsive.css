@@ -1,3 +1,11 @@
+@media (min-width: 1280px) {
+    .circles.under {
+      left: 420px;
+	  top: 120px;
+  }
+}
+
+
 @media only screen and (max-width: 1024px) {
   .number-bg {
     background-attachment: inherit; }
