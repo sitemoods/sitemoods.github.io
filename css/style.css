@@ -6010,10 +6010,23 @@ nav {
 .top-bar {
   height: 60px; }
   
+
+  
+  
   .player {
-	  width: 60%;
-	  height: 60%;
-  }
+    width: 400px;
+    margin: 0 auto 30px;
+    position: relative; }
+
+
+  .player img.on {
+    display: none;
+    position: absolute;
+    top: 0; }
+
+  .player:hover img.on {
+    display: block; }
+  
   
   .player-info {
 	  width: 90%;
@@ -6262,8 +6275,7 @@ overflow: hidden;
   height: 220px;
   display: block;
   margin-bottom: 30px;
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: url(../paths.html#member); }
+ }
 
 .hire {
   background: rgba(255, 255, 255, 0.8); }
