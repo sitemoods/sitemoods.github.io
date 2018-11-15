@@ -6466,7 +6466,7 @@ i.arrow.down {
   opacity: 1; }
 
 .work-header {
-  min-height: 50vh; }
+  min-height: 70vh; }
   .work-header .work-header-title {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
