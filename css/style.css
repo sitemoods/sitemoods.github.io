@@ -6014,8 +6014,8 @@ nav {
   
   
   .player {
-    width: 400px;
-    margin: 0 auto 30px;
+    width: 70%;
+  
     position: relative; }
 
 
@@ -6466,7 +6466,7 @@ i.arrow.down {
   opacity: 1; }
 
 .work-header {
-  min-height: 80vh; }
+  min-height: 50vh; }
   .work-header .work-header-title {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
