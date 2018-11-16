@@ -23,6 +23,12 @@
     <script src="js/wow.min.js"></script>
     <script src="js/slick.min.js"></script>
 	<script src="js/geral.js"></script>
+	<script>
+		function topFunction() {
+		    document.body.scrollTop = 0; // For Safari
+		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
   </head>
   <body>
 	  
@@ -31,7 +37,7 @@
         <ul class='title-area'>
           <li class='name'>
             <h1>
-              <a href='index.html'>
+              <a href='#' onclick="topFunction();">
                 <img src="img/svg2/moods.svg" alt="moods">
               </a>
             </h1>
@@ -89,7 +95,9 @@
  
 	  
 	  <div class="full no-overflow centered-text">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpVLz8av2qD6X0M3d9dJo1HfcsTCeygEJJneaxP4Oub368eA/viewform?embedded=true" width="290" height="895" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+		  <div class="espaco">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpVLz8av2qD6X0M3d9dJo1HfcsTCeygEJJneaxP4Oub368eA/viewform?embedded=true" width="80%" height="100%" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+</div>
 </div>
 
 

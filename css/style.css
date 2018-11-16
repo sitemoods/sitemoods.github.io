@@ -6502,6 +6502,12 @@ nav.wrapper {
     float: right; }
   nav.wrapper a.next {
     float: left; }
+	
+	.espaco {
+		width: 100%;
+		height: 1000px;
+	}
+	
 
 
 /* footer */
