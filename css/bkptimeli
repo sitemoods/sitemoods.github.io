@@ -24,6 +24,7 @@
   }
 }
 /* Some Cool Stuff */
+
 .demo-card:nth-child(1) {
   order: 1;
 }
@@ -64,16 +65,16 @@
   order: 10;
 }
 
+
 /* Border Box */
 * {
   box-sizing: border-box;
 }
 
-/* Fonts */
-
 
 #timeline {
   padding: 100px 0;
+
 
 }
 #timeline h1 {
@@ -97,7 +98,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 1170px;
-    height: 2630px;
+    height: 1650px;
     margin: 0 auto;
   }
 }
@@ -257,29 +258,5 @@
   background-color: #46b8e9;
 }
 #timeline .demo-card--step5 .head::after {
-  border-color: #46b8e9;
-}
-#timeline .demo-card--step6 {
-  background-color: #3ee9d1;
-}
-#timeline .demo-card--step6 .head::after {
-  border-color: #3ee9d1;
-}
-#timeline .demo-card--step7 {
-  background-color: #ce43eb;
-}
-#timeline .demo-card--step7 .head::after {
-  border-color: #ce43eb;
-}
-#timeline .demo-card--step8 {
-  background-color: #4d92eb;
-}
-#timeline .demo-card--step8 .head::after {
-  border-color: #4d92eb;
-}
-#timeline .demo-card--step9 {
-  background-color: #46b8e9;
-}
-#timeline .demo-card--step9 .head::after {
   border-color: #46b8e9;
 }

@@ -6014,8 +6014,6 @@ nav {
   
   
   .player {
-    width: 70%;
-  
     position: relative; }
 
 
@@ -6027,12 +6025,6 @@ nav {
   .player:hover img.on {
     display: block; }
   
-  
-  .player-info {
-	  width: 90%;
-	  height: 90%;
-  }
-    
 
 header {
   visibility: hidden;
@@ -6116,8 +6108,9 @@ header.on {
 text-align: center;
 overflow: hidden;
  }
-	  .anima img {
-	    position: relative; }
+ 
+.anima img {
+	position: relative; }
 
 .circles.alt {
   right: -100px;
@@ -6400,6 +6393,84 @@ ul.socials {
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg); }
+  
+  .lojinhas {
+	  fill: black;
+  }
+  .lojinhas:hover {
+    fill: #418fcd;
+  }
+  
+  .mooder:hover {
+opacity:0.5;
+  }
+  
+  .grow { transition: all .2s ease-in-out; }
+  .grow:hover { transform: scale(1.1); }
+  
+  
+  @-webkit-keyframes checks {
+      from {fill: #00ff7f;}
+      to {fill: #418fcd;}
+  }
+
+
+  @keyframes checks {
+      from {fill: #00ff7f;}
+      to {fill: #418fcd;}
+  }
+  
+  .check3 {
+	  fill:#418fcd;
+      -webkit-animation-name: checks; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: checks;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+	  animation-direction: alternate-reverse;
+  }
+  
+  .check2 {
+	  fill:#418fcd;
+      -webkit-animation-name: checks; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: checks;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+	  animation-delay: -0.4s;
+	  animation-direction: alternate-reverse;
+  }
+  
+  .check1 {
+	  fill:#418fcd;
+      -webkit-animation-name: checks; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+      animation-name: checks;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+	  animation-delay: -0.8s;
+	  animation-direction: alternate-reverse;
+  }
+  
+
+  
+  .rodar i {
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out; }
+  
+  .rodar:hover i {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
   
 i.arrow {
   background: none;
