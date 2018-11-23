@@ -6608,17 +6608,17 @@ nav.wrapper {
 
   .price-option {
     display: inline-block;
-    width: 13.25em;
+    width: 75%;
  
 
-	margin-bottom: 0.8125em;
+	margin-bottom: 3.8125em;
     font-size: 22px;
     opacity: 1;
     transition: opacity .2s ease;
   }
 
   .price-option:last-child {
-    margin-right: 0;
+    margin-right: 0px;
   }
 
   .pricing:hover .price-option {
@@ -6635,18 +6635,7 @@ nav.wrapper {
     text-align: center;
   }
 
-  .price-option--low .price-option__detail {
-    border-radius: .25em 0 0 0;
-  }
 
-  .price-option--mid .price-option__detail {
-    padding: 2.3em 0;
-    border-radius: .25em .25em 0 0;
-  }
-
-  .price-option--high .price-option__detail {
-    border-radius: 0 .25em 0 0;
-  }
 
   .price-option__cost,
   .price-option__type {
@@ -6678,18 +6667,18 @@ nav.wrapper {
 
   .price-option--low .price-option__purchase {
 	  background: #333;
-    border-radius: 0 0 0 .25em;
+
 	color: white;
   }
 
   .price-option--mid .price-option__purchase {
     background: #333;
-    border-radius: 0 0 .25em .25em;
+
   }
 
   .price-option--high .price-option__purchase {
     background: #333;
-    border-radius: 0 0 .25em 0;
+
   }
 
   .price-option__purchase:before {
@@ -6728,6 +6717,7 @@ nav.wrapper {
   overflow: hidden;
 
 }
+
 
 .embed-container iframe,
 .embed-container object,
