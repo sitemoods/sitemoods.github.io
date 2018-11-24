@@ -54,12 +54,15 @@ jQuery(document).ready(function($) {
   });
 
   $('.slides').slick({
-    autoplay: false,
+    autoplay: true,
     pauseOnHover: false,
-    dots: true,
-    speed: 1000,
+    dots: false,
+    speed: 500,
+	fade: true,
     arrows: false
   });
+  
+
 
   // var header_width = $('.work-header h1').width();
   // $('.work-header h1').css({

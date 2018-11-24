@@ -6775,20 +6775,18 @@ i.arrow.down {
   
   
 .work a, .work img {
+	width: 100%;
   display: block;
   position: relative;
-  color: #fff;
-  margin: 0 auto 80px; 
+
 
 }
 
 .work .quad {
 	width: 90%;
-	height: 369px;
   display: block;
   position: relative;
-  color: #fff;
-  margin: 0 auto 80px; 
+    margin: 0 auto 80px; 
 
 }
 
