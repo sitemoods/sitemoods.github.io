@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
     autoplay: true,
     pauseOnHover: false,
     dots: false,
-    speed: 500,
+    speed: 250,
 	fade: true,
     arrows: false
   });
