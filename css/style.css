@@ -55,32 +55,7 @@
   color: #fff; }
 
 .full.dark {
-  background: #222; }
-
-.full.cyan {
-  background: #D5E7E5; }
-  
-  .full.blue {
-background-image: radial-gradient( circle 776px at 70.1% 102%,  rgba(161,234,239,1) 9.1%, rgba(125,137,251,1) 76.8% );
-}
-
-.full.gold {
-	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(241,232,181,1) 0%, rgba(239,168,41,0.34) 90% );
-}
-
-.full.suitcase {
-background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,46,1) 85.6% );
-}
-
-.full.serious {
-	background-image: linear-gradient( 109.6deg,  rgba(36,45,57,1) 11.2%, rgba(16,37,60,1) 51.2%, rgba(0,0,0,1) 98.6% );
-}
-
-.full.colours {
-	background-image: radial-gradient( circle farthest-corner at 11.4% 52.5%,  rgba(242,223,166,1) 39.8%, rgba(189,217,243,1) 98.6% );
-}
-	
-  
+  background: #222; } 
 
 .full.pink {
   background: #FEAEAF; }
@@ -89,28 +64,43 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
   background: #f9f9f9; }
   
 
-
-.fixed-image {
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-  background-image: url(../img/banner_01.jpg);
-  -webkit-animation: fixed-images 10s ease infinite;
-  -moz-animation: fixed-images 10s ease infinite;
-  animation: fixed-images 10s ease infinite; }
-
-
+.full.green {
+    background-image: url(../img/svg2/green.svg); }
   
-  .bg-musicbranding {
-    background-image: url(../img/music_branding_capa.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-
-}
-
+	
+      .full.bluez {
+        background-image: url(../img/svg2/bluez.svg); }
+	  
+  	  .full.moodblue {
+  		  background: #272f6f;
+  		  background: -webkit-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -moz-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -ms-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -o-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: linear-gradient(to right, #272f6f, #3a72c2);
+  	  }
+	  
+  	  .full.moodorange {
+  		  background: #bd4f1c;
+  		  background: -webkit-linear-gradient(left, #bd4f1c, #e97a16);
+  		  background: -moz-linear-gradient(left, #bd4f1c, #e97a16);
+  		  background: -ms-linear-gradient(left, #bd4f1c, #e97a16);
+  		  background: -o-linear-gradient(left, #bd4f1c, #e97a16);
+  		  background: linear-gradient(to right, #bd4f1c, #e97a16);
+  	  }
+	  
+        .full.grey {
+          background-image: url(../img/svg2/grey.svg); }
+		  
+          .full.darkgrey {
+            background-image: url(../img/svg2/darkgrey.svg); }
+			
+            .full.orange {
+              background-image: url(../img/svg2/orange.svg); }
+			  
+              .full.red {
+                background-image: url(../img/svg2/red.svg); }
+  
   .bg-404 {
     background-image: url(../img/404.jpg);
     background-repeat: no-repeat;
@@ -119,34 +109,46 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
     background-position: top;
 
 }
+  
+  
+  .bg-vitrine {
+    background-image: url(../img/work/digitalsignage_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+
+}
 
 
-  .bg-playlists {	
-    background-image: url(../img/playlists_capa.jpg);
+
+  .bg-menuboard {	
+    background-image: url(../img/work/digitalsignage_bg_02.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: scroll;
     background-position: top;
 }
 
-.full.green {
-  background-image: url(../img/svg2/green.svg); }
-  
-	
-    .full.bluez {
-      background-image: url(../img/svg2/bluez.svg); }
-	  
-      .full.grey {
-        background-image: url(../img/svg2/grey.svg); }
-	
-    .bg-videobranding {
-	    background-image: url(../img/videobranding.jpg);
+  .bg-filas {
+    background-image: url(../img/work/digitalsignage_bg_03.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top;
+    
+}
+
+    .bg-tvcorp {
+        background-image: url(../img/work/digitalsignage_bg_04.jpg);
 	    background-repeat: no-repeat;
 	    background-size: auto;
 	    background-attachment: scroll;
 	    background-position: top;
-      
-  }
+}
+
+	
+
   
   .bg-sobre {
     background-image: url(../img/sobre.jpg);
@@ -190,14 +192,6 @@ background-image: linear-gradient( 181deg,  rgba(70,69,69,1) -1.7%, rgba(46,46,4
 	  background-image: linear-gradient( 91.7deg,  rgba(50,25,79,1) -4.3%, rgba(122,101,149,1) 101.8% );
   }
 
-      .bg-digitalsignage {
-  	    background-image: url(../img/digital_signage_capa.jpg);
-  	    background-repeat: no-repeat;
-  	    background-size: auto;
-  	    background-attachment: scroll;
-  	    background-position: top;
-  }
-  
 .overlay {
   padding: 100px 0 200px;
   background: rgba(34, 34, 34, 0.85); }
@@ -485,45 +479,329 @@ background: url(../img/moodstitle-decoration.png) center center no-repeat;
     background: #dfe2f1; }
   100% {
     background: #D5E7E5; } }
-@-webkit-keyframes fixed-images {
-  0% {
-    background-image: url(../img/banner_01.jpg); 
-background-size: auto;}
-  33% {
-    background-image: url(../img/banner_02.jpg); 
-background-size: auto;}
-  67% {
-    background-image: url(../img/banner_03.jpg); 
-background-size: auto;}
-  100% {
-    background-image: url(../img/banner_01.jpg); 
-	background-size: auto;} }
-@-moz-keyframes fixed-images {
-  0% {
-    background-image: url(../img/banner_01.jpg); 
-background-size: auto;}
-  33% {
-    background-image: url(../img/banner_02.jpg); 
-background-size: auto;}
-  67% {
-    background-image: url(../img/banner_03.jpg); 
-background-size: auto;}
-  100% {
-    background-image: url(../img/banner_01.jpg); 
-	background-size: auto;} }
-@keyframes fixed-images {
-  0% {
-    background-image: url(../img/banner_01.jpg); 
-background-size: auto;}
-  33% {
-    background-image: url(../img/banner_02.jpg); 
-background-size: auto;}
-  67% {
-    background-image: url(../img/banner_03.jpg); 
-background-size: auto;}
-  100% {
-    background-image: url(../img/banner_01.jpg); 
-	background-size: auto;} }
+	
+	
+	
+	
+	
+	@-webkit-keyframes musicbranding-bg-anima {
+	  0% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+	background-size: auto;}
+	  33% {
+	    background-image: url(../img/work/musicbranding_bg_02.jpg); 
+	background-size: auto;}
+	  67% {
+	    background-image: url(../img/work/musicbranding_bg_03.jpg); 
+	background-size: auto;}
+	  100% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+		background-size: auto;} }
+	@-moz-keyframes musicbranding-bg-anima {
+	  0% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+	background-size: auto;}
+	  33% {
+	    background-image: url(../img/work/musicbranding_bg_02.jpg); 
+	background-size: auto;}
+	  67% {
+	    background-image: url(../img/work/musicbranding_bg_03.jpg); 
+	background-size: auto;}
+	  100% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+		background-size: auto;} }
+	@keyframes musicbranding-bg-anima {
+	  0% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+	background-size: auto;}
+	  33% {
+	    background-image: url(../img/work/musicbranding_bg_02.jpg); 
+	background-size: auto;}
+	  67% {
+	    background-image: url(../img/work/musicbranding_bg_03.jpg); 
+	background-size: auto;}
+	  100% {
+	    background-image: url(../img/work/musicbranding_bg_01.jpg); 
+		background-size: auto;} }
+	
+		.musicbranding-bg {
+		    background-repeat: no-repeat;
+		    background-size: auto;
+		    background-attachment: scroll;
+		    background-position: top;
+		  background-image: url(../img/work/musicbranding_bg_01.jpg);
+		  -webkit-animation: musicbranding-bg-anima 10s ease infinite;
+		  -moz-animation: musicbranding-bg-anima 10s ease infinite;
+		  animation: musicbranding-bg-anima 10s ease infinite; }
+		  
+		  
+	  	@-webkit-keyframes videobranding-bg-anima {
+	  	  0% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  	background-size: auto;}
+	  	  33% {
+	  	    background-image: url(../img/work/videobranding_bg_02.jpg); 
+	  	background-size: auto;}
+	  	  67% {
+	  	    background-image: url(../img/work/videobranding_bg_03.jpg); 
+	  	background-size: auto;}
+	  	  100% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  		background-size: auto;} }
+	  	@-moz-keyframes videobranding-bg-anima {
+	  	  0% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  	background-size: auto;}
+	  	  33% {
+	  	    background-image: url(../img/work/videobranding_bg_02.jpg); 
+	  	background-size: auto;}
+	  	  67% {
+	  	    background-image: url(../img/work/videobranding_bg_03.jpg); 
+	  	background-size: auto;}
+	  	  100% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  		background-size: auto;} }
+	  	@keyframes videobranding-bg-anima {
+	  	  0% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  	background-size: auto;}
+	  	  33% {
+	  	    background-image: url(../img/work/videobranding_bg_02.jpg); 
+	  	background-size: auto;}
+	  	  67% {
+	  	    background-image: url(../img/work/videobranding_bg_03.jpg); 
+	  	background-size: auto;}
+	  	  100% {
+	  	    background-image: url(../img/work/videobranding_bg_01.jpg); 
+	  		background-size: auto;} }
+	
+	  		.videobranding-bg {
+	  		    background-repeat: no-repeat;
+	  		    background-size: auto;
+	  		    background-attachment: scroll;
+	  		    background-position: top;
+	  		  background-image: url(../img/work/videobranding_bg_01.jpg);
+	  		  -webkit-animation: videobranding-bg-anima 10s ease infinite;
+	  		  -moz-animation: videobranding-bg-anima 10s ease infinite;
+	  		  animation: videobranding-bg-anima 10s ease infinite; }
+			  
+			  
+			  
+		  	@-webkit-keyframes videoclipes-bg-anima {
+		  	  0% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  	background-size: auto;}
+		  	  33% {
+		  	    background-image: url(../img/work/videoclipes_bg_02.jpg); 
+		  	background-size: auto;}
+		  	  67% {
+		  	    background-image: url(../img/work/videoclipes_bg_03.jpg); 
+		  	background-size: auto;}
+		  	  100% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  		background-size: auto;} }
+		  	@-moz-keyframes videoclipes-bg-anima {
+		  	  0% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  	background-size: auto;}
+		  	  33% {
+		  	    background-image: url(../img/work/videoclipes_bg_02.jpg); 
+		  	background-size: auto;}
+		  	  67% {
+		  	    background-image: url(../img/work/videoclipes_bg_03.jpg); 
+		  	background-size: auto;}
+		  	  100% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  		background-size: auto;} }
+		  	@keyframes videoclipes-bg-anima {
+		  	  0% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  	background-size: auto;}
+		  	  33% {
+		  	    background-image: url(../img/work/videoclipes_bg_02.jpg); 
+		  	background-size: auto;}
+		  	  67% {
+		  	    background-image: url(../img/work/videoclipes_bg_03.jpg); 
+		  	background-size: auto;}
+		  	  100% {
+		  	    background-image: url(../img/work/videoclipes_bg_01.jpg); 
+		  		background-size: auto;} }
+	
+		  		.videoclipes-bg {
+		  		    background-repeat: no-repeat;
+		  		    background-size: auto;
+		  		    background-attachment: scroll;
+		  		    background-position: top;
+		  		  background-image: url(../img/work/videoclipes_bg_01.jpg);
+		  		  -webkit-animation: videoclipes-bg-anima 10s ease infinite;
+		  		  -moz-animation: videoclipes-bg-anima 10s ease infinite;
+		  		  animation: videoclipes-bg-anima 10s ease infinite; }
+				  
+				  
+				  
+			  	@-webkit-keyframes digitalsignage-bg-anima {
+			  	  0% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  	background-size: auto;}
+			  	  25% {
+			  	    background-image: url(../img/work/digitalsignage_bg_02.jpg); 
+			  	background-size: auto;}
+			  	  50% {
+			  	    background-image: url(../img/work/digitalsignage_bg_03.jpg); 
+			  	background-size: auto;}
+			  	  75% {
+			  	    background-image: url(../img/work/digitalsignage_bg_04.jpg); 
+			  		background-size: auto;}
+			  	  100% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  		background-size: auto;}  }
+			  	@-moz-keyframes digitalsignage-bg-anima {
+			  	  0% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  	background-size: auto;}
+			  	  25% {
+			  	    background-image: url(../img/work/digitalsignage_bg_02.jpg); 
+			  	background-size: auto;}
+			  	  50% {
+			  	    background-image: url(../img/work/digitalsignage_bg_03.jpg); 
+			  	background-size: auto;}
+			  	  75% {
+			  	    background-image: url(../img/work/digitalsignage_bg_04.jpg); 
+			  		background-size: auto;} 
+			  	  100% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  		background-size: auto;} }
+			  	@keyframes digitalsignage-bg-anima {
+			  	  0% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  	background-size: auto;}
+			  	  25% {
+			  	    background-image: url(../img/work/digitalsignage_bg_02.jpg); 
+			  	background-size: auto;}
+			  	  50% {
+			  	    background-image: url(../img/work/digitalsignage_bg_03.jpg); 
+			  	background-size: auto;}
+			  	  75% {
+			  	    background-image: url(../img/work/digitalsignage_bg_04.jpg); 
+			  		background-size: auto;} 
+			  	  100% {
+			  	    background-image: url(../img/work/digitalsignage_bg_01.jpg); 
+			  		background-size: auto;} }
+	
+			  		.digitalsignage-bg {
+			  		    background-repeat: no-repeat;
+			  		    background-size: auto;
+			  		    background-attachment: scroll;
+			  		    background-position: top;
+			  		  background-image: url(../img/work/digitalsignage_bg_01.jpg);
+			  		  -webkit-animation: digitalsignage-bg-anima 10s ease infinite;
+			  		  -moz-animation: digitalsignage-bg-anima 10s ease infinite;
+			  		  animation: digitalsignage-bg-anima 10s ease infinite; }
+	
+	
+		  		  	@-webkit-keyframes playlists-bg-anima {
+		  		  	  0% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  	background-size: auto;}
+		  		  	  33% {
+		  		  	    background-image: url(../img/work/playlists_bg_02.jpg); 
+		  		  	background-size: auto;}
+		  		  	  67% {
+		  		  	    background-image: url(../img/work/playlists_bg_03.jpg); 
+		  		  	background-size: auto;}
+		  		  	  100% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  		background-size: auto;} }
+		  		  	@-moz-keyframes playlists-bg-anima {
+		  		  	  0% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  	background-size: auto;}
+		  		  	  33% {
+		  		  	    background-image: url(../img/work/playlists_bg_02.jpg); 
+		  		  	background-size: auto;}
+		  		  	  67% {
+		  		  	    background-image: url(../img/work/playlists_bg_03.jpg); 
+		  		  	background-size: auto;}
+		  		  	  100% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  		background-size: auto;} }
+		  		  	@keyframes playlists-bg-anima {
+		  		  	  0% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  	background-size: auto;}
+		  		  	  33% {
+		  		  	    background-image: url(../img/work/playlists_bg_02.jpg); 
+		  		  	background-size: auto;}
+		  		  	  67% {
+		  		  	    background-image: url(../img/work/playlists_bg_03.jpg); 
+		  		  	background-size: auto;}
+		  		  	  100% {
+		  		  	    background-image: url(../img/work/playlists_bg_01.jpg); 
+		  		  		background-size: auto;} }
+	
+		  		  		.playlists-bg {
+		  		  		    background-repeat: no-repeat;
+		  		  		    background-size: auto;
+		  		  		    background-attachment: scroll;
+		  		  		    background-position: top;
+		  		  		  background-image: url(../img/work/playlists_bg_01.jpg);
+		  		  		  -webkit-animation: playlists-bg-anima 10s ease infinite;
+		  		  		  -moz-animation: playlists-bg-anima 10s ease infinite;
+		  		  		  animation: playlists-bg-anima 10s ease infinite; }
+						  
+			  		  	@-webkit-keyframes hashtags-bg-anima {
+			  		  	  0% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  	background-size: auto;}
+			  		  	  33% {
+			  		  	    background-image: url(../img/work/hashtags_bg_02.jpg); 
+			  		  	background-size: auto;}
+			  		  	  67% {
+			  		  	    background-image: url(../img/work/hashtags_bg_03.jpg); 
+			  		  	background-size: auto;}
+			  		  	  100% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  		background-size: auto;} }
+			  		  	@-moz-keyframes hashtags-bg-anima {
+			  		  	  0% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  	background-size: auto;}
+			  		  	  33% {
+			  		  	    background-image: url(../img/work/hashtags_bg_02.jpg); 
+			  		  	background-size: auto;}
+			  		  	  67% {
+			  		  	    background-image: url(../img/work/hashtags_bg_03.jpg); 
+			  		  	background-size: auto;}
+			  		  	  100% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  		background-size: auto;} }
+			  		  	@keyframes hashtags-bg-anima {
+			  		  	  0% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  	background-size: auto;}
+			  		  	  33% {
+			  		  	    background-image: url(../img/work/hashtags_bg_02.jpg); 
+			  		  	background-size: auto;}
+			  		  	  67% {
+			  		  	    background-image: url(../img/work/hashtags_bg_03.jpg); 
+			  		  	background-size: auto;}
+			  		  	  100% {
+			  		  	    background-image: url(../img/work/hashtags_bg_01.jpg); 
+			  		  		background-size: auto;} }
+	
+			  		  		.hashtags-bg {
+			  		  		    background-repeat: no-repeat;
+			  		  		    background-size: auto;
+			  		  		    background-attachment: scroll;
+			  		  		    background-position: top;
+			  		  		  background-image: url(../img/work/hashtags_bg_01.jpg);
+			  		  		  -webkit-animation: hashtags-bg-anima 10s ease infinite;
+			  		  		  -moz-animation: hashtags-bg-anima 10s ease infinite;
+			  		  		  animation: hashtags-bg-anima 10s ease infinite; }
+	
+	
+	
+	
 @-webkit-keyframes circle-1 {
   0% {
     top: 10px;
@@ -6056,7 +6334,7 @@ header ul {
   header ul a {
     color: #fff; }
   header ul a:hover {
-    color: #7ac787; }
+    color: grey; }
 header.on {
   visibility: visible; }
 
@@ -6070,7 +6348,7 @@ header.on {
     display: block;
     color: #fff; }
   .menu-toggler a:hover {
-    color: #7ac787; }
+    color: grey; }
 
 /* header */
 .header {
@@ -6311,7 +6589,7 @@ ul.socials {
     ul.socials li a {
       color: #333; }
     ul.socials li a:hover {
-      color: #7AC787; }
+      color: white; }
 	  
 	  
 	  ul.members {
@@ -6504,6 +6782,16 @@ i.arrow.down {
 
 }
 
+.work .quad {
+	width: 90%;
+	height: 369px;
+  display: block;
+  position: relative;
+  color: #fff;
+  margin: 0 auto 80px; 
+
+}
+
 
 .shadow{
 	-webkit-box-shadow: 10px 10px 70px -4px rgba(0,0,0,0.75);
@@ -6529,14 +6817,14 @@ i.arrow.down {
   top: 0;
   left: 0;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+
   width: 100%;
   height: 100%; }
   .work .info h3 {
     position: relative;
     top: 50%;
     margin-top: -50px;
-    color: #333;
+    color: #fff;
     font-size: 40px;
     font-weight: bold; }
   .work .info p {
@@ -6601,7 +6889,7 @@ nav.wrapper {
   .footer a {
     color: #666; }
   .footer a:hover {
-    color: #7AC787; }
+    color: white; }
   .footer .socials {
     margin-bottom: 30px; }
     .footer .socials i {
