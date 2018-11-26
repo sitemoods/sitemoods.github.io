@@ -41,16 +41,8 @@
   background-size: cover;
   background-position: 50% 50%;
   position: relative;
-  
+}
 
-  
-  /* for work section and member section*/ }
-
-.full.colored-bg {
-  background: #D5E7E5;
-  -webkit-animation: colored-bg 20s ease-in infinite;
-  -moz-animation: colored-bg 20s ease-in infinite;
-  animation: colored-bg 20s ease-in infinite; }
 
 
 .full.light {
@@ -59,19 +51,11 @@
 .full.dark {
   background: #222; } 
 
-.full.pink {
-  background: #FEAEAF; }
 
 .full.light-grey {
   background: #f9f9f9; }
   
 
-.full.green {
-    background-image: url(../img/svg2/green.svg); }
-  
-	
-      .full.bluez {
-        background-image: url(../img/svg2/bluez.svg); }
 	  
   	  .full.moodblue {
   		  background: #272f6f;
@@ -81,27 +65,14 @@
   		  background: -o-linear-gradient(left, #272f6f, #3a72c2);
   		  background: linear-gradient(to right, #272f6f, #3a72c2);
   	  }
-	  
-  	  .full.moodorange {
-  		  background: #bd4f1c;
-  		  background: -webkit-linear-gradient(left, #bd4f1c, #e97a16);
-  		  background: -moz-linear-gradient(left, #bd4f1c, #e97a16);
-  		  background: -ms-linear-gradient(left, #bd4f1c, #e97a16);
-  		  background: -o-linear-gradient(left, #bd4f1c, #e97a16);
-  		  background: linear-gradient(to right, #bd4f1c, #e97a16);
-  	  }
+
 	  
         .full.grey {
           background-image: url(../img/svg2/grey.svg); }
 		  
           .full.darkgrey {
             background-image: url(../img/svg2/darkgrey.svg); }
-			
-            .full.orange {
-              background-image: url(../img/svg2/orange.svg); }
-			  
-              .full.red {
-                background-image: url(../img/svg2/red.svg); }
+
   
   .bg-404 {
     background-image: url(../img/404.jpg);
@@ -111,70 +82,9 @@
     background-position: top;
 
 }
-  
-  
-  .bg-vitrine {
-    background-image: url(../img/work/digitalsignage_bg_01.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-
-}
 
 
 
-  .bg-menuboard {	
-    background-image: url(../img/work/digitalsignage_bg_02.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-}
-
-  .bg-filas {
-    background-image: url(../img/work/digitalsignage_bg_03.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-    
-}
-
-    .bg-tvcorp {
-        background-image: url(../img/work/digitalsignage_bg_04.jpg);
-	    background-repeat: no-repeat;
-	    background-size: auto;
-	    background-attachment: scroll;
-	    background-position: top;
-}
-
-	
-
-  
-  .bg-sobre {
-    background-image: url(../img/sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-}
-
-  .bg-contato {
-    background-image: url(../img/contato.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-}
-
-  .bg-hashtags {
-    background-image: url(../img/hashtags_tv.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: scroll;
-    background-position: top;
-}
 
 .topcover {
   position: fixed; 
@@ -182,6 +92,7 @@
   left: -50%; 
   width: 200%; 
   height: 100%;
+  
 }
 .topcover img {
   top: 0; 
@@ -290,7 +201,17 @@ body {
     text-justify: inter-word;
   font-family: meganoot, "Open Sans";
   overflow-x: hidden;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+ }
+ 
+ .darker {
+	 background: #222;
+ }
+ 
+ .fixado {
+	 top: 0;
+	 position: fixed;
+ }
   
   .floating {  
       animation-name: floating;
