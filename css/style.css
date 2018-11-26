@@ -180,6 +180,7 @@
   left: -50%; 
   width: 200%; 
   height: 200%;
+  
 
 }
 .topcover img {
@@ -189,7 +190,7 @@
   bottom: 0; 
   margin: auto; 
   min-width: 50%;
-  min-height: 50%;
+
 
 
 }
@@ -199,7 +200,6 @@
 
     padding-top:0px;
 	
-
 }
 
   .bg-portfolio {
