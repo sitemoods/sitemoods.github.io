@@ -2,27 +2,6 @@ jQuery(document).ready(function($) {
 
   $(document).foundation();
 
-  if($('form#contact_form').length > 0) {
-    $('form#contact_form').validate({
-      messages: { },
-      submitHandler: function(form) {
-        $.ajax({
-          type: 'POST',
-          url: 'send.php',
-          data: $(form).serialize(),
-          success: function(data) {
-            if(data.match(/success/)) {
-              $(form).trigger('reset');
-              $('#thanks').show().fadeOut(5000);
-            }
-          }
-        });
-        return false;
-      }
-    });
-  }
-
-  new WOW().init();
 
   $('.menu-toggler a').click(function(e) {
     e.preventDefault();
@@ -62,14 +41,6 @@ jQuery(document).ready(function($) {
     arrows: false
   });
   
-
-
-  // var header_width = $('.work-header h1').width();
-  // $('.work-header h1').css({
-  //   // "margin-left": - header_width / 2
-  // });
-
-
 
 
 

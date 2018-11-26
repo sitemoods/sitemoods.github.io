@@ -174,6 +174,30 @@
     background-position: top;
 }
 
+.topcover {
+  position: fixed; 
+  top: 0; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.topcover img {
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+
+}
+
+.slickslide{
+
+    padding-top:0px;
+
+}
+
   .bg-portfolio {
     background-image: url(../img/portfolio.jpg);
     background-repeat: no-repeat;
@@ -192,15 +216,8 @@
 	  background-image: linear-gradient( 91.7deg,  rgba(50,25,79,1) -4.3%, rgba(122,101,149,1) 101.8% );
   }
   
-  .topcover {
-	  position: relative;
-	  margin-top: 0px;
-  }
-  
-  .topcover img{
-	  width: 100%;
-	  height: 100%;
-  }
+
+
 
 .overlay {
   padding: 100px 0 200px;
@@ -6323,6 +6340,12 @@ nav {
     display: block; }
   
 
+	.menor {
+		position: relative;
+		width: 90%;
+		top: 0;
+	}
+		
 header {
   visibility: hidden;
   width: 100%;
