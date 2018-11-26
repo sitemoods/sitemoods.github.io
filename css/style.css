@@ -42,6 +42,8 @@
   background-position: 50% 50%;
   position: relative;
   
+
+  
   /* for work section and member section*/ }
 
 .full.colored-bg {
@@ -179,7 +181,7 @@
   top: 0; 
   left: -50%; 
   width: 200%; 
- 
+  height: 100%;
 }
 .topcover img {
   top: 0; 
