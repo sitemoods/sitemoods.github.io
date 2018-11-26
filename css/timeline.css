@@ -121,6 +121,11 @@
   margin: 10px auto 80px;
   max-width: 94%;
   z-index: 2;
+  opacity: .7;
+}
+
+#timeline .demo-card:hover {
+  opacity: 1;
 }
 @media (min-width: 480px) {
   #timeline .demo-card {
@@ -173,6 +178,7 @@
   align-items: center;
   color: #fff;
   font-weight: 400;
+  
 }
 #timeline .demo-card .head .number-box {
   display: inline;
@@ -231,6 +237,7 @@
 }
 #timeline .demo-card--step1 {
   background-color: #399B35;
+ 
 }
 #timeline .demo-card--step1 .head::after {
   border-color: #399B35;
