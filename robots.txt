@@ -1,1 +1,1 @@
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: http://moods.com.br/sitemap.xml
