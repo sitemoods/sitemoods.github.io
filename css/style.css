@@ -45,8 +45,10 @@
 
 
 
+
+
 .full.light {
-  color: #fff; }
+  background: #fff; }
 
 .full.dark {
   background: #222; } 
@@ -58,6 +60,15 @@
 
 	  
   	  .full.moodblue {
+  		  background: #272f6f;
+  		  background: -webkit-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -moz-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -ms-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: -o-linear-gradient(left, #272f6f, #3a72c2);
+  		  background: linear-gradient(to right, #272f6f, #3a72c2);
+  	  }
+	  
+  	  .portfmoodblue {
   		  background: #272f6f;
   		  background: -webkit-linear-gradient(left, #272f6f, #3a72c2);
   		  background: -moz-linear-gradient(left, #272f6f, #3a72c2);
@@ -6834,6 +6845,8 @@ nav.wrapper {
 		height: 1000px;
 	}
 	
+	
+
 
 
 /* footer */
