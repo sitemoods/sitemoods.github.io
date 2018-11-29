@@ -44,6 +44,14 @@
 }
 
 
+.rodape {
+padding: 25px 0;
+  position: relative;
+}
+
+.rodape.dark {
+  background: #222; } 
+
 
 
 
@@ -95,7 +103,7 @@
   top: 0; 
   left: -50%; 
   width: 200%; 
-  height: 100%;
+  height: 200%;
   
 }
 .topcover img {
@@ -104,8 +112,8 @@
   right: 0; 
   bottom: 0; 
   margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+  min-width: 25%;
+  min-height: 25%;
 
 
 }
@@ -136,7 +144,7 @@
 
 
 .overlay {
-  padding: 100px 0 200px;
+
   background: rgba(34, 34, 34, 0.85); }
 
 .no-padding {
@@ -6279,9 +6287,8 @@ ul.socials {
     display: inline-block;
     padding: 0 5px; }
     ul.socials li a {
-      color: #333; }
-    ul.socials li a:hover {
-      color: white; }
+      color: #bababa; }
+
 	  
 	  
 	  ul.members {
@@ -6577,19 +6584,26 @@ nav.wrapper {
 
 /* footer */
 .footer {
-  color: #666; 
+  color: #bababa; 
 }
   .footer ul {
     list-style: none;
     margin: 0; }
   .footer a {
-    color: #666; }
-  .footer a:hover {
-    color: white; }
+    color: #bababa; }
+
   .footer .socials {
     margin-bottom: 30px; }
     .footer .socials i {
       font-size: 24px; }
+	  
+	  
+      ul.socials li a:hover {
+        color: white; }
+	    .footer a:hover {
+	      color: white; }
+		  
+
 
 /* fullwidth image */
 .about-image img {
