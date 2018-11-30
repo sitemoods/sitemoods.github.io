@@ -276,9 +276,9 @@ background: url(../img/moodstitle-decoration.png) center center no-repeat;
   margin: 20px auto 30px; }
 
 .rotate {
-  -webkit-animation: rotate 10s ease-in-out infinite;
-  -moz-animation: rotate 10s ease-in-out infinite;
-  animation: rotate 10s ease-in-out infinite; }
+  -webkit-animation: rotate 5s ease-in-out infinite;
+  -moz-animation: rotate 5s ease-in-out infinite;
+  animation: rotate 5s ease-in-out infinite; }
 
 /* button */
 .button {
@@ -6287,7 +6287,7 @@ ul.socials {
     display: inline-block;
     padding: 0 5px; }
     ul.socials li a {
-      color: #bababa; }
+      color: white; }
 
 	  
 	  
@@ -6298,9 +6298,9 @@ ul.socials {
 	      display: inline-block;
 	      padding: 0 5px; }
 	      ul.members li a {
-	        color: #FFF; }
+	        color: grey; }
 	      ul.members li a:hover {
-	        color: #7AC787; }
+	        color: grey; }
 
 
 
@@ -6350,7 +6350,6 @@ ul.socials {
   .icon-text-circle i {
     margin-bottom: 30px;
     font-size: 60px;
-
     backgroud: #fff;
     padding-top: 70px;
     display: inline-block;
@@ -6584,13 +6583,13 @@ nav.wrapper {
 
 /* footer */
 .footer {
-  color: #bababa; 
+  color: white; 
 }
   .footer ul {
     list-style: none;
     margin: 0; }
   .footer a {
-    color: #bababa; }
+    color: white; }
 
   .footer .socials {
     margin-bottom: 30px; }
@@ -6601,7 +6600,7 @@ nav.wrapper {
       ul.socials li a:hover {
         color: white; }
 	    .footer a:hover {
-	      color: white; }
+	      color: grey; }
 		  
 
 

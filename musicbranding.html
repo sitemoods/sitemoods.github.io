@@ -10,20 +10,11 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/icons.css">
     <link href="css/meganoot.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick-theme.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
- 
-    <script src="js/slick.min.js"></script>
-	<script src="js/geral.js"></script>
 	<script>
 		function topFunction() {
 		    document.body.scrollTop = 0; // For Safari
@@ -47,7 +38,7 @@
         </ul>
         <div class="menu-toggler right">
           <a href='#' onclick="topFunction();" > 
-            <i class="fas fa-bars"></i>
+	 <svg class="icon icon-bars"><use xlink:href="symbol-defs.svg#icon-bars"></use></svg>
           </a>
         </div>
       </nav>
@@ -67,7 +58,7 @@
               </ul>
               <div class="menu-toggler right">
                 <a href='#' >
-                  <i class="fas fa-times"></i>
+                  <svg class="icon icon-close"><use xlink:href="symbol-defs.svg#icon-close"></use></svg>
                 </a>
               </div>
             </nav>
@@ -144,38 +135,35 @@
 
 	  
       <div class="row">
-        <div class="large-3 columns">
-          <div class="icon-text-circle">
-            <i class="fas fa-headphones" style="color: #399B35;"></i>
-            <h3>Criação do conceito</h3>
-          </div>
+        <div class="large-3 columns">			
+          <div class="centered-text">
+			  <svg class="icon anime icon-coffee" style="color: #399B35;"><use xlink:href="symbol-defs.svg#icon-coffee"></use></svg>                     
+		    <h3>Estudo da marca e criação do conceito</h3> 
+			</div>         
         </div>
         <div class="large-1 columns">
-          <i class="fas fa-long-arrow-alt-right arrow"></i>
+          <i class="fas fa-long-arrow-alt-right arrow">-</i>
           <i class="fas fa-long-arrow-alt-down arrow down"></i>
         </div>
 
         <div class="large-3 columns">
-          <div class="icon-text-circle">
-            <i class="fas fa-music" style="color: #7CBE25;"></i>
-            <h3>Curadoria musical</h3>
-          </div>
+          <div class="centered-text">
+			  <svg class="icon anime icon-headphones" style="color: #399B35;"><use xlink:href="symbol-defs.svg#icon-headphones"></use></svg>                    
+		    <h3>Curadoria de conteúdo musical</h3>
+			</div>          
         </div>
         <div class="large-1 columns">
-          <i class="fas fa-long-arrow-alt-right arrow wow fadeInLeft" data-wow-delay="0.8s"></i>
-          <i class="fas fa-long-arrow-alt-down arrow down wow fadeInLeft" data-wow-delay="0.8s"></i>
+          <i class="fas fa-long-arrow-alt-right arrow">-</i>
+          <i class="fas fa-long-arrow-alt-down arrow down"></i>
         </div>
         <div class="large-3 columns">
-          <div class="icon-text-circle">
-            <i class="fas fa-sync fa-spin" style="color: #ACD21B;"></i>
-            <h3>Atualização constante do conteúdo</h3>
-        
-          </div>
+          <div class="centered-text">
+			  <svg class="icon anime icon-loop2 rotate" style="color: #399B35;"><use xlink:href="symbol-defs.svg#icon-loop2"></use></svg>                    
+		    <h3>Atualizações constantes</h3>
+			</div>          
         </div>
         <div class="large-1 columns">
-        
 		</div>
-		
       </div>
 	  
 	  		
@@ -192,7 +180,7 @@
 
 
    
-		
+	 <div class="full no-overflow">	
       <div class="row">  
         <div class="large-12 columns">
 				<div class="centered-text">
@@ -239,13 +227,10 @@
     </div>
     <a href="contato.html" class="price-option__purchase">$80/mês</a>
   </div>
-
 </div>
-
 </div>
-
  </div>
-
+</div>
  
     <div class="rodape footer overlay no-overflow">
       <div class="row">
@@ -255,10 +240,10 @@
   		    <img class="circle-2" src="img/svg2/moods-green.svg" alt="moodsgreen">
   		   </div>
           <ul class="socials">
-            <li><a href="https://medium.com/@moods.com.br" ><i class='fab fa-medium'></i></a></li>
-			<li><a href="https://instagram.com/moods.com.br" ><i class='fab fa-instagram'></i></a></li>
-            <li><a href="https://twitter.com/moods_com_br" ><i class='fab fa-twitter'></i></a></li>
-			<li><a href="https://facebook.com/moods.com.br" ><i class='fab fa-facebook'></i></a></li>
+            <li><a href="https://medium.com/@moods.com.br" ><svg class="icon icon-medium"><use xlink:href="symbol-defs.svg#icon-medium"></use></svg></a></li>
+			<li><a href="https://instagram.com/moods.com.br" ><svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a></li>
+            <li><a href="https://twitter.com/moods_com_br" ><svg class="icon icon-twitter-square"><use xlink:href="symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
+			<li><a href="https://facebook.com/moods.com.br" ><svg class="icon icon-facebook-square"><use xlink:href="symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
           </ul>
           <ul class="menu">
                     <li><a class="active" href='index.html'>>Inicio</a></li> 
@@ -295,7 +280,12 @@
 
 
 </div>
-
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/slick.min.js"></script>
+<script src="js/geral.js"></script>
+  <script defer src="svgxuse.js"></script>
     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
 	<script src="https://vjs.zencdn.net/7.2.3/video.js"></script>
   </body>

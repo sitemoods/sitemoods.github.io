@@ -9,21 +9,12 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-	<link rel="stylesheet" href="css/animation.css" />
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/timeline.css" />
+	<link rel="stylesheet" href="css/icons.css">
     <link href="css/meganoot.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick-theme.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-
-    <script src="js/slick.min.js"></script>
-	<script src="js/geral.js"></script>
-	<link rel="stylesheet" href="css/timeline.css">
 	<script>
 		function topFunction() {
 		    document.body.scrollTop = 0; // For Safari
@@ -46,11 +37,12 @@
         </ul>
         <div class="menu-toggler right">
           <a href='#' onclick="topFunction();">
-            <i class="fas fa-bars"></i>
+	 <svg class="icon icon-bars"><use xlink:href="symbol-defs.svg#icon-bars"></use></svg>
           </a>
         </div>
       </nav>
     </div>
+	
     <header class=" ">
       <div class='contain-to-grid sticky transparent'>
             <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
@@ -64,8 +56,8 @@
                 </li>
               </ul>
               <div class="menu-toggler right">
-                <a href='#'>
-                  <i class="fas fa-times"></i>
+                <a href='#' >
+                  <svg class="icon icon-close"><use xlink:href="symbol-defs.svg#icon-close"></use></svg>
                 </a>
               </div>
             </nav>
@@ -106,7 +98,7 @@
 	          <h2 class="white">Portfolio</h2>  
 	          <div class="four spacing"></div>
 		
-	
+	<p class="leader white"> Trabalhos selecionados em nossa linha do tempo</p>	
 
 
          		  
@@ -116,21 +108,20 @@
 	    </div>
 	 </div>
 	
-	<div class="rodape no-overflow"> 
+	<div class="no-overflow"> 
 	
 
 		
 	
 
      <section id=timeline>
-	<p class="leader white"> Trabalhos selecionados em nossa linha do tempo</p>
+
 	<div class="demo-card-wrapper">
 		
-	
 		<div id="patiobatel" class="demo-card demo-card--step1">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fab fa-instagram"></i></span>
+						 <svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg>
 				</div>
 				<h2><span class="small">09/2018 | Hashtags</span>Patio Batel</h2>
 			</div>
@@ -144,7 +135,7 @@
 		<div id="oven" class="demo-card demo-card--step2">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-music"></i></span>
+					<svg class="icon icon-play2"><use xlink:href="symbol-defs.svg#icon-play2"></use></svg>
 				</div>
 				<h2><span class="small">08/2018 | TV Video Clipes</span>Oven Pizza</h2>
 			</div>
@@ -157,7 +148,7 @@
 		<div id="madalosso" class="demo-card demo-card--step3">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-eye"></i></span>
+					<svg class="icon icon-eye"><use xlink:href="symbol-defs.svg#icon-eye"></use></svg>
 				</div>
 			<h2><span class="small">05/2018 | Video Branding</span>Madalosso</h2>
 			</div>
@@ -170,7 +161,7 @@
 		<div id="vhconstrutora" class="demo-card demo-card--step4">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-music"></i></span>
+					<svg class="icon icon-music"><use xlink:href="symbol-defs.svg#icon-music"></use></svg>
 				</div>
 			<h2><span class="small">01/2018 | Tv Video Clipes</span>Edificio Aurum</h2>
 			</div>
@@ -183,7 +174,7 @@
 		<div id="daju" class="demo-card demo-card--step5">
 			<div class="head">
 				<div class="number-box rodar">
-				<span><i class="fas fa-eye"></i></span>
+				<svg class="icon icon-display"><use xlink:href="symbol-defs.svg#icon-display"></use></svg>
 				</div>
 			<h2><span class="small">07/2017 | Digital Signage</span>Lojas Daju</h2>
 			</div>
@@ -197,7 +188,7 @@
 		<div id="simepar" class="demo-card demo-card--step6">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-cloud"></i></span>
+					<svg class="icon icon-cloud-sun-lightning"><use xlink:href="symbol-defs.svg#icon-cloud-sun-lightning"></use></svg>
 				</div>
 			<h2><span class="small">03/2017 | Digital Signage</span>Simepar</h2>
 			</div>
@@ -210,7 +201,7 @@
 		<div id="tastysaladshop" class="demo-card demo-card--step7">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-music"></i></span>
+					<svg class="icon icon-music"><use xlink:href="symbol-defs.svg#icon-music"></use></svg>
 				</div>
 			<h2><span class="small">11/2016 | Music Branding</span>Tasty Salad Shop</h2>
 			</div>
@@ -223,7 +214,7 @@
 		<div id="babiloniagastronomia" class="demo-card demo-card--step8">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-drum"></i></span>
+					<svg class="icon icon-play2"><use xlink:href="symbol-defs.svg#icon-play2"></use></svg>
 				</div>
 			<h2><span class="small">10/2016 | Tv Video Clipes</span>Babilonia Gastronomia</h2>
 			</div>
@@ -236,7 +227,7 @@
 		<div id="kingtemaki" class="demo-card demo-card--step9">
 			<div class="head">
 				<div class="number-box rodar">
-					<span><i class="fas fa-play-circle"></i></span>
+					<svg class="icon icon-film1"><use xlink:href="symbol-defs.svg#icon-film1"></use></svg>
 				</div>
 			<h2><span class="small">05/2016 | Music & Video Branding</span>King Temaki</h2>
 			</div>
@@ -262,10 +253,10 @@
 </div>
  </div>
           <ul class="socials">
-            <li><a href="https://medium.com/@moods.com.br" ><i class='fab fa-medium'></i></a></li>
-			<li><a href="https://instagram.com/moods.com.br" ><i class='fab fa-instagram'></i></a></li>
-            <li><a href="https://twitter.com/moods_com_br" ><i class='fab fa-twitter'></i></a></li>
-			<li><a href="https://facebook.com/moods.com.br" ><i class='fab fa-facebook'></i></a></li>
+            <li><a href="https://medium.com/@moods.com.br" ><svg class="icon icon-medium"><use xlink:href="symbol-defs.svg#icon-medium"></use></svg></a></li>
+			<li><a href="https://instagram.com/moods.com.br" ><svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a></li>
+            <li><a href="https://twitter.com/moods_com_br" ><svg class="icon icon-twitter-square"><use xlink:href="symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
+			<li><a href="https://facebook.com/moods.com.br" ><svg class="icon icon-facebook-square"><use xlink:href="symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
           </ul>
           <ul class="menu">
                     <li><a class="active" href='index.html'>>Inicio</a></li> 
@@ -302,7 +293,12 @@
 
 
 </div>
-	
+	  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	  <script src="bower_components/foundation/js/foundation.min.js"></script>
+	  <script src="js/app.js"></script>
+	  <script src="js/slick.min.js"></script>
+	<script src="js/geral.js"></script>
+	  <script defer src="svgxuse.js"></script>
   </body>
 
 </html>

@@ -9,20 +9,11 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-	<link rel="stylesheet" href="css/animation.css" />
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/icons.css">
     <link href="css/meganoot.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick-theme.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-
-    <script src="js/slick.min.js"></script>
-	<script src="js/geral.js"></script>
 	<script>
 		function topFunction() {
 		    document.body.scrollTop = 0; // For Safari
@@ -45,11 +36,12 @@
         </ul>
         <div class="menu-toggler right">
           <a href='#' onclick="topFunction();">
-            <i class="fas fa-bars"></i>
+	 <svg class="icon icon-bars"><use xlink:href="symbol-defs.svg#icon-bars"></use></svg>
           </a>
         </div>
       </nav>
     </div>
+	
     <header class=" ">
       <div class='contain-to-grid sticky transparent'>
             <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
@@ -63,8 +55,8 @@
                 </li>
               </ul>
               <div class="menu-toggler right">
-                <a href='#'>
-                  <i class="fas fa-times"></i>
+                <a href='#' >
+                  <svg class="icon icon-close"><use xlink:href="symbol-defs.svg#icon-close"></use></svg>
                 </a>
               </div>
             </nav>
@@ -140,10 +132,10 @@
   		   </div>
 		   
           <ul class="socials">
-            <li><a href="https://medium.com/@moods.com.br" ><i class='fab fa-medium'></i></a></li>
-			<li><a href="https://instagram.com/moods.com.br" ><i class='fab fa-instagram'></i></a></li>
-            <li><a href="https://twitter.com/moods_com_br" ><i class='fab fa-twitter'></i></a></li>
-			<li><a href="https://facebook.com/moods.com.br" ><i class='fab fa-facebook'></i></a></li>
+            <li><a href="https://medium.com/@moods.com.br" ><svg class="icon icon-medium"><use xlink:href="symbol-defs.svg#icon-medium"></use></svg></a></li>
+			<li><a href="https://instagram.com/moods.com.br" ><svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a></li>
+            <li><a href="https://twitter.com/moods_com_br" ><svg class="icon icon-twitter-square"><use xlink:href="symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
+			<li><a href="https://facebook.com/moods.com.br" ><svg class="icon icon-facebook-square"><use xlink:href="symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
           </ul>
           <ul class="menu">
                     <li><a class="" href='index.html'>>Inicio</a></li> 
@@ -180,7 +172,12 @@
 
 
 </div>
-	
+	  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+	  <script src="bower_components/foundation/js/foundation.min.js"></script>
+	  <script src="js/app.js"></script>
+	  <script src="js/slick.min.js"></script>
+	<script src="js/geral.js"></script>
+	  <script defer src="svgxuse.js"></script>
   </body>
 
 </html>
