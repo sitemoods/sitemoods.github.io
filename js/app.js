@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-  $(document).foundation();
+//  $(document).foundation();      <script src="bower_components/foundation/js/foundation.min.js"></script>
 
 
   $('.menu-toggler a').click(function(e) {
@@ -10,9 +10,10 @@ jQuery(document).ready(function($) {
 
   $('.clients').slick({
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
+	arrows: false,
     pauseOnHover: false,
     responsive: [
       {

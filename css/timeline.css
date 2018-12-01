@@ -11,6 +11,7 @@
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
+	
   }
 
   #timeline .demo-card:nth-child(odd) .head::before, #timeline .demo-card:nth-child(even) .head::before {
@@ -109,6 +110,7 @@
   bottom: 0;
   left: 50%;
   border-left: 1px solid rgba(191, 191, 191, 0.4);
+  
 }
 @media (min-width: 1000px) {
   #timeline .demo-card-wrapper::after {
@@ -121,6 +123,7 @@
   margin: 10px auto 80px;
   max-width: 94%;
   z-index: 2;
+  
 }
 
 
@@ -217,6 +220,7 @@
   border: 1px solid rgba(191, 191, 191, 0.4);
   border-top: 0;
   padding: 15px;
+  
   
 }
 
