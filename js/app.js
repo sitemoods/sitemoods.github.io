@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-
-
   $('.menu-toggler a').click(function(e) {
     e.preventDefault();
     $('header').toggleClass('on');
@@ -40,8 +38,5 @@ jQuery(document).ready(function($) {
 	fade: true,
     arrows: false
   });
-  
-
-
 
 });
