@@ -1,7 +1,10 @@
-@media (min-width: 1280px) {
+
+
+@media (min-width: 800px) {
     .circles.under {
-      left: 130%;
+      left: 550px;
 	  top: 120px;
+	  
   }
 }
 

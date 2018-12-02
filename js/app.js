@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
 
-//  $(document).foundation();      <script src="bower_components/foundation/js/foundation.min.js"></script>
 
 
   $('.menu-toggler a').click(function(e) {

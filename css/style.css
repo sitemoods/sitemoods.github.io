@@ -6105,8 +6105,9 @@ overflow: hidden;
   top: -300px; }
   
   .circles.under {
-    left: 120px;
-    top: 20px; 
+    left: 160px;
+    top: 20px;
+	 
 }
 
   .circles.top {
@@ -6725,7 +6726,7 @@ nav.wrapper {
 }
 
 .videoplayer {
-	width: 50%;
+	width: 70%;
 	margin: auto;
 }
 
