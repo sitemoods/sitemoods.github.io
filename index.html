@@ -1,20 +1,18 @@
 <!doctype html>
 <html class="no-js" lang="pt-br">
-  
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moods - We Deliver Musical & Visual Content</title>
 	<meta name="description" content="Nós fazemos curadoria musical, TV de VideoClipes, e sistema automatizado de Digital Signage para a sua franquia." />
+	<meta name="theme-color" content="#3A72C2"/>
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/animation.css" />
 	<link rel="stylesheet" href="css/icons.css">
     <link href="css/meganoot.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/slick-theme.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/slick.css" media="screen" rel="stylesheet" type="text/css" />
-
 	<script>
 		function topFunction() {
 		    document.body.scrollTop = 0; // For Safari
@@ -315,31 +313,26 @@
   		   </div>
 		   
           <ul class="socials">
-            <li><a href="https://medium.com/@moods.com.br" ><svg class="icon icon-medium"><use xlink:href="symbol-defs.svg#icon-medium"></use></svg></a></li>
-			<li><a href="https://instagram.com/moods.com.br" ><svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a></li>
-            <li><a href="https://twitter.com/moods_com_br" ><svg class="icon icon-twitter-square"><use xlink:href="symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
-			<li><a href="https://facebook.com/moods.com.br" ><svg class="icon icon-facebook-square"><use xlink:href="symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
-          </ul>
+            <li><a href="https://medium.com/@moods.com.br" target="_blank"><svg class="icon icon-medium"><use xlink:href="symbol-defs.svg#icon-medium"></use></svg></a></li>
+			<li><a href="https://instagram.com/moods.com.br" target="_blank"><svg class="icon icon-instagram"><use xlink:href="symbol-defs.svg#icon-instagram"></use></svg></a></li>
+            <li><a href="https://twitter.com/moods_com_br" target="_blank"><svg class="icon icon-twitter-square"><use xlink:href="symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
+			<li><a href="https://facebook.com/moods.com.br" target="_blank"><svg class="icon icon-facebook-square"><use xlink:href="symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=5541988128123&text=Ol%C3%A1!" target="_blank"><svg class="icon icon-whatsapp"><use xlink:href="symbol-defs.svg#icon-whatsapp"></use></svg></a></li>
+          </ul>         
           <ul>
-                    <li><a class="active" href='index.html'>>Inicio</a></li> 
-			        <li> <a class="" href='sobre.html'>>Sobre</a></li>
-                    <li><a class="" href="musicbranding.html">>Music Branding</a></li>
-                    <li><a class="" href="videobranding.html">>Video Branding</a></li>
-                    <li><a class="" href="videoclipes.html">>TV Videoclipes</a></li>
-                    <li><a class="" href="digitalsignage.html">>Digital Signage</a></li>
-                    <li><a class="" href="playlists.html">>Playlists</a></li>
-                    <li><a class="" href="hashtags.html">>Hashtags</a></li>
-					<li><a class="" href="portfolio.html">>Portfolio</a></li>
-					<li><a class="" href="contato.html">>Contato</a></li>
+                    <li><a class="active" href='index.html'>Inicio</a></li> 
+			        <li><a class="" href='sobre.html'>Sobre</a></li>
+                    <li><a class="" href="musicbranding.html">Music Branding</a></li>
+                    <li><a class="" href="videobranding.html">Video Branding</a></li>
+                    <li><a class="" href="videoclipes.html">TV Videoclipes</a></li>
+                    <li><a class="" href="digitalsignage.html">Digital Signage</a></li>
+                    <li><a class="" href="playlists.html">Playlists</a></li>
+                    <li><a class="" href="hashtags.html">Hashtags</a></li>
+					<li><a class="" href="portfolio.html">Portfolio</a></li>
+					<li><a class="" href="contato.html">Contato</a></li>
           </ul>
-		  <div class="two spacing"></div>
-           <a href="mailto:contato@moods.com.br">contato@moods.com.br</a><br>	
-             
-             <ul class="socials">
- 			<li><a href="https://api.whatsapp.com/send?phone=5541988128123&text=Ol%C3%A1!"><svg class="icon icon-whatsapp"><use xlink:href="symbol-defs.svg#icon-whatsapp"></use></svg></a></li>
- 			</ul>				             
-           Av. Dom Pedro II 345, sala 04.<br> 
-		   Curitiba-PR, Brasil.
+				             
+		   
  
 		  
         </div>
@@ -349,16 +342,74 @@
 
     </div>
 <div class="footer rodape overlay centered-text">
-	<p>©2018 Jardim Sonoro. CNPJ: 12.553.127/0001­17</p>
+	<p>©2018 Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17</p>
 </div>
 
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
-    <script src="js/app.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-	<script src="js/geral.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+		  $('.menu-toggler a').click(function(e) {
+		    e.preventDefault();
+		    $('header').toggleClass('on');
+		  });
+
+		  $('.clients').slick({
+		    slidesToShow: 5,
+		    slidesToScroll: 2,
+		    autoplay: true,
+		    autoplaySpeed: 2000,
+			arrows: false,
+		    pauseOnHover: false,
+		    responsive: [
+		      {
+		        breakpoint: 767,
+		        settings: {
+		          slidesToShow: 3,
+		          slidesToScroll: 1
+		        }
+		      },
+		      {
+		        breakpoint: 480,
+		        settings: {
+		          slidesToShow: 2,
+		          slidesToScroll: 1
+		        }
+		      }
+		    ]
+		  });
+
+		  $('.slides').slick({
+		    autoplay: true,
+		    pauseOnHover: false,
+		    dots: false,
+		    speed: 250,
+			fade: true,
+		    arrows: false
+		  });
+
+		});
+		function detectmob(o) {
+		    return o = o ? o : !1, navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || !o && navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? !0 : !1
+		}
+
+		function loadSVG() {
+		    var o = ["img/svg2/tablet_desktop.svg", "img/svg2/mobile.svg"],
+		        t;
+		    t = detectmob(!0) ? o[1] : o[0], $.ajax({
+		        url: t,
+		        method: "GET",
+		        dataType: "text",
+		        success: function(o) {
+		            $("#Infografico").html(o)
+		        }
+		    })
+		}
+
+		detectmob()
+		loadSVG()
+		</script>
     <script defer src="svgxuse.js"></script>
-		
    </body>
 </html>

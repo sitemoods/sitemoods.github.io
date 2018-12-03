@@ -6753,3 +6753,11 @@ nav.wrapper {
   .clients {
 	  display: none;
   }
+  
+  .hoverhide {
+     opacity: 0;
+  }
+
+  .hoverhide:hover {
+      opacity: 1;
+  }
