@@ -6111,7 +6111,7 @@ overflow: hidden;
 }
 
   .circles.top {
-    right: 0px;
+    right: 120px;
     top: -100px; 
  
     filter: alpha(opacity=10); /* For IE8 and earlier */
@@ -6134,8 +6134,8 @@ overflow: hidden;
   transform: scale(0.75); }
 
 .circles.tiny {
-  right: -380px;
-  top: 35vh;
+  right: -60px;
+  top: 20vh;
 
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
