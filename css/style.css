@@ -89,6 +89,20 @@ min-height:25%
 padding-top:0
 }
 
+
+.playimg {
+width:50%
+}
+
+.playlist {
+filter: invert(0%);
+}
+
+
+.playlist:hover, .playlist:focus {
+filter: invert(100%);
+}
+
 .bg-portfolio {
 background-image:url(../img/portfolio.jpg);
 background-repeat:no-repeat;
