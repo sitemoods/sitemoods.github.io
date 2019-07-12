@@ -58,6 +58,17 @@
     .full.zigzag .overlay {
       padding-top: 40px; } }
 @media only screen and (max-width: 640px) {
+
+  .espaco {
+    width:100%;
+    height:3200px;
+      /*
+    background-image:url(../css/ajax-loader.gif);
+    background-repeat:no-repeat;
+    background-position:center
+      */
+    }
+    
   nav.wrapper a {
     width: 160px;
     padding: 20px; }
@@ -105,3 +116,5 @@
     position: relative;
     z-index: 9999;
     margin-top: -44px; } }
+
+   
