@@ -10193,7 +10193,7 @@ transform:rotateY(180deg)
 fill:#000
 }
 
-.lojinhas:hover {
+.lojinhas:hover, .lojinhas:focus {
 fill:#418fcd
 }
 
@@ -10407,7 +10407,7 @@ float:left
 
 .espaco {
 width:100%;
-height:2000px;
+height:2600px;
   /*
 background-image:url(../css/ajax-loader.gif);
 background-repeat:no-repeat;
@@ -10579,4 +10579,6 @@ opacity:0
 .hoverhide:hover {
 opacity:1
 }
+
+
 
