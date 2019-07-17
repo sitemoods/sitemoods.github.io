@@ -67,6 +67,7 @@ background-attachment:scroll;
 background-position:top
 }
 
+
 .topcover {
 position:fixed;
 top:0;
@@ -75,6 +76,14 @@ width:200%;
 height:200%
 }
 
+.bg-desktop {
+    background-image:url(../img/desktop.jpg);
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-attachment:scroll;
+    background-position:top
+    }
+    
 .topcover img {
 top:0;
 left:0;
