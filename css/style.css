@@ -10166,7 +10166,6 @@ position:relative
 .icon-text-circle i {
 margin-bottom:30px;
 font-size:60px;
-backgroud:#fff;
 padding-top:70px;
 display:inline-block;
 width:200px;
@@ -10543,11 +10542,11 @@ color:green
 }
 
 .price-option--mid .price-option__purchase:before {
-border-color:transparent transparent #eada42
+border-color:transparent transparent #ccc
 }
 
 .price-option--high .price-option__purchase:before {
-border-color:transparent transparent #e54e4b
+border-color:transparent transparent #ccc
 }
 
 .embed-container {

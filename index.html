@@ -361,6 +361,15 @@
 		    $('header').toggleClass('on');
 		  });
 
+      $('.slides').slick({
+		    autoplay: true,
+		    pauseOnHover: false,
+		    dots: false,
+		    speed: 2,
+			fade: true,
+		    arrows: false
+		  });
+
 		  $('.clients').slick({
 		    slidesToShow: 5,
 		    slidesToScroll: 2,
@@ -386,14 +395,7 @@
 		    ]
 		  });
 
-		  $('.slides').slick({
-		    autoplay: true,
-		    pauseOnHover: false,
-		    dots: false,
-		    speed: 250,
-			fade: true,
-		    arrows: false
-		  });
+
 
 		});
 		function detectmob(o) {
