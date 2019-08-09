@@ -10460,6 +10460,7 @@ max-height:600px
 .price-option {
 display:inline-block;
 width:75%;
+max-width: 700px;
 margin-bottom:3.8125em;
 font-size:22px;
 opacity:1;
