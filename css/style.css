@@ -185,7 +185,7 @@ color:#fff
 }
 
 h1,h2,h3,h4,h5,h6 {
-font-family:meganoot,"Open Sans";
+font-family: 'Ubuntu', sans-serif;
 margin-bottom:20px;
 margin-top:0
 }
@@ -199,7 +199,7 @@ color:#fff
 }
 
 .special-title {
-font-family:meganoot,"Open Sans";
+font-family: 'Ubuntu', sans-serif;
 font-weight:400;
 letter-spacing:2px
 }
@@ -207,7 +207,7 @@ letter-spacing:2px
 body {
 text-align:justify;
 text-justify:inter-word;
-font-family:meganoot,"Open Sans";
+font-family: 'Ubuntu', sans-serif;
 overflow-x:hidden;
 letter-spacing:1px
 }
@@ -9731,7 +9731,7 @@ display:block;
 font-size:25px;
 font-weight:400;
 text-transform:none;
-font-family:meganoot,"Open Sans";
+font-family: 'Ubuntu', sans-serif;
 letter-spacing:3px
 }
 
@@ -9774,7 +9774,7 @@ header ul {
 list-style:none;
 font-size:25px;
 line-height:1.5;
-font-family:meganoot,"Open Sans";
+font-family: 'Ubuntu', sans-serif;
 font-weight:600;
 margin:0 0 60px
 }
