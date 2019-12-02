@@ -108,8 +108,8 @@ filter: invert(0%);
 }
 
 
-.playlist:hover, .playlist:focus {
-filter: invert(100%);
+.playlist img:hover, .playlist img:focus {
+    border:2px solid white;
 }
 
 .bg-portfolio {
