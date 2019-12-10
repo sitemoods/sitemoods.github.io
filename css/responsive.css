@@ -115,6 +115,10 @@
   .menu-toggler {
     position: relative;
     z-index: 9999;
-    margin-top: -44px; } }
+    margin-top: -44px; } 
+    
+    .clients {
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+}
 
-   
+}

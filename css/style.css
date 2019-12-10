@@ -10348,7 +10348,7 @@ position:relative;
 top:50%;
 margin-top:-50px;
 color:#fff;
-font-size:25px;
+font-size:1em;
 font-weight:700
 }
 
@@ -10578,7 +10578,18 @@ display:none
 }
 
 .clients {
-display:none
+ margin-left: 50px;
+ margin-right: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 1em;
+}
+
+.clients img {
+opacity:0.8;
+}
+.clients img:hover {
+opacity:1;
 }
 
 .hoverhide {
