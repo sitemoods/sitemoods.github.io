@@ -52,82 +52,61 @@ li a:hover,a:focus {
 font-size: xx-large;
 }
 
-.amusic {
+.dupla {
 transition: all .2s ease-in-out;
 }
+.dupla:hover,img:focus {
+transform:scale(1.1);
+}
+
 .amusic h3{
 text-decoration:underline #7CBE25;
 }
 .amusic a:hover,a:focus {
 color:#7CBE25;
 }
-.amusic:hover,img:focus {
-transform:scale(1.1);
-}
 
-.avideo {
-transition: all .2s ease-in-out;
-}
+
 .avideo h3{
 text-decoration:underline #F39518;
 }
+
 .avideo a:hover,a:focus {
 color:#F39518;
 }
 
-.avideo:hover,img:focus {
-transform:scale(1.1);
-}
 
-.asignage {
-transition: all .2s ease-in-out;
-}
 .asignage h3{
 text-decoration:underline #46ABE5;
 }
 .asignage a:hover,a:focus {
 color:#46ABE5;
 }
-.asignage:hover,img:focus {
-transform:scale(1.1);
-}
 
-.aplay {
-transition: all .2s ease-in-out;
-}
+
 .aplay h3{
 text-decoration:underline #DD4DB2;
 }
 .aplay a:hover,a:focus {
 color:#DD4DB2;
 }
-.aplay:hover,img:focus {
-transform:scale(1.1);
-}
-.ainsta {
-transition: all .2s ease-in-out;
-}
+
+
 .ainsta h3{
 text-decoration:underline #739C2A;
 }
 .ainsta a:hover,a:focus {
 color:#739C2A;
 }
-.ainsta:hover,img:focus {
-transform:scale(1.1);
-}
-.aclips {
-transition: all .2s ease-in-out;
-}
+
+
 .aclips h3{
 text-decoration:underline #F24672;
 }
 .aclips a:hover,a:focus {
 color:#F24672;
 }
-.aclips:hover,img:focus {
-transform:scale(1.1);
-}
+
 
 
 
