@@ -1,94 +1,96 @@
 <!doctype html>
-<html class="no-js" lang="pt-br">
-  
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moods - Playlists para Spotify</title>
 	<meta name="description" content="Curadoria de playlists musicais para Spotify, redes sociais e eventos." />
 	<meta name="theme-color" content="#BF1383"/>
-    <link rel="stylesheet" href="../css/app.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-	<link rel="stylesheet" href="../css/icons.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="../css/slick.css" media="screen" rel="stylesheet" type="text/css" />
-	<script>
-		function topFunction() {
-		    document.body.scrollTop = 0; // For Safari
-		    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-	</script>
-  </head>
-  <body>
+</head>
+<!-- MENU START -->
 
-    <div class='contain-to-grid sticky transparent'>
-      <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
-        <ul class='title-area'>
-          <li class='name'>
-            <h2>
-              <a href="../">
+<body>
+    <div class='contain-to-grid sticky'>
+        <nav class='top-bar'>
+            <ul class='title-area'>
+                <li class='name'>
+                    <h2>
+              <a href='/'>
                 <img src="../img/svg2/moods-top-pink.svg" alt="moods">
               </a>
-            </h2>
-          </li>
-        </ul>
-        <div class="menu-toggler right">
-          <a href='#' onclick="topFunction();">
-	 <svg class="icon icon-bars"><use xlink:href="../symbol-defs.svg#icon-bars"></use></svg>
-          </a>
-        </div>
-      </nav>
-    </div>
-	
-    <header class=" ">
-      <div class='contain-to-grid sticky transparent'>
-            <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
-              <ul class='title-area'>
-                <li class='name'>
-                  <h2>
-                    <a href="../">
-                      <img src="../img/svg2/moods-top-pink.svg" alt="moodsmenu">
-                    </a>
-                  </h2>
+           </h2>
                 </li>
-              </ul>
-              <div class="menu-toggler right">
-                <a href='#' >
-                  <svg class="icon icon-close"><use xlink:href="../symbol-defs.svg#icon-close"></use></svg>
-                </a>
-              </div>
-            </nav>
-          </div>
-
-          <div class="row">
-            <div class="large-12 columns">
-              <ul class="centered-text menu">
-				
-                        <li><a class="" href="../">Inicio</a></li> 
-				        <li> <a class="" href="../sobre">Sobre</a></li>
-	                    <li><a class="" href="../musicbranding">Music Branding</a></li>
-	                    <li><a class="" href="../videobranding">Video Branding</a></li>
-	                    <li><a class="" href="../videoclipes">TV Videoclipes</a></li>
-	                    <li><a class="" href="../digitalsignage">Digital Signage</a></li>
-	                    <li><a class="active" href="../playlists">Playlists</a></li>
-	                    <li><a class="" href="../hashtags">Hashtags</a></li>
-						<li><a class="" href="../portfolio">Portfolio</a></li>
-						<li><a class="" href="../contato">Contato</a></li>
-              </ul>
+            </ul>
+            <div class="menu-toggler right">
+                <label for="menuoverlay">
+                    <svg class="icon icon-bars pointerm">
+                        <use xlink:href="symbol-defs.svg#icon-bars"></use>
+                    </svg>
+                </label>
             </div>
-          </div>
-    </header>
-   <div class="full no-overflow">  
-<div class="topcover no-overflow">
-  <span class="slides no-overflow">
-  <span class="slickslide"><img alt="playlists01" src="../img/work/playlists_bg_01.jpg" /></span>
-  <span class="slickslide"><img alt="playlists02" src="../img/work/playlists_bg_02.jpg" /></span>
-  <span class="slickslide"><img alt="playlists03" src="../img/work/playlists_bg_03.jpg" /></span>			  
-  </span>
-  </div>
-</div>
+        </nav>
+    </div>
 
+    <input type="checkbox" id="menuoverlay" />
+    <div class="menuoverlay">
+        <header>
+            <div class='contain-to-grid sticky transparent'>
+                <nav class='top-bar'>
+                    <ul class='title-area'>
+                        <li class='name'>
+                            <h2>
+                    <a href='/'>
+                      <img src="../img/svg2/moods-top-pink.svg" alt="moods">
+                    </a>
+                 </h2>
+                        </li>
+                    </ul>
+                    <div class="menu-toggler right">
+                        <label for="menuoverlay">
+                            <svg class="icon icon-close pointerm">
+                                <use xlink:href="symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul class="centered-text menu">
+                        <li><a href='/'>Inicio</a></li>
+                        <li><a href='sobre'>Sobre</a></li>
+                        <li class="amusic"><a class="" href="musicbranding">Music Branding</a></li>
+                        <li class="avideo"><a class="" href="videobranding">Video Branding</a></li>
+                        <li class="aclips"><a class="" href="videoclipes">TV Videoclipes</a></li>
+                        <li class="asignage"><a class="" href="digitalsignage">Digital Signage</a></li>
+                        <li class="aplay"><a class="" href="playlists">Playlists</a></li>
+                        <li class="ainsta"><a class="" href="hashtags">Hashtags</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="contato">Contato</a></li>
+                        <li><a href="https://medium.com/@moods.com.br" target="_blank" rel="noopener">Blog</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- MENU END -->
+
+    <div class="full">
+        <div class="topcover no-overflow">
+        <div class="fadein">
+            <img class="f1" alt="playlists01" src="../img/work/playlists_bg_01.jpg" />
+            <img class="f2" alt="playlists02" src="../img/work/playlists_bg_02.jpg" />
+            <img class="f3" alt="playlists03" src="../img/work/playlists_bg_03.jpg" />
+            </div>
+        </div>
    
     <div class="centered-text">
       <div class="row">
@@ -134,39 +136,34 @@
 				<div class="full centered-text">
 			
       <div class="row">
-		  
-        <div class="playimg large-3 columns">
-         <br>
-           <br>
-          <div class="playlist"><a href="https://open.spotify.com/embed/playlist/64zUlLFSs89vADJlIkTqKU" target="_blank">
-          <img class="shadow" alt="playlist-tastysalad-inverno" src="/playlists/playlist-tastysalad-inverno.jpg" />
+		       
+        <div class="dupla">
+
+          <div class="selector"><a href="https://open.spotify.com/embed/playlist/64zUlLFSs89vADJlIkTqKU" target="_blank">
+          <img class="shadow" alt="playlist-tastysalad-inverno" src="/playlists/playlist-tastysalad-inverno.jpg" /></a>
           </div>
           </div>
-          <br>
-          <br>
-                  <div class="playimg large-3 columns">
-          <div class="playlist"><a href="https://open.spotify.com/embed/playlist/4vVEeyQpF2B4Wo9WnOCK6g" target="_blank">
-          <img class="shadow" alt="playlist-tastysalad-novidades" src="/playlists/playlist-tastysalad-novidades.jpg" />
+ 
+        <div class="dupla">
+          <div class="selector"><a href="https://open.spotify.com/embed/playlist/4vVEeyQpF2B4Wo9WnOCK6g" target="_blank">
+          <img class="shadow" alt="playlist-tastysalad-novidades" src="/playlists/playlist-tastysalad-novidades.jpg" /></a>
           </div>
           </div>
            </div>
-           <br>
-           <br>
+
               <div class="row">
        
           
-                            <div class="playimg large-3 columns">
-                                <br>
-           <br>
-          <div class="playlist"><a href="https://open.spotify.com/embed/playlist/3N1CTukH6quvmjWVW2k1c9" target="_blank">
-          <img class="shadow" alt="playlist-bigben-coloridissimos" src="/playlists/playlist-bigben-coloridissimos.jpg" />
+                            <div class="dupla">
+
+          <div class="selector"><a href="https://open.spotify.com/embed/playlist/3N1CTukH6quvmjWVW2k1c9" target="_blank">
+          <img class="shadow" alt="playlist-bigben-coloridissimos" src="/playlists/playlist-bigben-coloridissimos.jpg" /></a>
           </div>
           </div>
-          <br>
-          <br>
-                            <div class="playimg large-3 columns">
-          <div class="playlist"><a href="https://open.spotify.com/embed/playlist/1pDSGIwzYEhuy37bhnMMsM" target="_blank">
-          <img class="shadow" alt="playlist-dujour-wild" src="/playlists/playlist-dujour-wild.jpg" />
+
+                            <div class="dupla">
+          <div class="selector"><a href="https://open.spotify.com/embed/playlist/1pDSGIwzYEhuy37bhnMMsM" target="_blank">
+          <img class="shadow" alt="playlist-dujour-wild" src="/playlists/playlist-dujour-wild.jpg" /></a>
           </div>
           </div>
           
@@ -175,69 +172,71 @@
 	</div>
 	        </div>
 	      </div>     
+        <!-- FOOTER START -->
+        <div class="rodape overlay footer no-overflow">
+            <div class="row">
 
-
-   
-   
-   		  
-
-    <div class="rodape overlay footer no-overflow">
-      <div class="row">
-        <div class="large-6 columns">
-  		  <div class="circles under">
+                <div class="large-6 columns">
+                    <div class="circles under">
 			  <div class="player circle-4">
 		    <img src="../img/svg2/moods-pink.svg" alt="moodspink">
-			</div>
-  		   </div>
-		   
-          <ul class="socials">
-            <li><a href="https://medium.com/@moods.com.br" target="_blank" rel="noopener"><svg class="icon icon-medium"><use xlink:href="../symbol-defs.svg#icon-medium"></use></svg></a></li>
-			<li><a href="https://instagram.com/moods.com.br" target="_blank" rel="noopener"><svg class="icon icon-instagram"><use xlink:href="../symbol-defs.svg#icon-instagram"></use></svg></a></li>
-            <li><a href="https://twitter.com/moods_com_br" target="_blank" rel="noopener"><svg class="icon icon-twitter-square"><use xlink:href="../symbol-defs.svg#icon-twitter-square"></use></svg></a></li>
-			<li><a href="https://facebook.com/moods.com.br" target="_blank" rel="noopener"><svg class="icon icon-facebook-square"><use xlink:href="../symbol-defs.svg#icon-facebook-square"></use></svg></a></li>
-			<li><a href="https://api.whatsapp.com/send?phone=5541988128123&text=Ol%C3%A1!" target="_blank" rel="noopener"><svg class="icon icon-whatsapp"><use xlink:href="../symbol-defs.svg#icon-whatsapp"></use></svg></a></li>
-          </ul>         
-          <ul>
-                    <li><a class="" href="../">Inicio</a></li> 
-			        <li><a class="" href="../sobre">Sobre</a></li>
-                    <li><a class="" href="../musicbranding">Music Branding</a></li>
-                    <li><a class="" href="../videobranding">Video Branding</a></li>
-                    <li><a class="" href="../videoclipes">TV Videoclipes</a></li>
-                    <li><a class="" href="../digitalsignage">Digital Signage</a></li>
-                    <li><a class="active" href="../playlists">Playlists</a></li>
-                    <li><a class="" href="../hashtags">Hashtags</a></li>
-					<li><a class="" href="../portfolio">Portfolio</a></li>
-					<li><a class="" href="../contato">Contato</a></li>
-          </ul>				      		  
+                        </div>
+                    </div>
+
+                    <ul class="socials">
+                        <li>
+                            <a href="https://instagram.com/moods.com.br" target="_blank" rel="noopener">
+                                <svg class="icon icon-instagram">
+                                    <use xlink:href="symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/moods_com_br" target="_blank" rel="noopener">
+                                <svg class="icon icon-twitter-square">
+                                    <use xlink:href="symbol-defs.svg#icon-twitter-square"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com/moods.com.br" target="_blank" rel="noopener">
+                                <svg class="icon icon-facebook-square">
+                                    <use xlink:href="symbol-defs.svg#icon-facebook-square"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=5541988128123&text=Ol%C3%A1!" target="_blank" rel="noopener">
+                                <svg class="icon icon-whatsapp">
+                                    <use xlink:href="symbol-defs.svg#icon-whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href='/'>Inicio</a></li>
+                        <li><a href='sobre'>Sobre</a></li>
+                        <li class="amusic"><a class="" href="musicbranding">Music Branding</a></li>
+                        <li class="avideo"><a class="" href="videobranding">Video Branding</a></li>
+                        <li class="aclips"><a class="" href="videoclipes">TV Videoclipes</a></li>
+                        <li class="asignage"><a class="" href="digitalsignage">Digital Signage</a></li>
+                        <li class="aplay"><a class="" href="playlists">Playlists</a></li>
+                        <li class="ainsta"><a class="" href="hashtags">Hashtags</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="contato">Contato</a></li>
+                        <li><a href="https://medium.com/@moods.com.br" target="_blank" rel="noopener">Blog</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
-      </div>
-    </div>
-<div class="footer rodape overlay centered-text">
-	<p>©2020 Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17</p>
-</div>
-</div>
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/slick.min.js"></script>
-	<script>
-		jQuery(document).ready(function($) {
-		  $('.menu-toggler a').click(function(e) {
-		    e.preventDefault();
-		    $('header').toggleClass('on');
-		  });
-
-
-		  $('.slides').slick({
-		    autoplay: true,
-		    pauseOnHover: false,
-		    dots: false,
-		    speed: 250,
-			fade: true,
-		    arrows: false
-		  });
-
-		});
-		</script>
-    <script defer src="../svgxuse.js"></script>
+        <div class="footer rodape overlay centered-text">
+            <p>©2020 Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17</p>
+        </div>
+        </div>
+        <!-- FOOTER END -->
 	
    </body>
 </html>

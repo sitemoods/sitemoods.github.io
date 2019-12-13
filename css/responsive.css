@@ -1,124 +1,98 @@
+.large-6 {
+width:50%
+}
+
+.large-5 {
+width:96.6666666667%
+padding: 20px;
+}
+
+#infomobile {
+display: none;
+}
+
+@media only screen 
+and (max-width : 640px) 
+ { 
+
+.large-6 {
+width:100%
+}
+}
 
 
-@media (min-width: 800px) {
+@media only screen 
+and (max-width : 812px) 
+ { 
+
+
+
+    #infodesktop {
+    display:none;
+    }
+    
+    #infomobile {
+    display: block;
+    }
+    
+      .circles.alt {
+    display: none; }
+      .circles.tiny {
+    display: none; }
+
+  .circles.top {
+        display: none; }
+        
+        .work .quad {
+width:70%;
+}
+
+ 
+
+ }
+
+
+
+@media only screen and (min-width:64.0625em) {
+
+.large-1 {
+width:8.3333333333%
+}
+
+.large-3 {
+width:25%
+}
+
+.large-5 {
+width:41.6666666667%
+}
+
+
+
+.large-7 {
+width:58.3333333333%
+}
+
+.large-12 {
+width:100%
+}
+
     .circles.under {
       left: 550px;
 	  top: 50px;
 	  
   }
-}
-
-
-@media only screen and (max-width: 1024px) {
-  .number-bg {
-    background-attachment: inherit; }
-
-   .circle-1.big {
-	
-	margin-top: -100px;
-	margin-left: 100px; }
-
-  .circles.alt {
-    right: 100px; }
-
-  .circles.tiny {
-    display: none; }
-
-  .circles.top {
-        display: none; }
-
-  .fold-lines {
-    top: 200px; }
-
-  .letters {
-    top: 0px; }
-
-  .number {
-    display: none; }
-
-  .header .intro {
-    margin-top: 150px;
-    margin-bottom: 0; }
-
-  .full.zigzag {
-    padding-top: 400px; }
 
   i.arrow {
     display: none;
-    padding: 40px 0 50px; }
+     }
 
   i.arrow.down {
-    display: block; } }
-@media only screen and (max-width: 800px) {
-  .fold-lines {
-    top: 300px; }
-
-  .full.zigzag {
-    padding-top: 300px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; } }
-@media only screen and (max-width: 640px) {
-
-  .espaco {
-    width:100%;
-    height:3200px;
-      /*
-    background-image:url(../css/ajax-loader.gif);
-    background-repeat:no-repeat;
-    background-position:center
-      */
-    }
-    
-  nav.wrapper a {
-    width: 160px;
-    padding: 20px; }
-
-  .work-header .work-header-title h1 {
-    font-size: 50px;
-    line-height: 1; }
-
-  .page-header h1 {
-    font-size: 50px; }
-  .page-header .intro {
-    margin-left: 0; }
-
-  .circles.alt {
-    display: none; }
-
-  .fold-lines {
-    top: 350px; }
-
-  .header h1 {
-    font-size: 60px; }
-  .header .intro {
-    margin-top: 100px;
-    margin-bottom: 0; }
-
-  .full.zigzag {
-    padding-top: 200px; }
-    .full.zigzag .overlay {
-      padding-top: 40px; }
-
-  .sub-menu {
-    margin: 0; }
-    .sub-menu li {
-      font-size: 20px;
-      font-family: 'Ubuntu', sans-serif;
-      letter-spacing: 0px; }
-
-  header ul {
-    list-style: none;
-    font-size: 25px;
-    font-weight: bold;
-    margin: 0 0 60px; }
-
-  .menu-toggler {
-    position: relative;
-    z-index: 9999;
-    margin-top: -44px; } 
-    
-    .clients {
-  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-}
+    display: block; }
 
 }
+
+
+
+
+

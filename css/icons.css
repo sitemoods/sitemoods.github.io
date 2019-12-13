@@ -6,6 +6,7 @@
   stroke: currentColor;
   fill: currentColor;
   color: white;
+  transition: all .2s ease-in-out;
 }
 
 .icon.anime {
@@ -15,6 +16,7 @@
     width: 150px;
     height: 150px;
 
+/*
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
@@ -23,15 +25,19 @@
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-in-out;
     -moz-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;   */
 }
 
+.icon.anime:hover {
+transform: scale(1.5);
+}
+/*
 .icon.anime:hover {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
-  transform: rotateY(180deg); }
+  transform: rotateY(180deg); }   */
 
 .icon:hover {
     color: grey; }
