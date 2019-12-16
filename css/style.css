@@ -43,7 +43,6 @@ text-decoration: none;
 
 a:hover,a:focus {
 color:grey;
-text-decoration:underline;
 }
 
 
@@ -61,7 +60,9 @@ transform:scale(1.1);
 
 .amusic h3{
 text-decoration:underline #7CBE25;
+-webkit-text-decoration:underline #7CBE25;
 }
+
 .amusic a:hover,a:focus {
 color:#7CBE25;
 }
@@ -69,6 +70,8 @@ color:#7CBE25;
 
 .avideo h3{
 text-decoration:underline #F39518;
+-webkit-text-decoration:underline #F39518;
+
 }
 
 .avideo a:hover,a:focus {
@@ -78,6 +81,7 @@ color:#F39518;
 
 .asignage h3{
 text-decoration:underline #46ABE5;
+-webkit-text-decoration:underline #46ABE5;
 }
 .asignage a:hover,a:focus {
 color:#46ABE5;
@@ -86,6 +90,7 @@ color:#46ABE5;
 
 .aplay h3{
 text-decoration:underline #DD4DB2;
+-webkit-text-decoration:underline #DD4DB2;
 }
 .aplay a:hover,a:focus {
 color:#DD4DB2;
@@ -94,6 +99,7 @@ color:#DD4DB2;
 
 .ainsta h3{
 text-decoration:underline #739C2A;
+-webkit-text-decoration:underline #739C2A;
 }
 .ainsta a:hover,a:focus {
 color:#739C2A;
@@ -102,6 +108,7 @@ color:#739C2A;
 
 .aclips h3{
 text-decoration:underline #F24672;
+-webkit-text-decoration:underline #F24672;
 }
 .aclips a:hover,a:focus {
 color:#F24672;
@@ -241,7 +248,7 @@ line-height:inherit
 
 
 .full {
-padding:100px 0;
+padding:20px 0;
 background-size:cover;
 background-position:50% 50%;
 position:relative;
@@ -309,6 +316,7 @@ background-position:top
 
 .terco {
 width: 80%;
+margin: 0 auto;
 }
 
 
@@ -397,11 +405,11 @@ font-size:5rem
 }
 
 h2 {
-font-size:2.3125rem
+font-size:4vw;
 }
 
 h3 {
-font-size:1.5rem
+font-size:3vw;
 }
 
 h4 {
@@ -704,15 +712,15 @@ padding-top:200px
 }
 
 .header h1 {
-font-size:92px;
+font-size:10vw;
 font-weight:700;
 line-height:1em;
 font-weight:600
 }
 
 .header .intro {
-margin-top:380px;
-margin-bottom:80px
+margin-top:30%;
+
 }
 
 .header .intro p {
@@ -1181,7 +1189,6 @@ i.arrow {
 background:none;
 color:#ccc;
 font-size:30px;
-padding-top:80px;
 text-align:center;
 display:block
 }
@@ -1262,7 +1269,7 @@ float:left
 
 .espaco {
 width:100%;
-height:1500px;
+height:1200px;
   /*
 background-image:url(../css/ajax-loader.gif);
 background-repeat:no-repeat;
@@ -1340,7 +1347,7 @@ display:block
 }
 
 .price-option__cost {
-font-size:1.5em;
+font-size:3vw;
 color:#383838
 }
 
@@ -1354,7 +1361,7 @@ padding: 10px;
 position:relative;
 display:block;
 padding:.6em;
-font-size:.875em;
+font-size:2.5vw;
 font-weight:700;
 text-align:center;
 text-transform:uppercase;
@@ -1451,7 +1458,10 @@ height:200%
     .tripla {
   float: left;
   width: 33.33%;
+
+
 }
+
     
     /*blocos imagens works index */
     
