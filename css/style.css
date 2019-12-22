@@ -240,6 +240,7 @@ color:#333;
 i {
 font-style:italic;
 line-height:inherit;
+font-weight: bold;
 }
 
 
@@ -404,8 +405,12 @@ h1 {
 font-size:5rem
 }
 
-h2 {
+.intro h2 {
 font-size:4vw;
+}
+
+h2 {
+font-size:1.4375rem
 }
 
 h3 {
@@ -1278,7 +1283,6 @@ background-position:center
 
 .footer {
 color:#fff;
-padding: 20px;
 font-size:medium;
 }
 
@@ -1288,11 +1292,11 @@ color:#fff;
 
 .footer ul {
 list-style:none;
-margin:0
+margin:0;
 }
 
 .footer a {
-color:#fff
+color:#fff;
 }
 
 .footer .socials {
@@ -1423,16 +1427,19 @@ font-size:0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
   grid-gap: 1em;
+  
 }
 
 
 
 .clients img {
 opacity:0.8;
+transition:all .2s ease-in-out;
 
 }
 .clients img:hover {
 opacity:1;
+transform:scale(1.1);
 }
 
 .hoverhide {
@@ -1499,6 +1506,40 @@ width: 80%;
   grid-column: 1 / 2;
   align-self: center;
   justify-self: center;
+}
+
+blockquote{
+  font-size: 1.4em;
+  width:80%;
+  margin:50px auto;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #3A72C2 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+
+  content: "\201C";
+  color:#3A72C2;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }
 
 
