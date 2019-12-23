@@ -1520,7 +1520,7 @@ blockquote{
   background:#EDEDED;
 }
 
-blockquote .blue{
+.blue blockquote{
     border-left:8px solid #3A72C2 ;
 }
 
@@ -1534,7 +1534,7 @@ blockquote::before{
   top:-10px;
 }
 
-blockquote .blue::before{
+.blue blockquote::before{
     color:#3A72C2;
 }
 
