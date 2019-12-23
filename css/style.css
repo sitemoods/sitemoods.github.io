@@ -1562,7 +1562,7 @@ color:#7CBE25;
 }
 
 
-blockquoteorange{
+.blockquoteorange{
   font-size: 1.4em;
   width:80%;
   margin:50px auto;
@@ -1572,7 +1572,7 @@ blockquoteorange{
   position: relative;
   background:#EDEDED; border-left:8px solid #D56B1B ;
 }
-blockquoteorange::before{
+.blockquoteorange::before{
   content: "\201C";
   font-size:4em;
   position: absolute;
@@ -1580,11 +1580,11 @@ blockquoteorange::before{
   top:-10px; 
 color:#D56B1B;
 }
-blockquoteorange::after{
+.blockquoteorange::after{
   content: '';
 }
 
-blockquotered{
+.blockquotered{
   font-size: 1.4em;
   width:80%;
   margin:50px auto;
@@ -1594,7 +1594,7 @@ blockquotered{
   position: relative;
   background:#EDEDED; border-left:8px solid #EA283F ;
 }
-blockquotered::before{
+.blockquotered::before{
   content: "\201C";
   font-size:4em;
   position: absolute;
@@ -1602,11 +1602,11 @@ blockquotered::before{
   top:-10px; 
 color:#EA283F;
 }
-blockquotered::after{
+.blockquotered::after{
   content: '';
 }
 
-blockquotepink{
+.blockquotepink{
   font-size: 1.4em;
   width:80%;
   margin:50px auto;
@@ -1616,7 +1616,7 @@ blockquotepink{
   position: relative;
   background:#EDEDED; border-left:8px solid #BF1383 ;
 }
-blockquotepink::before{
+.blockquotepink::before{
   content: "\201C";
   font-size:4em;
   position: absolute;
@@ -1624,7 +1624,7 @@ blockquotepink::before{
   top:-10px; 
 color:#BF1383;
 }
-blockquotepink::after{
+.blockquotepink::after{
   content: '';
 }
 
