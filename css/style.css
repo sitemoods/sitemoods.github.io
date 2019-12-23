@@ -1514,21 +1514,31 @@ blockquote{
   margin:50px auto;
   color: #555555;
   padding:1.2em 30px 1.2em 75px;
-  border-left:8px solid #3A72C2 ;
+
   line-height:1.6;
   position: relative;
   background:#EDEDED;
 }
 
+blockquote .blue{
+    border-left:8px solid #3A72C2 ;
+}
+
 blockquote::before{
 
   content: "\201C";
-  color:#3A72C2;
+
   font-size:4em;
   position: absolute;
   left: 10px;
   top:-10px;
 }
+
+blockquote .blue::before{
+    color:#3A72C2;
+}
+
+
 
 blockquote::after{
   content: '';
