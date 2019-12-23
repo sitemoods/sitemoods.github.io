@@ -1425,6 +1425,7 @@ font-size:0;
 
 .clients {
   display: grid;
+    -ms-grid-columns: repeat(auto-fill, minmax(15%, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
   grid-gap: 1em;
   
@@ -1486,6 +1487,7 @@ width: 80%;
   padding: 0;
   display: grid;
   grid-gap: 0.5em;
+    -ms-grid-columns: auto;
   grid-template-columns: auto;
   justify-content: center;
 }
@@ -1497,11 +1499,14 @@ width: 80%;
   padding: 0;
   display: grid;
   grid-gap: 0.5em;
+    -ms-grid-columns: auto;
   grid-template-columns: auto;
   justify-content: center;
 }
 
 .coverimg img {
+    -ms-grid-column: 1 / 2;
+     -ms-grid-row: 1 / 2;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   align-self: center;
@@ -1635,6 +1640,8 @@ border:solid 2px;
 }
 
 .fadein img {
+      -ms-grid-row: 1 / 2;
+      -ms-grid-column: 1 / 2;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   align-self: center;
