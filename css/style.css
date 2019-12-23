@@ -1539,7 +1539,7 @@ color:#3A72C2;
   content: '';
 }
 
-blockquotegreen{
+.blockquotegreen{
   font-size: 1.4em;
   width:80%;
   margin:50px auto;
@@ -1549,7 +1549,7 @@ blockquotegreen{
   position: relative;
   background:#EDEDED; border-left:8px solid #7CBE25 ;
 }
-blockquotegreen::before{
+.blockquotegreen::before{
   content: "\201C";
   font-size:4em;
   position: absolute;
@@ -1557,7 +1557,7 @@ blockquotegreen::before{
   top:-10px; 
 color:#7CBE25;
 }
-blockquotegreen::after{
+.blockquotegreen::after{
   content: '';
 }
 
