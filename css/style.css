@@ -1509,7 +1509,7 @@ width: 80%;
 }
 
 
-blockquote span{
+.blockquote span{
   display:block;
   color:#333333;
   font-style: normal;
@@ -1517,7 +1517,7 @@ blockquote span{
   margin-top:1em;
 }
 
-blockquoteblue{
+.blockquoteblue{
   font-size: 1.4em;
   width:80%;
   margin:50px auto;
@@ -1527,7 +1527,7 @@ blockquoteblue{
   position: relative;
   background:#EDEDED; border-left:8px solid #3A72C2 ;
 }
-blockquoteblue::before{
+.blockquoteblue::before{
   content: "\201C";
   font-size:4em;
   position: absolute;
@@ -1535,7 +1535,7 @@ blockquoteblue::before{
   top:-10px; 
 color:#3A72C2;
 }
-blockquoteblue::after{
+.blockquoteblue::after{
   content: '';
 }
 
