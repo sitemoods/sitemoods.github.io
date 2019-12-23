@@ -1508,41 +1508,6 @@ width: 80%;
   justify-self: center;
 }
 
-blockquote{
-  font-size: 1.4em;
-  width:80%;
-  margin:50px auto;
-  color: #555555;
-  padding:1.2em 30px 1.2em 75px;
-
-  line-height:1.6;
-  position: relative;
-  background:#EDEDED;
-}
-
-.blue blockquote{
-    border-left:8px solid #3A72C2 ;
-}
-
-blockquote::before{
-
-  content: "\201C";
-
-  font-size:4em;
-  position: absolute;
-  left: 10px;
-  top:-10px;
-}
-
-.blue blockquote::before{
-    color:#3A72C2;
-}
-
-
-
-blockquote::after{
-  content: '';
-}
 
 blockquote span{
   display:block;
@@ -1550,6 +1515,28 @@ blockquote span{
   font-style: normal;
   font-weight: bold;
   margin-top:1em;
+}
+
+blockquoteblue{
+  font-size: 1.4em;
+  width:80%;
+  margin:50px auto;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED; border-left:8px solid #3A72C2 ;
+}
+blockquoteblue::before{
+  content: "\201C";
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px; 
+color:#3A72C2;
+}
+blockquoteblue::after{
+  content: '';
 }
 
 
