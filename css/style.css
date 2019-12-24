@@ -11,7 +11,7 @@ box-sizing:inherit
 }
 
 .linha {
-font-size:medium;
+font-size:1em;
 }
 
 img {
@@ -50,7 +50,8 @@ color:grey;
 
 
 li a:hover,a:focus {
-font-size: xx-large;
+text-decoration:underline #fff;
+-webkit-text-decoration:underline #fff;
 }
 
 .dupla {
@@ -744,10 +745,10 @@ padding-top:200px
 }
 
 .header h1 {
-font-size:10vw;
+font-size:8vw;
 font-weight:700;
 line-height:1em;
-font-weight:600
+font-weight:600;
 }
 
 .header .intro {
@@ -756,18 +757,18 @@ margin-top:30%;
 }
 
 .header .intro p {
-font-size:18px
+font-size:18px;
 }
 
 .header .intro.alt {
 margin-top:200px;
-margin-bottom:0
+margin-bottom:0;
 }
 
 .page-header h1 {
 font-size:92px;
 font-weight:600;
-line-height:1em
+line-height:1em;
 }
 
 .page-header .intro {
@@ -1309,7 +1310,7 @@ background-position:center
 
 .footer {
 color:#fff;
-font-size:medium;
+font-size:1em;
 }
 
 .footer p{
@@ -1334,9 +1335,6 @@ ul.socials li a:hover {
 color:#fff
 }
 
-.footer a:hover {
-font-size:large;
-}
 
 .about-image img {
 width:100%;
