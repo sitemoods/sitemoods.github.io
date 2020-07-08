@@ -66,59 +66,71 @@ transition: all .2s ease-in-out;
 }
 
 .amusic h3{
-text-decoration:underline #7CBE25;
--webkit-text-decoration:underline #7CBE25;
+
 }
 
 .amusic a:hover,a:focus {
 color:#7CBE25;
+        
+        text-decoration:underline #7CBE25;
+-webkit-text-decoration:underline #7CBE25;
 }
 
 
 .avideo h3{
-text-decoration:underline #F39518;
--webkit-text-decoration:underline #F39518;
+
 
 }
 
 .avideo a:hover,a:focus {
 color:#F39518;
+        
+        text-decoration:underline #F39518;
+-webkit-text-decoration:underline #F39518;
 }
 
 
 .asignage h3{
-text-decoration:underline #46ABE5;
--webkit-text-decoration:underline #46ABE5;
+
 }
 .asignage a:hover,a:focus {
 color:#46ABE5;
+        
+        text-decoration:underline #46ABE5;
+-webkit-text-decoration:underline #46ABE5;
 }
 
 
 .aplay h3{
-text-decoration:underline #DD4DB2;
--webkit-text-decoration:underline #DD4DB2;
+
 }
 .aplay a:hover,a:focus {
 color:#DD4DB2;
+        
+        text-decoration:underline #DD4DB2;
+-webkit-text-decoration:underline #DD4DB2;
 }
 
 
 .ainsta h3{
-text-decoration:underline #739C2A;
--webkit-text-decoration:underline #739C2A;
+
 }
 .ainsta a:hover,a:focus {
 color:#739C2A;
+        
+        text-decoration:underline #739C2A;
+-webkit-text-decoration:underline #739C2A;
 }
 
 
 .aclips h3{
-text-decoration:underline #F24672;
--webkit-text-decoration:underline #F24672;
+
 }
 .aclips a:hover,a:focus {
 color:#F24672;
+        
+        text-decoration:underline #F24672;
+-webkit-text-decoration:underline #F24672;
 }
 
 
