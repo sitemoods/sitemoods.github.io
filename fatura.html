@@ -4,214 +4,165 @@
     <meta charset="utf-8">
     <title>Moods - Fatura</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
     
     
     <style type="text/css">
-    	body{margin-top:20px;
-background:lightgray;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
-.invoice .top-left {
-    font-size:65px;
-	color:#3ba0ff;
+
+
+body {
+  background: url("") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
 }
 
-.brand img{
-    width: 25vmin;
+.fatura {
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+.desc {
+	display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  margin-bottom: 28pt;
+  border: none;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.vl {
+  border-left: 1px solid transparent;
+  height: 30px;
+}
+
+.btns {
+    display: block;
+	float: left;
+	padding: 20px;
 }
 
 .footer {
-    color:white;
+	display: block;
+	font-size:0.5em;
 }
 
-.invoice .top-right {
-	text-align:right;
-	padding-right:20px;
+.logo img{
+	margin-bottom: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info {
+	padding: 10px;
 }
 
-.invoice .table-row {
-	margin-left:-15px;
-	margin-right:-15px;
-	margin-top:25px;
-}
-
-.invoice .payment-info {
-	font-weight:500;
-}
-
-.invoice .table-row .table>thead {
-	border-top:1px solid #ddd;
-}
-
-.invoice .table-row .table>thead>tr>th {
-	border-bottom:none;
-}
-
-.invoice .table>tbody>tr>td {
-	padding:8px 20px;
-}
-
-.invoice .invoice-total {
-	margin-right:-10px;
-	font-size:16px;
-}
-
-.invoice .last-row {
-	border-bottom:1px solid #ddd;
-}
-
-.invoice-ribbon {
-	width:85px;
-	height:88px;
-	overflow:hidden;
-	position:absolute;
-	top:-1px;
-	right:14px;
-}
-
-.ribbon-inner {
-	text-align:center;
-	-webkit-transform:rotate(45deg);
-	-moz-transform:rotate(45deg);
-	-ms-transform:rotate(45deg);
-	-o-transform:rotate(45deg);
-	position:relative;
-	padding:7px 0;
-	left:-5px;
-	top:11px;
-	width:120px;
-	font-size:15px;
-	color:#fff;
-}
-
-.paga {
-	background-color:#66c591;
-}
-
-.aberta {
-	background-color:grey;
-}
-
-.footer {
-    text-align: center;
-}
-
-.ribbon-inner:before,.ribbon-inner:after {
-	content:"";
-	position:absolute;
-}
-
-.ribbon-inner:before {
-	left:0;
-}
-
-.ribbon-inner:after {
-	right:0;
-}
-
-.invoice .from,.invoice .to,.invoice .payment-details {
-		float:none;
-		width:100%;
-		text-align:center;
-		margin-bottom:25px;
-	}
-
-@media(max-width:575px) {
-	.invoice .top-left,.invoice .top-right,.invoice .payment-details {
-		text-align:center;
-	}
-
-
-
-	.invoice p.lead,.invoice .from p.lead,.invoice .to p.lead,.invoice .payment-details p.lead {
-		font-size:22px;
-	}
-
-	.invoice .btn {
-		margin-top:10px;
-	}
-}
-
-@media print {
-	.invoice {
-		width:900px;
-		height:800px;
-	}
-}
     </style>
 </head>
 <body>
 
-<div class="container bootstrap snippets bootdeys">
-<div class="row">
-  <div class="col-sm-12">
-	  	<div class="panel panel-default invoice" id="invoice">
-		  <div class="panel-body">
-			<div class="invoice-ribbon"><div id="status" class="ribbon-inner">Em Aberto</div></div>
-		    <div class="row">
-
-				<div class="col-sm-6 top-left brand">
-					<a href="https://moods.com.br"><img src="https://moods.com.br/img/svg2/moods.svg" alt="MOODS"></a>
-				</div>
-
-			</div>
-		
-			<div class="row">
-
-				<div class="col-xs-4 from">
-<h4><span id="servico">Carregando dados...</span> - <span id="cliente"></span></h4>
-				</div>
-
-			</div>
-<hr>
-			<div class="row">
-
-					<ul id="infoboleto">
-                        <li><h5>Valor: R$ <span id="valor"></span></h5></li>
-						<li><h5>Vencimento: <b> <span id="vencimento"></span></b></h5></li>
-                        <li><h5> Boleto: <code><span id="linhadigital"></span></code></h5></li>
-					    <br>	
-                    </ul>
-                    
-                    <div class="col-xs-4 from" id="agradecimento" style="display: none">
-                        <h4><code class="btn-success"><span id="servico" class="btn-success">Obrigado!</span></code></h4>
-                                        </div>
-                
-				
-			</div>
-
-			<div class="row">
-			<div class="col-xs-6 margintop">
-				<p class="lead marginbottom"></p>
-
-
-			</div>
-			<div class="col-xs-6 text-right pull-right invoice-total">
-				<a  id="linkboleto" href="#"><button class="btn btn-success">Boleto PDF</button></a>
-				<span id="btnnota" style="display: none"><a id="linknota" href="#"><button class="btn btn-info">Nota Fiscal</button></a></span>
-			</div>
-			</div>
-
-          </div>
-
-        </div>
-        <div class="footer">
-            Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17
-            <p class="paga aberta">.</p>
-            </div>
-
+	<div class="fatura">
+		<div class="logo">
+		<a href="https://moods.com.br"><img src="https://moods.com.br/img/svg2/moods.svg" alt="MOODS"></a>
 	</div>
-</div>
+	<div class="info">
+	<span class="desc" id="servico">Carregando dados...</span>
+	<span id="status" class="aviso">Em Aberto</span>
+     </div>
+		<form id="infoboleto">
+		  <input id="cliente" placeholder="Cliente:" type="text" readonly/>
+		  <input id="valor" placeholder="R$: " type="text" readonly/>
+		  <input id="vencimento" placeholder="Vencimento: __/__/__" type="text" readonly/>
+		  <input id="linhadigital" placeholder="Carregando dados..." type="text" readonly/>
+		</form>
+		<div id="agradecimento" style="display: none"><h4><span id="servico" class="">Obrigado!</span></h4></div>
+		<div class="btns">
+			<a  id="linkboleto" href="#" target="_blank"><button type="button">Boleto PDF</button></a>
+		</div>
+		<div class="btns">
+		  <span id="btnnota" style="display: none"><a id="linknota" href="#" target="_blank"><button type="button">Nota Fiscal</button></a></span>
+		</div>
+	</div>
+		<hr>
+		<div class="footer">
+			
+		<p>Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17</p>
+	</div>
+	  
+	  <div class="vl"></div>
 
-</div>
 
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
-var ndoc = "z"
-var nnum = "z"
-var ncod = "z"
+var linknota = "z"
 var idboleto = "z"
 
 function getUrlVars() {
@@ -222,7 +173,8 @@ function getUrlVars() {
     return vars;
 }
 
-var idboleto = getUrlVars()["id"];
+
+
 
 function monthName(mon) {
    return ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'August', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'][mon - 1];
@@ -236,47 +188,69 @@ xmlhttp.onreadystatechange = function() {
     var myObj = JSON.parse(this.responseText);
     
     if (myObj.boleto.status == "paid") {
-    Status = "Paga";
-    document.getElementById("status").classList.add('btn-success');
+    Status = "Pago";
+    document.getElementById("status").classList.add('green');
     document.getElementById("infoboleto").style.display = "none";
     document.getElementById("agradecimento").style.display = "block";
     }
     else {
     Status = "Aberta";
-    document.getElementById("status").classList.add('btn-warning');
+    document.getElementById("status").classList.add('yellow');
     };
     document.getElementById("status").innerHTML = Status;
     
     
     
     
-    document.getElementById("linhadigital").innerHTML = myObj.boleto.barCode;
+    document.getElementById("linhadigital").value = myObj.boleto.barCode;
  
   
   valor = String(myObj.boleto.amount).slice(0,-2) + "," + String(myObj.boleto.amount).slice(-2);
-  document.getElementById("valor").innerHTML = valor;
+  document.getElementById("valor").value = "Valor: R$ "+ valor;
   
   
   var dataiso = myObj.boleto.due; 
-  var vencmes = dataiso.slice(6,7);
+  var vencano = dataiso.slice(0,5);
+  // var vencmes = dataiso.replace(vencano, "");
+  //vencmes = vencmes.slice(0,2);
+  vencmes = dataiso.slice(5,7);
+  vencmes = vencmes.replace("-", "");
   vencmes = monthName(vencmes);
   var vencdia = dataiso.slice(8,10);
   
-   document.getElementById("vencimento").innerHTML = vencdia + " / " + vencmes;
-    
-  
-  document.getElementById("cliente").innerHTML = myObj.boleto.name;
-    document.getElementById("servico").innerHTML = myObj.boleto.descriptions[0] && myObj.boleto.descriptions[0].text;
-    document.getElementById("linkboleto").href="https://api.starkbank.com/v1/charge/" + idboleto + "/pdf"
-    document.getElementById("linknota").href="http://isscuritiba.curitiba.pr.gov.br/portalnfse/Default.aspx?doc=" + ndoc + "&num=" + nnum + "&cod=" +ncod
+   document.getElementById("vencimento").value = "Vencimento: " + vencdia + " / " + vencmes;
 
-    if ( ndoc !== "z") {
+	console.log("Tags:")
+	console.log(myObj.boleto.tags[0])
+  
+  document.getElementById("cliente").value = "Cliente: " + myObj.boleto.name;
+    document.getElementById("servico").innerHTML = myObj.boleto.descriptions[0] && myObj.boleto.descriptions[0].text;
+    document.getElementById("linkboleto").href="https://api.starkbank.com/v1/charge/" + idboleto + "/pdf";
+    if (typeof myObj.boleto.tags[0] !== 'undefined') {
+		linknota=myObj.boleto.tags[0];
+	}
+	document.getElementById("linknota").href=linknota;
+
+    if ( linknota.includes("http")) {
         document.getElementById("btnnota").style.display = "block";
     }
+  } else if (this.readyState == 4 && this.status !== 200) {
+	  document.body.style.display = "none"; 
+	  window.alert(this.responseText);
   }
 };
-xmlhttp.open("GET", "https://api.starkbank.com/v2/boleto/"+idboleto, true);
-xmlhttp.send();
+/*
+if (typeof getUrlVars()["id"] === 'undefined') {
+	document.body.style.display = "none"; 
+	window.alert("URL incompleta, sem ID da fatura.")
+	} else {
+		var idboleto = getUrlVars()["id"];
+		xmlhttp.open("GET", "https://api.starkbank.com/v2/boleto/"+idboleto, true);
+		xmlhttp.send();
+	}
+*/
+
 </script>
 </body>
 </html>
+
