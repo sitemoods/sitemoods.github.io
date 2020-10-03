@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Moods - Fatura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+    <style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+p {
+  font-size: small;
+}
+
+.fatura {
+margin-top: 15px;
+margin-left: 15px;
+margin-right: 15px;
+  background: #f8f4e5;
+  padding: 50px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+
+}
+
+.fatura:hover {
+  box-shadow: 15px 15px 1px #95a4ff, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+
+
+  line-height: 28pt;
+
+  border: none;
+  border-bottom: 5px solid black;
+
+  width: 100%;
+  
+  outline: none;
+  color: black;
+  background-color:white;
+}
+
+
+
+
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+input:focus,
+input:hover {
+  background: black;
+  color: white;
+  border-bottom: 5px solid #95a4ff;
+
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+
+.vl {
+  border-left: 1px solid transparent;
+  height: 30px;
+}
+
+.btns {
+
+	float: left;
+	padding: 10px;
+}
+
+.btnsr {
+
+float: right;
+padding: 10px;
+}
+
+.footer {
+	display: block;
+}
+
+.footer p {
+  font-size:0.5em;
+}
+
+.logo img{
+	margin-bottom: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo img:hover {
+filter: invert(1);
+}
+.info {
+	padding: 10px;
+  text-align: center;
+}
+
+.tipo {
+  border-bottom: 5px solid black;
+}
+
+.boletonum {
+  font-size: xx-small;
+}
+
+.pago {
+  background-color: aquamarine;
+}
+
+.aguardando {
+  background-color:black;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+
+	<div class="fatura">
+		<div class="logo">
+		<a href="https://moods.com.br"><img src="https://moods.com.br/img/svg2/moods.svg" alt="MOODS"></a>
+	</div>
+	<div class="info">
+  <h4 id="servico" type="text" placeholder="Carregando dados..."></h4>
+  <h4 id="cliente" type="text"></h4>
+  </div>
+  <div class="info">
+    <p id="status"></p>
+  </div>
+
+
+		<div id="infoboleto">
+      <p>Valor:<p></p> 
+      <input id="valor" type="text" readonly/>
+      <p>Vencimento:<p></p> 
+      <input id="vencimento" type="text" readonly/>
+      <p>No. do Boleto:<p></p> 
+      <input id="linhadigital" class="boletonum" readonly type="text"/>
+    </div>
+
+    <div id="agradecimento" style="display: none" class="info"><h4><span id="servico">Obrigado!</span></h4></div>
+    <div class="btns">
+		<div class="btnsr">
+			<a  id="linkboleto" href="#" target="_blank"><button type="button">Boleto PDF</button></a>
+		</div>
+		<div class="btnsr">
+		  <span id="btnnota" style="display: none"><a id="linknota" href="#" target="_blank">
+        <button type="button">Nota Fiscal</button></a>
+      </span>
+    </div>
+    </div>
+	</div>
+		<hr>
+		<div class="footer">
+		<p>Jardim Sonoro - Curitiba-PR, Brasil - CNPJ: 12.553.127/0001­17</p>
+	</div>
+	  
+	  <div class="vl"></div>
+
+
+<script type="text/javascript">
+
+var linknota = "z"
+var idboleto = "z"
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+
+
+
+function monthName(mon) {
+   return ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'August', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'][mon - 1];
+}
+
+
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    
+    if (myObj.boleto.status == "paid") {
+    Status = "Pagamento Recebido";
+    document.getElementById("status").classList.add('pago');
+    document.getElementById("infoboleto").style.display = "none";
+    document.getElementById("agradecimento").style.display = "block";
+    }
+    else {
+    Status = "Aguardando Pagamento";
+    document.getElementById("status").classList.add('aguardando');
+    };
+    document.getElementById("status").innerHTML = Status;
+    
+    
+    
+    
+    document.getElementById("linhadigital").value = myObj.boleto.barCode;
+ 
+  
+  valor = String(myObj.boleto.amount).slice(0,-2) + "," + String(myObj.boleto.amount).slice(-2);
+  document.getElementById("valor").value = "R$ "+ valor;
+  
+  
+  var dataiso = myObj.boleto.due; 
+  var vencano = dataiso.slice(0,4);
+  // var vencmes = dataiso.replace(vencano, "");
+  //vencmes = vencmes.slice(0,2);
+  vencmes = dataiso.slice(5,7);
+  vencmes = vencmes.replace("-", "");
+  vencmes = monthName(vencmes);
+  var vencdia = dataiso.slice(8,10);
+  
+   document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + vencano;
+  
+  document.getElementById("cliente").innerHTML = myObj.boleto.name;
+    document.getElementById("servico").innerHTML = myObj.boleto.descriptions[0] && myObj.boleto.descriptions[0].text;
+
+    document.getElementById("linkboleto").href="https://api.starkbank.com/v1/charge/" + idboleto + "/pdf";
+    if (typeof myObj.boleto.tags[0] !== 'undefined') {
+		linknota=myObj.boleto.tags[0];
+	}
+	document.getElementById("linknota").href=linknota;
+
+    if ( linknota.includes("http")) {
+        document.getElementById("btnnota").style.display = "block";
+    }
+  } else if (this.readyState == 4 && this.status !== 200) {
+	  document.body.style.display = "none"; 
+	  window.alert(this.responseText);
+  }
+};
+
+if (typeof getUrlVars()["id"] === 'undefined') {
+	document.body.style.display = "none"; 
+	window.alert("URL incompleta, sem ID da fatura.")
+	} else {
+		var idboleto = getUrlVars()["id"];
+		xmlhttp.open("GET", "https://api.starkbank.com/v2/boleto/"+idboleto, true);
+		xmlhttp.send();
+	}
+
+
+</script>
+</body>
+</html>
