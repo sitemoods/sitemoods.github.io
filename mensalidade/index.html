@@ -186,8 +186,7 @@ filter: invert(1);
 
 
 .butao {
-padding: 5px;
-display:inline-block;
+padding: 4px;
 width: 25%;
 
 }
@@ -201,13 +200,13 @@ width: 25%;
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size:12px;
+  font-size:11px;
   font-weight:bold;
 height: 35px;
- padding: 20px;
+ padding: 15px;
 overflow: hidden;
   background: #ffa580;
-  letter-spacing: 2px;
+  
   outline: none;
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
@@ -237,7 +236,7 @@ overflow: hidden;
   <h4 id="cliente"class="subinfo"></h4>
   </div>
   <div class="info">
-    <p id="status"><i>Carregando dados...</i></p>
+    <p id="status" class="aguardando"><i>Carregando dados...</i></p>
   </div>
 
 
@@ -253,17 +252,9 @@ overflow: hidden;
     <div id="agradecimento" style="display: none" class="info"><h4><span id="servico">Obrigado!</span></h4></div>
 
     <div class="pill-nav">
-		<div class="butao">
-			<a  id="linkboleto" href="#" target="_blank">Boleto PDF</a>
-		</div>
-		<div class="butao">
-		  <span id="btnnota" style="display: none"><a id="linknota" href="#" target="_blank">Nota Fiscal</a>
-      </span>
-    </div>
-      <div class="butao">
-        <span id="btncartao" style="display: none"><a id="linkcartao" href="#" target="_blank">Pagar c/ Cartão</a>
-    </span>
-    </div>
+		<div class="butao" id="btnboleto" style="display: none;"><a  id="linkboleto" href="#" target="_blank">Boleto PDF</a></div>
+		<div class="butao" id="btnnota" style="display: none;"><a id="linknota" href="#" target="_blank">Nota Fiscal</a></div>
+    <div class="butao" id="btncartao" style="display: none;"><a id="linkcartao" href="#" target="_blank">Pagar c/ Cartão</a></div>
     </div>
 
     </div>
@@ -277,9 +268,7 @@ overflow: hidden;
 
 <script type="text/javascript">
 
-linknota = "z"
-idboleto = "z"
-linkcartao = "z";
+
 
 function getUrlVars() {
     var vars = {};
@@ -301,18 +290,21 @@ function monthName(mon) {
 var xmlhttp = new XMLHttpRequest();
 
 xmlhttp.onreadystatechange = function() {
+  var linknota = "z";
+  var linkcartao = "z";
+  
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
     
     if (myObj.boleto.status == "paid") {
     var Status = "Pagamento Recebido";
+    document.getElementById("status").classList.remove('aguardando');
     document.getElementById("status").classList.add('pago');
-    document.getElementById("infoboleto").style.display = "none";
+    /*document.getElementById("infoboleto").style.display = "none";*/
     document.getElementById("agradecimento").style.display = "block";
     }
     else {
     var Status = "Aguardando Pagamento";
-    document.getElementById("status").classList.add('aguardando');
     };
     document.getElementById("status").innerHTML = Status;
     
@@ -345,6 +337,9 @@ document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + ve
     document.getElementById("servico").innerHTML = myObj.boleto.descriptions[0] && myObj.boleto.descriptions[0].text;
     if (idboleto !== 'z') {
     document.getElementById("linkboleto").href="https://api.starkbank.com/v1/charge/" + idboleto + "/pdf";
+    if (myObj.boleto.status !== "paid") {
+    document.getElementById("btnboleto").style.display = "inline-block";
+    }
     }
  
     if (typeof myObj.boleto.tags[0] !== 'undefined') {
@@ -353,8 +348,8 @@ document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + ve
 	
 
     if ( linknota.includes("http")) {
-        document.getElementById("btnnota").style.display = "block";
         document.getElementById("linknota").href=linknota;
+        document.getElementById("btnnota").style.display = "inline-block";
     }
 
     if (centavos === "00") {
@@ -398,8 +393,10 @@ document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + ve
     }
 
     if ( linkcartao.includes("http")) {
-        document.getElementById("btncartao").style.display = "block";
         document.getElementById("linkcartao").href=linkcartao;
+        if (myObj.boleto.status !== "paid") {
+        document.getElementById("btncartao").style.display = "inline-block";
+        }
     }
 
 
