@@ -84,24 +84,6 @@ input {
 
 
 
-
-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-}
-button:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
-}
 input:focus,
 input:hover {
   background: black;
@@ -120,17 +102,6 @@ input:hover {
   height: 30px;
 }
 
-.btns {
-
-	float: left;
-	padding: 10px;
-}
-
-.btnsr {
-
-float: right;
-padding: 10px;
-}
 
 .footer {
 	display: block;
@@ -200,10 +171,10 @@ width: 25%;
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size:11px;
+  font-size:10px;
   font-weight:bold;
-height: 35px;
- padding: 15px;
+height: 30px;
+ padding: 10px;
 overflow: hidden;
   background: #ffa580;
   
@@ -220,6 +191,16 @@ overflow: hidden;
   text-decoration-color: #95a4ff;
 }
 
+.clipbtn {
+
+float:right;
+margin-top: -35px;
+margin-right: -20px;
+padding: 5px;
+}
+.clipbtn:hover {
+  filter:invert(1);
+}
 
 
 
@@ -241,20 +222,21 @@ overflow: hidden;
 
 
 		<div id="infoboleto">
-      <p>Valor:<p></p> 
+      <p>Valor:</p> 
       <input id="valor" type="text" readonly/>
-      <p>Vencimento:<p></p> 
+      <p>Vencimento:</p> 
       <input id="vencimento" type="text" readonly/>
-      <p>No. do Boleto:<p></p> 
+      <p>No. do Boleto:</p> 
       <input id="linhadigital" class="boletonum" readonly type="text"/>
-    </div>
+      <span class="clipbtn" onclick="copyBoleto()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10" height="10"><path d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"/></svg></span>
+      </div>
 
     <div id="agradecimento" style="display: none" class="info"><h4><span id="servico">Obrigado!</span></h4></div>
 
     <div class="pill-nav">
 		<div class="butao" id="btnboleto" style="display: none;"><a  id="linkboleto" href="#" target="_blank">Boleto PDF</a></div>
 		<div class="butao" id="btnnota" style="display: none;"><a id="linknota" href="#" target="_blank">Nota Fiscal</a></div>
-    <div class="butao" id="btncartao" style="display: none;"><a id="linkcartao" href="#" target="_blank">Pagar c/ Cartão</a></div>
+    <div class="butao" id="btncartao" style="display: none;"><a id="linkcartao" href="#" target="_blank">Cartão Crédito</a></div>
     </div>
 
     </div>
@@ -292,6 +274,7 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   var linknota = "z";
   var linkcartao = "z";
+  var identificador = "z";
   
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
@@ -342,9 +325,16 @@ document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + ve
     }
     }
  
-    if (typeof myObj.boleto.tags[0] !== 'undefined') {
-		var linknota=myObj.boleto.tags[0];
+    if (typeof myObj.boleto.tags !== 'undefined') {
+      myObj.boleto.tags.forEach(leTags);
 	}
+
+function leTags(value, index, array) {
+  if (value.includes("http")) {
+  linknota = value; 
+  } else
+  identificador = value;
+}
 	
 
     if ( linknota.includes("http")) {
@@ -422,5 +412,14 @@ if (typeof getUrlVars()["id"] === 'undefined') {
 
 
 </script>
+<script>
+  function copyBoleto() {
+    var copyText = document.getElementById("linhadigital");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Linha digitável do boleto copiada: " + copyText.value);
+  }
+  </script>
 </body>
 </html>
