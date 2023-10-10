@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Moods - Ativação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://moods.com.br/img/moods400.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+
+    
+    
+    <style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+p {
+  font-size: small;
+  font-weight: bold;
+}
+
+.fatura {
+margin-top: 15px;
+margin-left: 15px;
+margin-right: 15px;
+  background: #f8f4e5;
+  padding: 50px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+  min-width: 250px;
+
+}
+
+.fatura:hover {
+  box-shadow: 15px 15px 1px #95a4ff, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+
+
+  line-height: 28pt;
+
+  border: none;
+  border-bottom: 5px solid black;
+
+  width: 100%;
+  
+  outline: none;
+  color: black;
+  background-color:white;
+}
+
+
+
+
+input:focus,
+input:hover {
+  background: black;
+  color: white;
+  border-bottom: 5px solid #95a4ff;
+
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+
+.vl {
+  border-left: 1px solid transparent;
+  height: 30px;
+}
+
+
+.footer {
+	display: block;
+}
+
+.footer p {
+  font-size:0.4em;
+  font-weight: bold;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.logo img{
+	margin-bottom: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo img:hover {
+filter: invert(1);
+}
+.info {
+	padding: 10px;
+  text-align: center;
+  line-height: 28pt;
+}
+
+.tipo {
+  border-bottom: 5px solid black;
+}
+
+.boletonum {
+  font-size: xx-small;
+}
+
+.pago {
+  background-color: aquamarine;
+}
+
+.aguardando {
+  background-color:black;
+  color: white;
+}
+
+.subinfo {
+    color: grey;
+}
+
+
+.butao {
+padding: 4px;
+width: 25%;
+
+}
+.pill-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pill-nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  font-weight:bold;
+height: 30px;
+ padding: 10px;
+overflow: hidden;
+  background: #ffa580;
+  
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+.pill-nav a:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  text-decoration:underline;
+  text-decoration-color: #95a4ff;
+}
+
+.clipbtn {
+
+float:right;
+margin-top: -35px;
+margin-right: -20px;
+padding: 5px;
+}
+.clipbtn:hover {
+  filter:invert(1);
+}
+
+
+
+    </style>
+</head>
+<body>
+
+	<div class="fatura">
+		<div class="logo">
+		<img src="https://moods.com.br/img/svg2/moods.svg" alt="MOODS">
+	</div>
+	<div class="info">
+  <h3 id="servico" ></h3>
+  <h4 id="cliente"class="subinfo"></h4>
+  </div>
+  <div class="info">
+    <p id="status" class="aguardando"><i>Carregando dados...</i></p>
+  </div>
+
+
+		<div id="infoboleto">
+      <p>Valor:</p> 
+      <input id="valor" type="text" readonly/>
+      <p>Vencimento:</p> 
+      <input id="vencimento" type="text" readonly/>
+      <p>No. do Boleto:</p> 
+      <input id="linhadigital" class="boletonum" readonly type="text"/>
+      <span class="clipbtn" onclick="copyBoleto()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10" height="10"><path d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"/></svg></span>
+      </div>
+
+    <div id="agradecimento" style="display: none" class="info"><h4><span id="servico">Obrigado!</span></h4></div>
+
+    <div class="pill-nav">
+		<div class="butao" id="btnboleto" style="display: none;"><a  id="linkboleto" href="#" target="_blank">Boleto PDF</a></div>
+		<div class="butao" id="btnnota" style="display: none;"><a id="linknota" href="#" target="_blank">Nota Fiscal</a></div>
+    <div class="butao" id="btncartao" style="display: none;"><a id="linkcartao" href="#" target="_blank">Cartão Crédito</a></div>
+    </div>
+
+    </div>
+
+		<div class="footer">
+      <a href="https://moods.com.br" target="_blank"><p>Jardim Sonoro - CNPJ: 12.553.127/0001­17</p></a>
+	</div>
+	  
+	  <div class="vl"></div>
+
+
+<script type="text/javascript">
+
+
+
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+
+
+
+
+function monthName(mon) {
+   return ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'August', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'][mon - 1];
+}
+
+
+
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function() {
+  var linknota = "z";
+  var linkcartao = "z";
+  var identificador = "z";
+  
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+    
+    if (myObj.boleto.status == "paid") {
+    var Status = "Pagamento Recebido";
+    document.getElementById("status").classList.remove('aguardando');
+    document.getElementById("status").classList.add('pago');
+    /*document.getElementById("infoboleto").style.display = "none";*/
+    document.getElementById("agradecimento").style.display = "block";
+    }
+    else {
+    var Status = "Aguardando Pagamento";
+    };
+    document.getElementById("status").innerHTML = Status;
+    
+    document.getElementById("linhadigital").value = myObj.boleto.barCode;
+ 
+  var reais = String(myObj.boleto.amount).slice(0,-2);
+  var centavos = String(myObj.boleto.amount).slice(-2);
+
+  if (centavos !== "00") {
+    var valor = reais + "," + centavos;
+  } else {
+      var valor = reais;
+  }
+
+  document.getElementById("valor").value = "R$ "+ valor;
+  
+  
+  var dataiso = myObj.boleto.due; 
+  var vencano = dataiso.slice(0,4);
+  // var vencmes = dataiso.replace(vencano, "");
+  //vencmes = vencmes.slice(0,2);
+  var vencmes = dataiso.slice(5,7);
+  vencmes = vencmes.replace("-", "");
+  vencmes = monthName(vencmes);
+  var vencdia = dataiso.slice(8,10);
+  
+document.getElementById("vencimento").value = vencdia + "/" + vencmes + "/" + vencano;
+  
+  document.getElementById("cliente").innerHTML = myObj.boleto.name;
+    document.getElementById("servico").innerHTML = myObj.boleto.descriptions[0] && myObj.boleto.descriptions[0].text;
+    if (idboleto !== 'z') {
+    document.getElementById("linkboleto").href="https://api.starkbank.com/v1/charge/" + idboleto + "/pdf";
+    if (myObj.boleto.status !== "paid") {
+    document.getElementById("btnboleto").style.display = "inline-block";
+    }
+    }
+ 
+    if (typeof myObj.boleto.tags !== 'undefined') {
+      myObj.boleto.tags.forEach(leTags);
+	}
+
+function leTags(value, index, array) {
+  if (value.includes("http")) {
+  linknota = value; 
+  } else
+  identificador = value;
+}
+	
+
+    if ( linknota.includes("http")) {
+        document.getElementById("linknota").href=linknota;
+        document.getElementById("btnnota").style.display = "inline-block";
+    }
+
+    if (centavos === "00") {
+    switch (reais) {
+    case "50":
+    linkcartao = "https://cielolink.com.br/3itQjGj";
+    break;
+    case "75":
+    linkcartao = "https://cielolink.com.br/3d5yXOX";
+    break;
+    case "80":
+    linkcartao = "https://cielolink.com.br/3d0bfng";
+    break;
+    case "100":
+    linkcartao = "https://cielolink.com.br/30xC4tY";
+    break;
+    case "120":
+    linkcartao = "https://cielolink.com.br/3cVB480";
+    break;
+    case "150":
+    linkcartao = "https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/de299c93-2055-4d97-8a6b-cfd881c68cd4";
+    break;
+    case "180":
+    linkcartao = "https://cielolink.com.br/3cWZ4aG";
+    break;
+    case "200":
+    linkcartao = "https://cielolink.com.br/30vXSWI";
+    break;
+    case "300":
+    linkcartao = "https://cielolink.com.br/2Gjf8Ia";
+    break;
+    case "350":
+    linkcartao = "https://cieloecommerce.cielo.com.br/transactionalvnext/order/buynow/a810a4a0-a5a3-42e4-8d24-d3b49ef17ea1";
+    break;
+    case "525":
+    linkcartao = "https://cielolink.com.br/2HTxzDv";
+    break;
+    case "640":
+    linkcartao = "https://cielolink.com.br/34pV1zL";
+    break;
+    default:
+    linkcartao = "z";
+     }
+    }
+
+    if ( linkcartao.includes("http")) {
+        document.getElementById("linkcartao").href=linkcartao;
+        if (myObj.boleto.status !== "paid") {
+        document.getElementById("btncartao").style.display = "inline-block";
+        }
+    }
+
+
+  } else if (this.readyState == 4 && this.status !== 200) {
+	  document.body.style.display = "none"; 
+	  window.alert(this.responseText);
+  }
+};
+
+if (typeof getUrlVars()["id"] === 'undefined') {
+	document.body.style.display = "none"; 
+	window.alert("URL incompleta, sem ID da fatura.")
+    
+    /*var idboleto = prompt("Insira o ID da fatura");
+    xmlhttp.open("GET", "https://api.starkbank.com/v2/boleto/"+idboleto, true);
+    xmlhttp.send();*/
+
+	} else {
+		idboleto = getUrlVars()["id"];
+		xmlhttp.open("GET", "https://api.starkbank.com/v2/boleto/"+idboleto, true);
+		xmlhttp.send();
+	}
+
+
+</script>
+<script>
+  function copyBoleto() {
+    var copyText = document.getElementById("linhadigital");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Linha digitável do boleto copiada: " + copyText.value);
+  }
+  </script>
+</body>
+</html>
