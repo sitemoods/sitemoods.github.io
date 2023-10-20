@@ -729,9 +729,15 @@ html {
 
     /* Style to prevent phone number decoration */
 .phone-number {
-  color: inherit; /* Use the default text color */
-  text-decoration: none; /* Remove any underline */
-  cursor: default; /* Remove link cursor */
+  color: inherit !important; /* Use the default text color */
+  text-decoration: none !important; /* Remove any underline */
+  cursor: default !important; /* Remove link cursor */
+}
+
+.a {
+  color: inherit !important; /* Use the default text color */
+  text-decoration: none !important; /* Remove any underline */
+  cursor: default !important; /* Remove link cursor */
 }
 
 
