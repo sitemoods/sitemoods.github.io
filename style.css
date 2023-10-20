@@ -731,13 +731,15 @@ html {
 .phone-number {
   color: inherit !important; /* Use the default text color */
   text-decoration: none !important; /* Remove any underline */
-  cursor: default !important; /* Remove link cursor */
 }
 
-.a {
+a {
   color: inherit !important; /* Use the default text color */
   text-decoration: none !important; /* Remove any underline */
-  cursor: default !important; /* Remove link cursor */
 }
 
+a[href^=tel] {
+  color: inherit !important; /* Use the default text color */
+  text-decoration: none !important; /* Remove any underline */
+}
 
