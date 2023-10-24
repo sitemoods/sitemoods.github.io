@@ -765,3 +765,8 @@ a[href^=tel] {
     border-radius: 25px;
     width: 100%
 }
+
+.icone {
+  width: 96px; 
+  height: 96px;
+}
