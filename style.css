@@ -772,12 +772,39 @@ a[href^=tel] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ padding-bottom: 10px;
   }
 
   .w3-modal-content video {
     border-radius: 25px;
     width: 100%
 }
+
+@media only screen 
+    and (max-width : 812px) {
+
+      .w3-modal-content { 
+        max-width: 90%;
+        border-radius: 10px;
+
+      }
+
+      .w3-modal-content-big {
+        max-width: 90%;
+        border-radius: 10px;
+       }
+
+       .blockquoteblue{
+        width:100%;
+        margin:10px auto;
+        padding: 10px;
+      
+      
+      
+      }
+
+
+    }
 
 .icone {
   width: 96px; 
