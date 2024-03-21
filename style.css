@@ -723,9 +723,10 @@ html {
   text-decoration: none !important; /* Remove any underline */
 }
 
+
 a {
-  color: inherit !important; /* Use the default text color */
-  text-decoration: none !important; /* Remove any underline */
+  color: inherit; 
+  text-decoration: none; 
 }
 
 a[href^=tel] {
@@ -812,43 +813,17 @@ a[href^=tel] {
 }
 
 
-.dghez {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  font-size: 13px;
-  letter-spacing: .75px;
-  margin: 20px;
-  margin-top:50px;
+@keyframes changeColor {
+  0% { color: #ACD21B; }
+  25% { color: #ACD21B; }
+  26% { color: #E97A16; }
+  50% { color: #E97A16; }
+  51% { color: #46ABE5; }
+  100% { color: #46ABE5; }
 }
-.dghez:hover {
-  animation: none;
-  -webkit-animation: none;
-  -moz-animation: none;
-  -o-animation: none;
-}
-.dghez:hover:after {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-.dghez:after {
-  content: "";
-  width: 28px;
-  height: 14px;
-  position: absolute;
-  -webkit-transform: scale(20);
-  -moz-transform: scale(20);
-  -ms-transform: scale(20);
-  transform: scale(20);
-  top: -7px;
-  left: -7px;
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  -ms-transition: -ms-transform 0.5s;
-  -o-transition: -o-transform 0.5s;
-  transition: transform 0.5s;
-  border-radius: 50%;
+
+
+
+h3 a {
+  animation: changeColor 8s infinite; /* Alterado o tempo de animação para 2 segundos para uma transição mais rápida */
 }

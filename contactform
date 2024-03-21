@@ -1,0 +1,24 @@
+   <div class="full overlay centered-text">
+        <form id="form" action="https://submit-form.com/jVoZDnRF">
+          <input
+    type="checkbox"
+    name="_meldoce"
+    style="display:none"
+    tabindex="-1"
+    autocomplete="off"/>
+  
+            <input name="nome" id="name" type="text" placeholder="NOME">
+            <div class="divide">
+                <input name="email" id="email" type="email" placeholder="E-MAIL" required>
+                <input name="tel" id="telefone" type="tel" placeholder="Telefone">
+            </div>
+            <input type="hidden" name="_redirect" value="https://moods.com.br/sucesso" />
+            <textarea name="message" id="message" type="text" placeholder=""></textarea>
+            <input id="submit" type="submit" value="Enviar">
+
+        </form>
+
+
+
+
+    </div>
