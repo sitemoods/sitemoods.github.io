@@ -827,3 +827,30 @@ a[href^=tel] {
 h3 a {
   animation: changeColor 8s infinite; /* Alterado o tempo de animação para 2 segundos para uma transição mais rápida */
 }
+
+.email {
+  font-size:4vw;
+  position: relative;
+
+  text-decoration: none !important;
+  border: none;
+}
+
+@keyframes acidbg {
+  0%, 100% {
+      background-color: #72b6e1;
+ }
+  33.33% {
+      background-color: #5bc5aa;
+ }
+  66.67% {
+      background-color: #b272e1;
+ }
+}
+
+.loopCol {
+  animation: acidbg 5s linear infinite;
+  padding: 2px;
+  font-weight: bold;
+ /* Opcional: Adicione preenchimento para tornar o destaque mais visível */
+}
