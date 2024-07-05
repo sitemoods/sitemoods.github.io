@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Moods - Mensalidade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://moods.com.br/img/moods400.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+
+    
+    
+    <style type="text/css">
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+p {
+  font-size: small;
+  font-weight: bold;
+}
+
+.fatura {
+margin-top: 15px;
+margin-left: 15px;
+margin-right: 15px;
+  background: #f8f4e5;
+  padding: 50px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+  min-width: 250px;
+
+}
+
+.fatura:hover {
+  box-shadow: 15px 15px 1px #95a4ff, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+
+
+  line-height: 28pt;
+
+  border: none;
+  border-bottom: 5px solid black;
+
+  width: 100%;
+  
+  outline: none;
+  color: black;
+  background-color:white;
+}
+
+
+
+
+input:focus,
+input:hover {
+  background: black;
+  color: white;
+  border-bottom: 5px solid #95a4ff;
+
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+
+.vl {
+  border-left: 1px solid transparent;
+  height: 30px;
+}
+
+
+.footer {
+	display: block;
+}
+
+.footer p {
+  font-size:0.4em;
+  font-weight: bold;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.logo img{
+	margin-bottom: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.logo img:hover {
+filter: invert(1);
+}
+.info {
+	padding: 10px;
+  text-align: center;
+  line-height: 28pt;
+}
+
+.tipo {
+  border-bottom: 5px solid black;
+}
+
+.boletonum {
+  font-size: xx-small;
+}
+
+.pago {
+  background-color: aquamarine;
+}
+
+.aguardando {
+  background-color:black;
+  color: white;
+}
+
+.subinfo {
+    color: grey;
+}
+
+
+.butao {
+padding: 4px;
+width: 25%;
+
+}
+.pill-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pill-nav a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size:10px;
+  font-weight:bold;
+height: 30px;
+ padding: 10px;
+overflow: hidden;
+  background: #ffa580;
+  
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+.pill-nav a:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  text-decoration:underline;
+  text-decoration-color: #95a4ff;
+}
+
+.clipbtn {
+
+float:right;
+margin-top: -35px;
+margin-right: -20px;
+padding: 5px;
+}
+.clipbtn:hover {
+  filter:invert(1);
+}
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .section h3 {
+            margin: 5px 0;
+        }
+        .loading, .error {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Consulta de Cobrança</div>
+        <div id="result">
+            <div class="loading">Carregando...</div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchCobranca(codigoSolicitacao) {
+            try {
+                const response = await fetch(`https://moods.contato-087.workers.dev/?codigoSolicitacao=${codigoSolicitacao}`);
+                const data = await response.json();
+                if (data.cobrancaInfo) {
+                    displayCobranca(data.cobrancaInfo);
+                } else {
+                    displayError('Dados de cobrança não encontrados.');
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                displayError('Erro ao buscar dados. Tente novamente mais tarde.');
+            }
+        }
+
+        function displayCobranca(cobrancaInfo) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <div class="section">
+                    <h3>Dados da Cobrança</h3>
+                    <p><strong>Código de Solicitação:</strong> ${sanitize(cobrancaInfo.cobranca.codigoSolicitacao)}</p>
+                    <p><strong>Seu Número:</strong> ${sanitize(cobrancaInfo.cobranca.seuNumero)}</p>
+                    <p><strong>Data de Emissão:</strong> ${sanitize(cobrancaInfo.cobranca.dataEmissao)}</p>
+                    <p><strong>Data de Vencimento:</strong> ${sanitize(cobrancaInfo.cobranca.dataVencimento)}</p>
+                    <p><strong>Valor Nominal:</strong> ${sanitize(cobrancaInfo.cobranca.valorNominal)}</p>
+                    <p><strong>Tipo de Cobrança:</strong> ${sanitize(cobrancaInfo.cobranca.tipoCobranca)}</p>
+                    <p><strong>Situação:</strong> ${sanitize(cobrancaInfo.cobranca.situacao)}</p>
+                </div>
+                <div class="section">
+                    <h3>Pagador</h3>
+                    <p><strong>Nome:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.nome)}</p>
+                    <p><strong>CPF/CNPJ:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cpfCnpj)}</p>
+                    <p><strong>Endereço:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.endereco)}, ${sanitize(cobrancaInfo.cobranca.pagador.numero)}, ${sanitize(cobrancaInfo.cobranca.pagador.complemento)}</p>
+                    <p><strong>Bairro:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.bairro)}</p>
+                    <p><strong>Cidade:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cidade)}</p>
+                    <p><strong>UF:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.uf)}</p>
+                    <p><strong>CEP:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cep)}</p>
+                    <p><strong>Email:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.email)}</p>
+                    <p><strong>Telefone:</strong> (${sanitize(cobrancaInfo.cobranca.pagador.ddd)}) ${sanitize(cobrancaInfo.cobranca.pagador.telefone)}</p>
+                </div>
+                <div class="section">
+                    <h3>Boleto</h3>
+                    <p><strong>Nosso Número:</strong> ${sanitize(cobrancaInfo.boleto.nossoNumero)}</p>
+                    <p><strong>Código de Barras:</strong> ${sanitize(cobrancaInfo.boleto.codigoBarras)}</p>
+                    <p><strong>Linha Digitável:</strong> ${sanitize(cobrancaInfo.boleto.linhaDigitavel)}</p>
+                </div>
+                <div class="section">
+                    <h3>Pix</h3>
+                    <p><strong>Txid:</strong> ${sanitize(cobrancaInfo.pix.txid)}</p>
+                    <p><strong>Pix Copia e Cola:</strong> ${sanitize(cobrancaInfo.pix.pixCopiaECola)}</p>
+                </div>
+            `;
+        }
+
+        function displayError(message) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<div class="error">${message}</div>`;
+        }
+
+        function sanitize(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const codigoSolicitacao = getQueryParam('id');
+        if (codigoSolicitacao) {
+            fetchCobranca(codigoSolicitacao);
+        } else {
+            displayError('Código de Solicitação não fornecido na URL.');
+        }
+    </script>
+</body>
+</html>
