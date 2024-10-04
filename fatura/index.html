@@ -49,6 +49,12 @@
             cursor: pointer;
             color: white;
             font-size: 12px;
+            
+        }
+
+        .colorized {
+            border-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+            animation: animate-border 5s infinite;
         }
         .code-text {
             margin: 0;
@@ -90,6 +96,8 @@
             background-color: white;
             border-radius: 10px;
             margin-bottom: 10px;
+            
+            
         }
         .qr-legend {
             font-size: 10px;
@@ -148,6 +156,25 @@
             clip: rect(0,0,0,0);
             border: 0;
         }
+
+
+@keyframes animate-border {
+    0% {
+        border-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+    }
+    25% {
+        border-image: linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+    }
+    50% {
+        border-image: linear-gradient(225deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+    }
+    75% {
+        border-image: linear-gradient(315deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+    }
+    100% {
+        border-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
+    }
+}
     </style>
 </head>
 <body>
@@ -157,7 +184,7 @@
         </div>
         <div id="result">
             <div class="text-center">
-                <div class="spinner-border" role="status">
+                <div class="spinner-border colorized" role="status">
                     <span class="sr-only">Carregando...</span>
                 </div>
             </div>
@@ -205,9 +232,11 @@
                         <div class="qr-legend">(clique para copiar a linha digitável)</div>
                     </div>
                     <div class="grid-item">
+                      
                         <h3>Pix</h3>
                         <div id="qrcode" class="qr-code" onclick="copyToClipboard('${sanitize(cobrancaInfo.pix.pixCopiaECola)}')"></div>
                         <div class="qr-legend">(clique para copiar a chave pix)</div>
+                    
                     </div>
                 </div>
             `;
