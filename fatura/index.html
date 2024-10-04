@@ -68,6 +68,10 @@
             margin-bottom: 15px;
             font-size: 16px;
         }
+        .infotext {
+            font-size: 11px;
+            font-weight:lighter;
+        }
         .badge {
             display: inline-block;
             padding: 0.25em 0.4em;
@@ -215,7 +219,7 @@ function displayCobranca(cobrancaInfo) {
     resultDiv.innerHTML = `
         <div class="grid-container">
             <div class="grid-item">
-                <h3>Dados da Cobrança</h3>
+                <h3>Dados da Cobrança: <span class="infotext"> ${codigoSolicitacao}</span></h3>
                 <p><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
                 <p><strong>Valor Nominal:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
                         <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
@@ -275,7 +279,7 @@ function displayNotaFiscal(num, cod) {
 
     // Cria o botão com o link dinâmico
     const button = document.createElement('button');
-    button.innerText = 'Abrir Nota Fiscal';
+    button.innerText = 'Visualizar NFsE';
     button.onclick = function() {
         const url = `https://isscuritiba.curitiba.pr.gov.br/portalnfse/Default.aspx?doc=12553127000117&num=${num}&cod=${cod}`;
         window.open(url, '_blank');
