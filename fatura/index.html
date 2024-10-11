@@ -203,6 +203,7 @@
     try {
         const response = await fetch(`https://moods.contato-087.workers.dev/?codigoSolicitacao=${codigoSolicitacao}`);
         const data = await response.json();
+        console.log(data.cobrancaInfo)
         if (data.cobrancaInfo) {
             displayCobranca(data.cobrancaInfo);
         } else {
