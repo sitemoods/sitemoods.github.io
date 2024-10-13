@@ -220,15 +220,19 @@ function displayCobranca(cobrancaInfo) {
     resultDiv.innerHTML = `
         <div class="grid-container">
             <div class="grid-item">
-                <h3>Dados da Cobrança: <span class="infotext"> ${codigoSolicitacao}</span></h3>
+                <h3>Dados da Cobrança:</h3>
+                <p><strong>ID:</strong> ${formatDate(cobrancaInfo.cobranca.seuNumero)}</p>
+                <p><strong>Emitido em:</strong> ${formatDate(cobrancaInfo.cobranca.dataEmissao)}</p>
                 <p><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
-                <p><strong>Valor Nominal:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
-                        <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
+                <p><strong>Valor:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
+                <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
             </div>
             <div class="grid-item">
                 <h3>Cliente</h3>
-                <p><strong>Nome:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.nome)}</p>
-                <p><strong>CPF/CNPJ:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cpfCnpj)}</p>
+                <p><strong>Razão Social:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.nome)}</p>
+                <p><strong>CNPJ:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cpfCnpj)}</p>
+                <p><strong>Endereço:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.endereco)} - ${sanitize(cobrancaInfo.cobranca.pagador.numero)}</p>
+                <p><strong>Cidade:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cidade)} - ${sanitize(cobrancaInfo.cobranca.pagador.uf)}, CEP: ${sanitize(cobrancaInfo.cobranca.pagador.cep)}</p>
             </div>
             <div class="grid-item">
                 <h3>Boleto</h3>
