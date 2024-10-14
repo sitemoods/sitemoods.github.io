@@ -223,8 +223,8 @@ function displayCobranca(cobrancaInfo) {
                 <h3>Dados da Cobrança:</h3>
                 <p><strong>ID:</strong>${cobrancaInfo.cobranca.seuNumero}</p>
                 <p><strong>Emitido em:</strong> ${formatDate(cobrancaInfo.cobranca.dataEmissao)}</p>
-                <p style="text-decoration-line: underline;"><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
                 <p><strong>Valor:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
+                <p style="text-decoration-line: underline;"><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
                 <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
             </div>
             <div class="grid-item">
