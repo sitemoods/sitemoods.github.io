@@ -185,6 +185,64 @@
         border-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) 1;
     }
 }
+
+/* Estilos Gerais do Botão */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent; /* Borda inicial */
+    padding: 0.375rem 0.75rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
+    border-radius: 0.25rem; /* Bordas arredondadas */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transição suave */
+}
+
+/* Estilos do Botão Primário */
+.btn-primary {
+    color: #fff; /* Cor do texto */
+    background-color: #007bff; /* Cor de fundo */
+    border-color: #007bff; /* Cor da borda */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-color: #0056b3; /* Cor da borda ao passar o mouse */
+}
+
+.btn-primary:focus, .btn-primary:active {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Sombra ao focar ou ativar */
+}
+
+/* Estilos do Botão Info */
+.btn-info {
+    color: #fff; /* Cor do texto */
+    background-color: #17a2b8; /* Cor de fundo */
+    border-color: #17a2b8; /* Cor da borda */
+}
+
+.btn-info:hover {
+    background-color: #138496; /* Cor de fundo ao passar o mouse */
+    border-color: #117a8b; /* Cor da borda ao passar o mouse */
+}
+
+.btn-info:focus, .btn-info:active {
+    outline: none; /* Remove contorno padrão */
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); /* Sombra ao focar ou ativar */
+}
+
+/* Estilo para Botões Desabilitados */
+.btn:disabled {
+    opacity: 0.65; /* Opacidade reduzida */
+    cursor: not-allowed; /* Cursor não permitido */
+}
+
     </style>
 </head>
 <body>
@@ -270,8 +328,9 @@ function displayCobranca(cobrancaInfo) {
             </div>
             <div class="grid-item">
     <h3>Cartão de Crédito</h3>
-    <button id="pagar-cartao-btn" onclick="pagarComCartao()">Pagar com Cartão</button><i style="font size: small;">(somente esta fatura)</i>
-    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" disabled>Assinar com Cartão</button><i style="font size: small;">(pagamento recorrente)</i>
+    <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><i style="font size: small;">(somente esta fatura)</i>
+    <br>
+    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" class="btn btn-primary" disabled>Assinar com Cartão</button><i style="font size: small;">(pagamento recorrente deste serviço)</i>
 </div>
         </div>
     `;
@@ -312,6 +371,7 @@ function displayNotaFiscal(num, cod) {
     // Cria o botão com o link dinâmico
     const button = document.createElement('button');
     button.innerText = 'Visualizar NFsE';
+    button.classList="btn btn-info";
     button.onclick = function() {
         const url = `https://isscuritiba.curitiba.pr.gov.br/portalnfse/Default.aspx?doc=12553127000117&num=${num}&cod=${cod}`;
         window.open(url, '_blank');
