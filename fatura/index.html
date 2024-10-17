@@ -55,6 +55,7 @@
         .centertext {
   text-align: center;
   font-size: small;
+  margin: 40px
 }
 
         .colorized {
@@ -268,8 +269,9 @@ function displayCobranca(cobrancaInfo) {
                 <div class="qr-legend">(clique para copiar a chave pix)</div>
             </div>
             <div class="grid-item">
-    <h3>Pagamento com Cartão</h3>
-    <button id="pagar-cartao-btn" onclick="pagarComCartao()">Pagar com Cartão</button>
+    <h3>Cartão de Crédito</h3>
+    <button id="pagar-cartao-btn" onclick="pagarComCartao()">Pagar com Cartão</button><i style="font size: small;">(somente esta fatura)</i>
+    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" disabled>Assinar com Cartão</button><i style="font size: small;">(pagamento recorrente)</i>
 </div>
         </div>
     `;
