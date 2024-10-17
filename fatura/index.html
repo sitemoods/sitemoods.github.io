@@ -242,7 +242,9 @@
     opacity: 0.65; /* Opacidade reduzida */
     cursor: not-allowed; /* Cursor não permitido */
 }
-
+.buttons {
+    margin: 25px;
+}
     </style>
 </head>
 <body>
@@ -326,11 +328,11 @@ function displayCobranca(cobrancaInfo) {
                 <div id="qrcode" class="qr-code" onclick="copyToClipboard('${sanitize(cobrancaInfo.pix.pixCopiaECola)}')"></div>
                 <div class="qr-legend">(clique para copiar a chave pix)</div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item buttons">
     <h3>Cartão de Crédito</h3>
-    <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><i style="font size: small;">(somente esta fatura)</i>
+    <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><p class="qr-legend">(somente esta fatura)</p>
     <br>
-    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" class="btn btn-primary" disabled>Assinar com Cartão</button><i style="font size: small;">(pagamento recorrente deste serviço)</i>
+    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" class="btn btn-primary" disabled>Assinar com Cartão</button><p class="qr-legend">(pagamento recorrente deste serviço)</p>
 </div>
         </div>
     `;
