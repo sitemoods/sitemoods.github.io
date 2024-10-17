@@ -500,7 +500,7 @@ async function pagarComCartao() {
         });
 
         const rawResponse = await response.text();
-        console.log('Resposta Bruta da Cielo:', rawResponse); // Loga a resposta bruta
+      //  console.log('Resposta Bruta da Cielo:', rawResponse); // Loga a resposta bruta
 
         const result = JSON.parse(rawResponse); // Converte para objeto JSON
 
