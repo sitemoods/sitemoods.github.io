@@ -485,6 +485,7 @@ if (codigoSolicitacao) {
 async function AssinarComCartao() {
     try {
         const cobrancaInfo = await fetchCobrancaInfo(); // Obtém os dados de cobrança
+        const monthName = getMonthNameFromDate(cobrancaInfo.cobranca.dataEmissao);
 
         const response = await fetch('https://cielolink.contato-087.workers.dev', {
             method: 'POST',
@@ -492,6 +493,7 @@ async function AssinarComCartao() {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
+                monthName: monthName,
                 seuNumero: cobrancaInfo.cobranca.seuNumero,
                 valorNominal: cobrancaInfo.cobranca.valorNominal,
                 cpfCnpj: sanitize(cobrancaInfo.cobranca.pagador.cpfCnpj),
@@ -533,6 +535,8 @@ async function pagarComCartao() {
                 monthName: monthName,
                 seuNumero: cobrancaInfo.cobranca.seuNumero,
                 valorNominal: cobrancaInfo.cobranca.valorNominal,
+                cpfCnpj: sanitize(cobrancaInfo.cobranca.pagador.cpfCnpj),
+                Assinatura: false
             }),
         });
 
