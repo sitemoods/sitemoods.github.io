@@ -314,19 +314,21 @@ function displayCobranca(cobrancaInfo) {
                 <p><strong>Endereço:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.endereco)} - ${sanitize(cobrancaInfo.cobranca.pagador.numero)}</p>
                 <p><strong>Cidade:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cidade)} - ${sanitize(cobrancaInfo.cobranca.pagador.uf)}, <strong>CEP:</strong> ${sanitize(cobrancaInfo.cobranca.pagador.cep)}</p>
             </div>
-            <div class="grid-item">
+                  
+
+            <div class="grid-item" style="display: ${['RECEBIDO', 'MARCADO_RECEBIDO'].includes(cobrancaInfo.cobranca.situacao) ? 'none' : 'block'};">
                 <h3>Boleto</h3>
                 <div class="code-field" onclick="copyToClipboard('${sanitize(cobrancaInfo.boleto.linhaDigitavel)}')">
                     <p class="code-text">${sanitize(cobrancaInfo.boleto.linhaDigitavel)}</p>
                 </div>
                 <div class="qr-legend text-center">(Clique para copiar a linha digitável)</div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" style="display: ${['RECEBIDO', 'MARCADO_RECEBIDO'].includes(cobrancaInfo.cobranca.situacao) ? 'none' : 'block'};">
                 <h3>Pix</h3>
                 <div id="qrcode" class="qr-code" onclick="copyToClipboard('${sanitize(cobrancaInfo.pix.pixCopiaECola)}')"></div>
                 <div class="qr-legend text-center">(Clique para copiar a chave pix)</div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" style="display: ${['RECEBIDO', 'MARCADO_RECEBIDO'].includes(cobrancaInfo.cobranca.situacao) ? 'none' : 'block'};">
     <h3>Cartão de Crédito</h3>
     <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><p class="qr-legend">(Somente desta fatura)</p>
     <br>
