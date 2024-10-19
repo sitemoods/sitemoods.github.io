@@ -41,12 +41,15 @@ addEventListener('fetch', event => {
   
   async function gerarLinkCielo(data) {
     const url = 'https://cieloecommerce.cielo.com.br/api/public/v1/orders/';
-    const payload = {
+
+    let payload;
+    if ( ! data.Assinatura) {
+    payload = {
         Cart: {
             Items: [
                 {
                     Name: `Moods.com.br [${data.monthName}]`,
-                    Description: `Fatura ID: ${data.seuNumero}`,
+                    Description: `Fatura ID: [${data.seuNumero}] Cliente: [${data.cpfCnpj}]`,
                     UnitPrice: data.valorNominal * 100,
                     Quantity: 1,
                     Type: 'Digital',
@@ -62,6 +65,33 @@ addEventListener('fetch', event => {
         OrderNumber: data.seuNumero,
         SoftDescriptor: `moods${data.seuNumero}`,
     };
+};
+
+if ( data.Assinatura) {
+    payload = {
+        Cart: {
+            Items: [
+                {
+                    Name: `Moods.com.br [Assinatura]`,
+                    Description: `Serviço ID: [${data.seuNumero}] Cliente: [${data.cpfCnpj}]`,
+                    UnitPrice: data.valorNominal * 100,
+                    Quantity: 1,
+                    Type: 'Digital',
+                },
+            ],
+        },
+        Payment: {
+            RecurrentPayment: {
+                Interval: 'Monthly'
+            },
+        },
+        Shipping: {
+            Type: 'WithoutShipping',
+        },
+        OrderNumber: data.seuNumero,
+        SoftDescriptor: `moods${data.seuNumero}`,
+    };
+};
   
     const headers = {
         'Content-Type': 'application/json',
