@@ -321,18 +321,18 @@ function displayCobranca(cobrancaInfo) {
                 <div class="code-field" onclick="copyToClipboard('${sanitize(cobrancaInfo.boleto.linhaDigitavel)}')">
                     <p class="code-text">${sanitize(cobrancaInfo.boleto.linhaDigitavel)}</p>
                 </div>
-                <div class="qr-legend text-center">(Clique para copiar a linha digitável)</div>
+                <div class="qr-legend text-center">Clique para copiar a linha digitável</div>
             </div>
             <div class="grid-item" style="display: ${['RECEBIDO', 'MARCADO_RECEBIDO'].includes(cobrancaInfo.cobranca.situacao) ? 'none' : 'block'};">
                 <h3>Pix</h3>
                 <div id="qrcode" class="qr-code" onclick="copyToClipboard('${sanitize(cobrancaInfo.pix.pixCopiaECola)}')"></div>
-                <div class="qr-legend text-center">(Clique para copiar a chave pix)</div>
+                <div class="qr-legend text-center">Clique para copiar a chave pix</div>
             </div>
             <div class="grid-item" style="display: ${['RECEBIDO', 'MARCADO_RECEBIDO'].includes(cobrancaInfo.cobranca.situacao) ? 'none' : 'block'};">
     <h3>Cartão de Crédito</h3>
-    <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><p class="qr-legend">(Somente desta fatura)</p>
+    <button id="pagar-cartao-btn" onclick="pagarComCartao()" class="btn btn-primary">Pagar com Cartão</button><p class="qr-legend">Somente desta fatura</p>
     <br>
-    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" class="btn btn-primary">Assinar com Cartão</button><p class="qr-legend">(Ativar o pagamento recorrente deste serviço no cartão)</p>
+    <button id="pagar-cartao-btn" onclick="AssinarComCartao()" class="btn btn-primary">Assinar com Cartão</button><p class="qr-legend">Ativar o pagamento recorrente deste serviço no cartão</p>
 </div>
         </div>
     `;
