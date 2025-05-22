@@ -138,10 +138,7 @@ html {
   overflow: hidden;
   }
   
-  .rodape p {
-    font-size: 10px;
-  }
-  
+
   
   
   .big img{
@@ -854,3 +851,21 @@ h3 a {
   font-weight: bold;
  /* Opcional: Adicione preenchimento para tornar o destaque mais visível */
 }
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-icons a svg {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  fill: #80cbc4;
+}
+
+
