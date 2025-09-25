@@ -306,7 +306,7 @@ function displayCobranca(cobrancaInfo) {
                 <p><strong>Valor:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
                 <p style="text-decoration-line: underline;"><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
                 <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
-                <button id="download-pdf-btn" onclick="downloadPDF()" class="btn btn-secondary">PDF</button>
+                <button id="download-pdf-btn" onclick="downloadPDF()" class="btn btn-primary">PDF</button>
 
             </div>
             <div class="grid-item">
