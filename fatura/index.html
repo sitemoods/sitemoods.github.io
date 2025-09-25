@@ -306,7 +306,7 @@ function displayCobranca(cobrancaInfo) {
                 <p><strong>Valor:</strong> ${formatCurrency(cobrancaInfo.cobranca.valorNominal)}</p>
                 <p style="text-decoration-line: underline;"><strong>Data de Vencimento:</strong> ${formatDate(cobrancaInfo.cobranca.dataVencimento)}</p>
                 <p><strong>Situação:</strong> <span class="${getSituacaoClass(cobrancaInfo.cobranca.situacao)}">${getSituacaoText(cobrancaInfo.cobranca.situacao)}</span></p>
-                <button id="download-pdf-btn" onclick="downloadPDF()" class="btn btn-secondary">📄PDF</button>
+                <button id="download-pdf-btn" onclick="downloadPDF()" class="btn btn-secondary">PDF</button>
 
             </div>
             <div class="grid-item">
@@ -356,7 +356,7 @@ function displayCobranca(cobrancaInfo) {
 }
 
 async function downloadPDF() {
-    const codigoSolicitacao = getQueryParam('codigoSolicitacao');
+    const codigoSolicitacao = getQueryParam('id');
     if (!codigoSolicitacao) {
         alert('Código de solicitação não encontrado.');
         return;
