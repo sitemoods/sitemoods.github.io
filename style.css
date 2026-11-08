@@ -141,9 +141,12 @@ html {
 
   
   
-  .big img{
+  .big img, .big svg{
     width: 150%;
+    height: auto;
     transform: scale(0.8);
+    display: inline-block;
+    vertical-align: middle;
   }
   
   .overlay {
